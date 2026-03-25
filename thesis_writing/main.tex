@@ -1,0 +1,183 @@
+\documentclass[thesis]{cluu}
+
+\usepackage[style=cluu]{biblatex}
+\addbibresource{main.bib}
+
+\begin{document}
+\title{My thesis}
+\author{Xiaotian Luo}
+% \date{...}
+\supervisors{My Supervisor, Uppsala University\\
+  Some Other Supervisor, NLP Enterprises, Inc.}
+% Use \supervisor (without s at end) if you have only one
+
+\maketitle
+
+\begin{abstract}
+    text here
+\end{abstract}
+
+\tableofcontents
+
+\addchap{Preface}
+% with \addchap instead of \chapter it isn't numbered.
+
+\chapter{Introduction}
+text here
+
+\chapter{Background}
+\section{Domain Adaptation of Dense Retrieval}
+\subsection{From Lexical to Dense Retrieval}
+
+Information retrieval (IR) is the task of identifying and ranking 
+documents from a large corpus that are relevant to a given query. 
+Early IR systems approached this through lexical methods, representing 
+both queries and documents as sparse bag-of-words vectors. Models such 
+as TF-IDF and BM25 compute relevance scores based on term frequency 
+statistics and inverse document frequency weighting 
+\parencite{manning2008introduction, robertson2009probabilistic}. By 
+leveraging inverted indices, these methods enable efficient retrieval 
+at scale and remain strong baselines to this day.
+
+However, lexical retrieval suffers from a fundamental limitation known 
+as \textit{vocabulary mismatch}: when a query and a relevant document 
+share the same meaning but express it through different words, 
+term-based methods fail to establish a match. This brittleness is 
+particularly problematic in specialised domains where terminology is 
+inconsistent or evolves over time.
+
+Dense retrieval addresses this limitation by mapping queries and 
+documents into a shared continuous vector space using neural networks, 
+enabling matching based on semantic similarity rather than exact term 
+overlap. Building on the contextual representations introduced by BERT 
+\parencite{devlin-etal-2019-bert}, Sentence-BERT demonstrated that 
+transformer-based models could be fine-tuned to produce meaningful 
+sentence-level embeddings \parencite{reimers2019sentence}. This gave 
+rise to the \textit{bi-encoder} architecture, in which a query and a 
+document are encoded independently into dense vectors, and relevance 
+is computed as their dot product or cosine similarity 
+\parencite{karpukhin2020dense}. Since document embeddings can be 
+pre-computed offline, approximate nearest neighbour search libraries 
+such as FAISS \parencite{johnson2019billion} make dense retrieval 
+computationally feasible even over millions of documents.
+
+The strong performance of dense retrieval models depends critically 
+on large-scale supervised training data consisting of 
+(query, document) pairs. Datasets such as MS~MARCO, 
+containing hundreds of thousands of human-annotated relevance 
+judgements, have been central to training state-of-the-art dense 
+retrievers \parencite{bajaj2016ms}. As we discuss in the following 
+section, this dependency on labelled data becomes a significant 
+obstacle when moving beyond general-domain web search.
+
+\subsection{Domain Adaptation and the Pain of Label Scarcity}
+
+The effectiveness of dense retrieval models comes at a cost: they 
+require large quantities of labelled (query, document) pairs 
+to learn meaningful vector representations. Outside of general-domain 
+web search, such annotations are rarely available. In specialised 
+fields such as medicine, law, or historical archives, producing 
+relevance judgements requires significant domain expertise and is 
+too expensive to do at scale. Models must therefore often be applied in 
+a \textit{zero-shot} setting, where no labelled data from the target 
+domain exists.
+
+This creates a serious problem. Research using the BEIR benchmark, a 
+diverse collection of retrieval datasets spanning biomedical, 
+scientific, and other specialised domains, has shown that dense 
+retrieval models trained on MS~MARCO perform poorly when applied to 
+unseen domains \parencite{thakur2021beir}. In many cases, these 
+neural models are outperformed by the simple lexical baseline BM25. 
+The reason is that a bi-encoder learns a mapping function that places 
+text into specific positions in vector space. When the target domain 
+differs significantly from the training domain, this mapping no longer 
+places relevant documents and queries close together. This gap between 
+the training distribution and the target distribution is known as 
+\textit{domain shift}.
+
+Addressing domain shift without labelled data requires 
+\textit{unsupervised domain adaptation} (UDA). The core idea is to 
+generate synthetic training data directly from the target corpus, 
+which can then be used to fine-tune the model on the new domain. 
+Recent approaches such as GPL \parencite{wang-etal-2022-gpl} follow 
+this direction and have shown promising results. We discuss these 
+methods in detail in the following section.
+
+\section{Related Work}
+
+The field of unsupervised domain adaptation for dense retrieval has 
+evolved through several distinct paradigms, each addressing the 
+limitations of its predecessor.
+
+\paragraph{\textbf{Domain-Adaptive Pre-training}}served as the initial 
+approach, focusing on helping models internalize the vocabulary and 
+linguistic patterns of the target corpus. Foundational methods like 
+Masked Language Modeling (MLM) \parencite{devlin-etal-2019-bert} 
+established general language understanding, while architectures such 
+as Condenser \parencite{gao-callan-2021-condenser} and TSDAE 
+\parencite{wang-etal-2021-tsdae} designed pre-training objectives 
+specifically to improve dense retrieval performance. A significant limitation of these methods is that learning the 
+vocabulary and patterns of a domain is not the same as learning 
+to retrieve. Pre-training on target domain text teaches the model 
+to better represent that text, but it provides no signal about 
+which documents are relevant to a given query. The core skill of 
+retrieval, matching a query to a relevant passage remains untrained.
+
+\paragraph{\textbf{Self-Supervised Contrastive Learning}} attempted to solve 
+this by creating artificial retrieval tasks without manual labels. 
+For instance, the Inverse Cloze Task (ICT) \parencite{lee-etal-2019-latent} 
+treats a random sentence as a query for its context, while SimCSE 
+\parencite{gao-etal-2021-simcse} and Contrastive Tension (CT) 
+\parencite{carlsson2021semantic} use dropout noise or dual encoders 
+to generate contrastive pairs for fine-tuning. While these methods 
+are efficient for learning sentence embeddings, they do not reflect 
+real user search behaviour. Randomly extracted sentences from a 
+document often lack the specific structure and information-seeking 
+nature of a real-world user query.
+
+\paragraph{\textbf{Pure Query Generation}} addressed this disconnect by using 
+Large Language Models (LLMs) to synthesize human-like queries from 
+target documents. Seminal works like Doc2Query 
+\parencite{nogueira2019doc2query} and domain-targeted QGen 
+\parencite{ma-etal-2021-zero} showed that fine-tuning on these 
+synthetic pairs can bridge the document-to-query gap. Nevertheless, 
+LLM-generated queries are inherently noisy and may contain 
+hallucinations. This forces the model to treat all synthetic pairs 
+as equally reliable, regardless of their actual quality.
+
+\paragraph{\textbf{Generative Pseudo-Labeling (GPL)}} 
+\parencite{wang-etal-2022-gpl} represents the current state-of-the-art 
+solution and serves as the methodological framework for this thesis. 
+GPL follows a three-step pipeline: first, an LLM generates synthetic 
+queries for each passage in the target corpus; second, hard negatives 
+are mined using a dense retriever; third, a Cross-Encoder scores each 
+(query, passage) pair to produce soft relevance labels. By supervising 
+the retriever with these continuous scores rather than binary labels, 
+GPL effectively handles the noise inherent in synthetic query 
+generation and produces more robust domain-adapted models. While more 
+recent approaches such as DRAGON \parencite{lin-etal-2023-train} 
+explore ensemble-based labeling to further improve training signal 
+diversity, GPL remains the most widely adopted framework for 
+unsupervised domain adaptation due to its practical balance between 
+performance and computational cost. This thesis therefore adopts GPL 
+as its methodological foundation.
+
+\section{LLM-based Query Generation}
+\begin{itemize}
+  \item Data processing
+  \item Prompt engineering
+\end{itemize}
+
+\section{Challenges in Historical Swedish Retrieval}
+\begin{itemize}
+  \item OCR errors
+  \item Spelling variations
+  \item Semantic shifts
+  \item Boundary issues
+\end{itemize}
+
+
+\printbibliography
+% at start yields errors because there are no citations and the bibliography file is empty
+
+\end{document}

@@ -1,0 +1,14 @@
+\contentsline {chapter}{\nonumberline Preface}{4}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Background}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Domain Adaptation of Dense Retrieval}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}From Lexical to Dense Retrieval}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Domain Adaptation and the Pain of Label Scarcity}{6}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Related Work}{7}{section.2.2}%
+\contentsline {paragraph}{\nonumberline \textbf {Domain-Adaptive Pre-training}}{7}{paragraph*.3}%
+\contentsline {paragraph}{\nonumberline \textbf {Self-Supervised Contrastive Learning}}{7}{paragraph*.4}%
+\contentsline {paragraph}{\nonumberline \textbf {Pure Query Generation}}{7}{paragraph*.5}%
+\contentsline {paragraph}{\nonumberline \textbf {Generative Pseudo-Labeling (GPL)}}{7}{paragraph*.6}%
+\contentsline {section}{\numberline {2.3}LLM-based Query Generation}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Challenges in Historical Swedish Retrieval}{8}{section.2.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
