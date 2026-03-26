@@ -27,6 +27,7 @@ python scripts/score_margins_gpl.py \
     --input output/gpl_negatives.json \
     --output output/gpl_training_data.jsonl \
     --reranker BAAI/bge-reranker-v2-m3 \
-    --batch-size 64
+    --batch-size 64 \
+    --max-length 512
 
 echo "Done: output/gpl_training_data.jsonl"
