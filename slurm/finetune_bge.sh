@@ -9,7 +9,7 @@
 #SBATCH -o logs/finetune_bge_%j.out
 #SBATCH -e logs/finetune_bge_%j.err
 
-# BGE-M3 unified fine-tuning with LoRA + self-distillation (m3_kd_loss)
+# BGE-M3 unified fine-tuning with self-distillation (m3_kd_loss)
 # Input:  output/bge_training_data.jsonl  (from convert_to_flagembedding_format.py)
 # Output: output/models/bge-m3-unified/
 
@@ -36,7 +36,7 @@ torchrun --nproc_per_node 1 \
     --use_self_distill True \
     --kd_loss_type m3_kd_loss \
     --self_distill_start_step 0 \
-    --num_train_epochs 2 \
+    --num_train_epochs 1 \
     --per_device_train_batch_size 2 \
     --learning_rate 1e-5 \
     --warmup_ratio 0.1 \
@@ -48,10 +48,6 @@ torchrun --nproc_per_node 1 \
     --dataloader_drop_last True \
     --logging_steps 10 \
     --save_steps 500 \
-    --use_lora True \
-    --lora_rank 32 \
-    --lora_alpha 64 \
-    --lora_dropout 0.1 \
     --overwrite_output_dir
 
 echo "Done: output/models/bge-m3-unified"

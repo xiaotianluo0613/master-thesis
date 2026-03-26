@@ -9,7 +9,7 @@
 #SBATCH -o logs/finetune_gpl_%j.out
 #SBATCH -e logs/finetune_gpl_%j.err
 
-# GPL fine-tuning — MarginMSE loss with LoRA
+# GPL fine-tuning — kl_div loss, full fine-tuning
 # Input:  output/gpl_training_data.jsonl  (from score_margins_gpl.py)
 # Output: output/models/bge-m3-gpl/
 
@@ -33,7 +33,7 @@ torchrun --nproc_per_node 1 \
     --passage_max_len 512 \
     --knowledge_distillation True \
     --kd_loss_type kl_div \
-    --num_train_epochs 5 \
+    --num_train_epochs 1 \
     --per_device_train_batch_size 32 \
     --learning_rate 2e-5 \
     --warmup_ratio 0.1 \
@@ -45,10 +45,6 @@ torchrun --nproc_per_node 1 \
     --dataloader_drop_last True \
     --logging_steps 10 \
     --save_steps 500 \
-    --use_lora True \
-    --lora_rank 32 \
-    --lora_alpha 64 \
-    --lora_dropout 0.1 \
     --overwrite_output_dir
 
 echo "Done: output/models/bge-m3-gpl"
