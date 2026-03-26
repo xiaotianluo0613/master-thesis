@@ -53,8 +53,9 @@ def main():
             batch = pairs[i:i + args.batch_size]
             queries = [p[0] for p in batch]
             passages = [p[1] for p in batch]
+            sentence_pairs = [[q, p] for q, p in zip(queries, passages)]
             result = model.compute_score(
-                {"query": queries, "passage": passages},
+                sentence_pairs,
                 weights_for_different_modes=[0.4, 0.2, 0.4],  # dense, sparse, colbert
             )
             batch_scores = result["colbert+sparse+dense"]
