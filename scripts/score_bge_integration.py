@@ -28,7 +28,7 @@ def main():
     args = parser.parse_args()
 
     print(f"Loading BGE-M3: {args.model}")
-    model = BGEM3FlagModel(args.model, use_fp16=True)
+    model = BGEM3FlagModel(args.model, use_fp16=False)
     print("Model loaded.")
 
     examples = []
