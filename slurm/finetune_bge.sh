@@ -26,7 +26,7 @@ source .venv/bin/activate
 torchrun --nproc_per_node 1 \
     -m FlagEmbedding.finetune.embedder.encoder_only.m3 \
     --model_name_or_path BAAI/bge-m3 \
-    --train_data output/bge_training_data.jsonl \
+    --train_data output/bge_training_data_scored.jsonl \
     --output_dir output/models/bge-m3-unified \
     --train_group_size 8 \
     --query_max_len 512 \
