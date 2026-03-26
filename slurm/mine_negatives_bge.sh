@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -A uppmax2026-1-95
+#SBATCH -A uppmax2025-2-290
 #SBATCH -p gpu
 #SBATCH --gres=gpu:1
 #SBATCH -t 02:00:00
