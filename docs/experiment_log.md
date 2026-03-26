@@ -4,6 +4,38 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
+## 2026-03-26 — Pilot Fine-tuning Complete
+
+**Status**: Complete. Both models trained on UPPMAX.
+
+**Actions**:
+- Moved all heavy compute to UPPMAX (Pelle cluster) — local machine too slow
+- Set up repo, venv, and data on `/proj/uppmax2025-2-505/xilu1878/master_thesis/`
+- Ran hard negative mining on GPU (jobs 4713881, 4713882) — finished in seconds
+  - `output/bge_negatives.json`: 330 examples, 7 negatives each, avg top1 sim=0.459
+  - `output/gpl_negatives.json`: 330 examples, 1 negative each
+- Scored GPL data with `bge-reranker-v2-m3` → `output/gpl_training_data.jsonl`
+  - pos_score=0.69, neg_score=0.03 — strong margin, good quality
+- Scored BGE data with BGE-M3 integration score (dense+sparse+colbert, weights 0.4/0.2/0.4) → `output/bge_training_data_scored.jsonl`
+  - avg pos=0.31, avg neg=0.35 — inverted scores (expected pre-FT, confirms need for fine-tuning)
+- Fine-tuned BGE-M3 unified (m3_kd_loss, epoch=1, full FT) → `output/models/bge-m3-unified/`
+- Fine-tuned GPL approach (kl_div, epoch=1, full FT) → `output/models/bge-m3-gpl/`
+
+**Key decisions**:
+- Switched from MarginMSE to kl_div for GPL (FlagEmbedding m3 trainer does not support MarginMSE)
+- Used BGE-M3 integration score as teacher (not bge-reranker-v2-m3) for BGE approach — follows Chen et al. 2024
+- epoch=1 for pilot phase per supervisor advice — compare data prep approaches, not max performance
+- Full fine-tuning (no LoRA) — LoRA not supported in FlagEmbedding encoder-only m3 trainer
+
+**Infrastructure issues resolved**:
+- FlagEmbedding training module requires source install (`pip install -e ".[finetune]"`)
+- Bug in FlagEmbedding runner.py: `dtype=torch_dtype` → `torch_dtype=torch_dtype` (fixed manually)
+- transformers version: 4.53.0 works; 4.44.0 breaks FlagEmbedding inference
+
+**Next**: Evaluation — nDCG@10, MRR@10 on val set (87 queries). Baseline is MRR~0.56.
+
+---
+
 ## 2026-03-25 — Hard Negative Mining
 
 **Status**: Mining scripts written and running.
