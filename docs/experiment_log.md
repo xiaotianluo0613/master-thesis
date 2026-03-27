@@ -23,7 +23,7 @@ Running log of experiments, results, and decisions. Most recent entry first.
 - BGE unified outperforms GPL on both metrics
 - Absolute numbers are low but expected: hard domain (19th century Swedish OCR), small pilot, N-to-N evaluation
 - Relative improvement: +31% MRR for BGE unified, +22% MRR for GPL
-- Baseline MRR (0.27) is lower than earlier baseline eval (0.56 on 2026-03-18) — likely different val set/corpus; needs investigation
+- Baseline MRR (0.27) is lower than earlier baseline eval (0.56 on 2026-03-18) — not comparable: earlier eval used a different (likely 1-to-1) query set before N-to-N generation was implemented. Current 0.27 is the correct baseline for N-to-N evaluation.
 
 **Next**: Investigate baseline discrepancy. Then decide: scale up data or iterate on approach.
 
