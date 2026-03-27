@@ -4,6 +4,31 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
+## 2026-03-27 — Pilot Evaluation Results
+
+**Status**: Complete.
+
+**Script**: `scripts/evaluate_comparison.py`
+**Val set**: `data/val_queries.json` (87 queries, all positives, N-to-N)
+**Corpus**: 550 chunks
+
+| Model | nDCG@10 | MRR@10 |
+|-------|---------|--------|
+| BGE-M3 baseline | 0.1505 | 0.2726 |
+| BGE-M3 unified (Approach B) | **0.1908** | **0.3573** |
+| BGE-M3 GPL (Approach A) | 0.1800 | 0.3319 |
+
+**Observations**:
+- Both fine-tuned models beat baseline after just 1 epoch on 330 examples
+- BGE unified outperforms GPL on both metrics
+- Absolute numbers are low but expected: hard domain (19th century Swedish OCR), small pilot, N-to-N evaluation
+- Relative improvement: +31% MRR for BGE unified, +22% MRR for GPL
+- Baseline MRR (0.27) is lower than earlier baseline eval (0.56 on 2026-03-18) — likely different val set/corpus; needs investigation
+
+**Next**: Investigate baseline discrepancy. Then decide: scale up data or iterate on approach.
+
+---
+
 ## 2026-03-26 — Pilot Fine-tuning Complete
 
 **Status**: Complete. Both models trained on UPPMAX.
@@ -32,7 +57,7 @@ Running log of experiments, results, and decisions. Most recent entry first.
 - Bug in FlagEmbedding runner.py: `dtype=torch_dtype` → `torch_dtype=torch_dtype` (fixed manually)
 - transformers version: 4.53.0 works; 4.44.0 breaks FlagEmbedding inference
 
-**Next**: Evaluation — nDCG@10, MRR@10 on val set (87 queries). Baseline is MRR~0.56.
+**Next**: ~~Evaluation~~ — done, see below.
 
 ---
 

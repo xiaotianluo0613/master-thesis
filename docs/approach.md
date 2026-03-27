@@ -37,17 +37,18 @@ Based on: *GPL: Generative Pseudo Labeling for Unsupervised Domain Adaptation of
 - Filtering: removes true positives + all chunks from same document group
 - Output: `output/gpl_negatives.json`
 
-### Margin Scoring
+### Scoring
 - Script: `scripts/score_margins_gpl.py`
 - Model: `BAAI/bge-reranker-v2-m3` (cross-encoder)
-- margin = CE(query, positive) − CE(query, negative)
+- Scores (query, positive) and (query, negative) separately; outputs pos_scores/neg_scores
+- Skips examples where pos_score ≤ neg_score (unreliable)
 - Output: `output/gpl_training_data.jsonl`
 
 ### Training
-- Script: `scripts/finetune_gpl.py`
 - SLURM: `slurm/finetune_gpl.sh`
-- Loss: `MarginMSELoss` (sentence-transformers)
-- Hyperparameters: epochs=5, batch_size=32, lr=2e-5, optimizer=AdamW
+- Framework: FlagEmbedding official m3 trainer (MarginMSE not supported; using kl_div)
+- Loss: `kl_div` with pre-computed reranker scores as teacher
+- Hyperparameters: epochs=1 (pilot), batch_size=32, lr=2e-5, warmup_ratio=0.1, temp=0.02, train_group_size=2
 - Output: `output/models/bge-m3-gpl/`
 
 ---
@@ -64,17 +65,18 @@ Based on: *BGE M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granul
 - Output: `output/bge_negatives.json`
 
 ### Teacher Scoring
-- Script: `scripts/score_teacher_bge.py`
-- Model: BGE-M3 integration score (dense + sparse + ColBERT multi-vector)
+- Script: `scripts/score_bge_integration.py`
+- Model: BGE-M3 integration score (dense + sparse + ColBERT, weights 0.4/0.2/0.4)
 - Scores: query vs positive + all 7 negatives
-- Output: `output/bge_training_data.jsonl`
+- Output: `output/bge_training_data_scored.jsonl`
+- Note: pre-FT scores are inverted (avg pos=0.31, avg neg=0.35) — expected, confirms need for fine-tuning
 
 ### Training
-- Script: FlagEmbedding official training script
+- Framework: FlagEmbedding official m3 trainer (`torchrun -m FlagEmbedding.finetune.embedder.encoder_only.m3`)
 - SLURM: `slurm/finetune_bge.sh`
-- Loss: InfoNCE + Knowledge Distillation
-- Hyperparameters: epochs=2, batch_size=1, lr=1e-5, group_size=8, warmup_ratio=0.1, temperature=0.02
-- Output: `output/models/bge-m3-official/`
+- Loss: `m3_kd_loss` (unified self-distillation across dense+sparse+colbert)
+- Hyperparameters (pilot): epochs=1, batch_size=2, lr=1e-5, train_group_size=8, warmup_ratio=0.1, temp=0.02, fp16=True
+- Output: `output/models/bge-m3-unified/`
 
 ---
 
