@@ -198,7 +198,7 @@ class HardNegativeMinerBGE:
 def main():
     parser = argparse.ArgumentParser(description="Mine hard negatives for BGE-M3 official approach")
     parser.add_argument("--chunks", default="data/layer1_pilot_pairs_550_grouped_3_4.json")
-    parser.add_argument("--queries", default="data/queries_layer1_n2n_pilot_final_v2.json")
+    parser.add_argument("--queries", default="data/train_queries.json")
     parser.add_argument("--output", default="output/bge_negatives.json")
     parser.add_argument("--model", default="BAAI/bge-m3")
     parser.add_argument("--retrieval-k", type=int, default=200)

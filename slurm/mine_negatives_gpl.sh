@@ -23,7 +23,7 @@ mkdir -p logs output
 module load Python/3.11.5-GCCcore-13.3.0
 source .venv/bin/activate
 
-python scripts/mine_hard_negatives_gpl.py \
+python scripts/pipeline/mine_hard_negatives_gpl.py \
     --chunks data/layer1_pilot_pairs_550_grouped_3_4.json \
     --queries data/train_queries.json \
     --output output/gpl_negatives.json \

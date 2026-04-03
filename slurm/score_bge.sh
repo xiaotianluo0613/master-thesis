@@ -23,7 +23,7 @@ mkdir -p logs output
 module load Python/3.11.5-GCCcore-13.3.0
 source .venv/bin/activate
 
-python scripts/score_bge_integration.py \
+python scripts/pipeline/score_bge_integration.py \
     --input output/bge_training_data.jsonl \
     --output output/bge_training_data_scored.jsonl \
     --model BAAI/bge-m3 \

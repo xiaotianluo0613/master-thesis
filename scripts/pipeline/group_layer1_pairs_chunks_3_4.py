@@ -53,7 +53,7 @@ def main() -> None:
 
     src = Path(args.input)
     data = json.loads(src.read_text(encoding="utf-8"))
-    pairs = data.get("pairs", [])
+    pairs = data.get("chunks", data.get("pairs", []))
 
     by_volume = {}
     for p in pairs:

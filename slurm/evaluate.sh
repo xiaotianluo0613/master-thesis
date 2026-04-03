@@ -22,7 +22,7 @@ mkdir -p logs output
 module load Python/3.11.5-GCCcore-13.3.0
 source .venv/bin/activate
 
-python scripts/evaluate_comparison.py \
+python scripts/pipeline/evaluate_comparison.py \
     --chunks data/layer1_pilot_pairs_550_grouped_3_4.json \
     --queries data/val_queries.json \
     --batch-size 64 \
