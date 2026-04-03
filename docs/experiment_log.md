@@ -4,6 +4,36 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
+## 2026-04-03 — Project Restructure + Layer 1 Full-Scale Pipeline
+
+**Status**: Layer 1 data preparation running (query generation in progress).
+
+**Actions**:
+
+**Project restructure (industry-standard layout)**:
+- Reorganised 60+ scripts into `scripts/pipeline/`, `scripts/data_prep/`, `scripts/archive/` using `git mv` to preserve history
+- Archived all GPL scripts and exploratory code — GPL approach dropped after pilot (BGE unified +31% MRR vs GPL +22%)
+- Rewrote `CLAUDE.md` to reflect current state: LoRA is the goal (full FT pilot only), 4-layer curriculum design, evaluation design, UPPMAX setup, 3 project goals
+
+**Layer 1 full-scale data pipeline (local)**:
+- Wrote `scripts/pipeline/build_layer1_chunks.py`:
+  - Proportional sampling: use ALL Reports first (scarce — only 321 from 2 volumes due to low OCR confidence filtering), fill remaining proportionally from Court_Book and Court_Records
+  - Early stopping per type to avoid scanning all 560+ volumes — runs in seconds
+  - Target: 7300 chunks from 597 Layer 1 pool volumes
+- Wrote `scripts/pipeline/prepare_layer1_data.sh`: 3-step local pipeline (build chunks → group 3–4 per group → generate queries via Gemini)
+- Fixed `group_layer1_pairs_chunks_3_4.py` to accept both `"chunks"` and `"pairs"` JSON keys
+- Updated SLURM scripts with corrected `scripts/pipeline/` paths
+
+**Key decisions**:
+- Chunk unit: 1 XML page = 1 chunk, no token limit enforced (same as pilot, max pooling handles eval fairness)
+- Proportional imbalance accepted: Reports under-represented (321 chunks vs ~7000 combined CB+CR) but used in full — quality filter excludes most Report volumes
+- SLURM scripts as experiment records: Python scripts stay generic, SLURM carries all hyperparameters
+- Switched to Claude Code as primary AI assistant for industry-style AI-assisted development
+
+**Next**: Wait for Gemini query generation to complete (~several hours, uses `--resume` if interrupted). Then scp `data/layer1_queries.json` and `data/layer1_chunks_grouped.json` to UPPMAX and run SLURM jobs: mine hard negatives → teacher scoring → fine-tune Layer 1.
+
+---
+
 ## 2026-03-27 — Pilot Evaluation Results
 
 **Status**: Complete.
