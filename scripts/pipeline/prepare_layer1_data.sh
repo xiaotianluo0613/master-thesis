@@ -52,15 +52,16 @@ echo "Done: data/layer1_chunks_grouped.json"
 echo "=== Step 3: Generating N-to-N queries ==="
 
 python scripts/pipeline/generate_n_to_n_queries_layered.py \
-    --chunks          data/layer1_chunks_grouped.json \
-    --fewshot         data/n_to_n_fewshot_examples.json \
-    --pool-dir        output/data_pools \
-    --output          data/layer1_queries.json \
-    --provider        gemini \
-    --model           gemini-2.5-flash \
-    --queries-per-day 3 \
-    --temperature     1.0 \
-    --delay           4.0 \
+    --chunks                  data/layer1_chunks_grouped.json \
+    --fewshot                 data/n_to_n_fewshot_examples.json \
+    --pool-dir                output/data_pools \
+    --output                  data/layer1_queries.json \
+    --provider                gemini \
+    --model                   gemini-2.5-flash \
+    --queries-per-day         3 \
+    --temperature             1.0 \
+    --delay                   4.0 \
+    --disable-baseline-filter \
     --resume
 
 echo "Done: data/layer1_queries.json"

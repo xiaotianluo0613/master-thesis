@@ -1,13 +1,11 @@
-# System files
+# ── System ────────────────────────────────────────────────────────────────────
 .DS_Store
 .DS_Store?
 *.swp
 *.swo
 *~
-.idea/
-.vscode/
 
-# Python
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *$py.class
@@ -30,27 +28,44 @@ wheels/
 env/
 venv/
 
-# Jupyter
+# ── Jupyter ───────────────────────────────────────────────────────────────────
 .ipynb_checkpoints
 *.ipynb
 
-# Data and outputs (keep these out of version control, use them locally)
+# ── Data and outputs (not in git — scp manually to/from UPPMAX) ──────────────
 data/
 output/
 logs/
 *.log
+
+# ── LaTeX build artifacts ─────────────────────────────────────────────────────
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.out
+*.lof
+*.lot
 texput.log
 
-# Large files
+# ── Large / binary files ──────────────────────────────────────────────────────
 *.pdf
 *.xlsx
 *.csv
+*.pth
+*.bin
 
-# Temp files
+# ── Raw corpus data (not public) ─────────────────────────────────────────────
 Filedrop-*/
 30002021/
 
-# IDE
+# ── Scratch files ─────────────────────────────────────────────────────────────
+test_translation.py
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
 .idea/
 .vscode/
 *.code-workspace
