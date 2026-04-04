@@ -28,7 +28,7 @@ python scripts/pipeline/split_train_val.py \
     --queries      data/layer1_queries.json \
     --train-output data/layer1_train_queries.json \
     --val-output   data/layer1_val_queries.json \
-    --val-size     87 \
+    --val-size     551 \
     --seed         42
 
 echo "Done: data/layer1_train_queries.json + data/layer1_val_queries.json"

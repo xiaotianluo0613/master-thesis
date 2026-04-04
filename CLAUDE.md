@@ -116,7 +116,9 @@ Queries simulate a historian who does NOT know where the answer is:
 - Carved from generated queries, same types as training
 - Each layer of training has its own validation set
 - Used to compare runs and tune hyperparameters
-- Pilot val: 87 queries, N-to-N (all positives kept), 550-chunk corpus
+- Split: 10% val, 90% train (grouped by date — no document group leaks across splits)
+- Pilot val: 87 queries (from 417 total), N-to-N (all positives kept), 550-chunk corpus
+- Layer 1 val: 551 queries (from 5514 total), 4963 train
 
 ### Test set (used ONCE at the end — never touch during training)
 - Temporal split: unseen time period (1878–1900)
