@@ -4,6 +4,29 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
+## 2026-04-04 — Layer 1 Query Generation Complete + GitHub Portfolio
+
+**Status**: Layer 1 data ready. SLURM jobs being written. Waiting to run on UPPMAX.
+
+**Actions**:
+- Query generation completed: **5514 queries**, 0 failed, 0 missing positives
+  - 1838 groups × 3 queries (2 entity + 1 social pattern), 3–4 positives per query
+  - Fix needed: added `--disable-baseline-filter` to `prepare_layer1_data.sh` — old script was filtering new chunk IDs against pilot baseline file → 0 queries generated
+- Verified query output: correct schema, all layer1, min/max positives match group sizes
+- `scp`-ed `layer1_queries.json` + `layer1_chunks_grouped.json` to UPPMAX
+- Wrote Layer 1 SLURM scripts: `layer1_split.sh`, `layer1_mine.sh`, `layer1_score.sh`, `layer1_finetune.sh` (all use new account `uppmax2026-1-95`)
+- Polished GitHub repo for job portfolio: rewrote README, added `requirements.txt`, updated `.gitignore` (LaTeX artifacts, model weights), added `visualizations/`, deleted stale exploratory docs, made repo public
+
+**Key decisions**:
+- Pilot used 1 epoch; Layer 1 using 3 epochs — larger dataset justifies more passes
+- Pilot batch size 2; Layer 1 batch size 4 — more data, more stable gradients
+- Added `docs/TODO.md` as persistent task tracker across sessions
+- Added `docs/experiment_log.md` update rule to memory — update at end of every session
+
+**Next**: Run SLURM jobs on UPPMAX in order: split → mine → score → finetune → evaluate
+
+---
+
 ## 2026-04-03 — Project Restructure + Layer 1 Full-Scale Pipeline
 
 **Status**: Layer 1 data preparation running (query generation in progress).
