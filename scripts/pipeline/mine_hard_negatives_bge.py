@@ -7,7 +7,7 @@ For each query:
   - Filter out true positives and same-group chunks
   - Skip rank 1 (likely false negative), take from ranks 2-200
   - Select 7 hard negatives
-  - Randomly sample 1 positive per query for training
+  - Expand each query into one training example per positive chunk (N-to-N)
 
 Output: output/bge_negatives.json (ready for teacher scoring step)
 """
@@ -122,28 +122,30 @@ class HardNegativeMinerBGE:
                 "similarity_score": score,
             })
 
-        # Randomly sample 1 positive for training
-        sampled_pos_id = random.choice(list(positive_ids))
-        sampled_pos_idx = self.chunk_id_to_idx.get(sampled_pos_id)
-        if sampled_pos_idx is None:
-            return None
-        pos_chunk = self.chunks[sampled_pos_idx]
-        pos_text = pos_chunk.get("text_without_prefix") or pos_chunk.get("text", "")
-
-        return {
-            "query_id": f"{query_data.get('date', 'unknown')}_q{query_data.get('query_index', 0)}",
-            "query": query_text,
-            "query_type": query_data.get("query_type", "unknown"),
-            "layer": query_data.get("layer", "unknown"),
-            "date": query_data.get("date", "unknown"),
-            "volume_id": query_data.get("volume_id", "unknown"),
-            "positive_chunk_id": sampled_pos_id,
-            "positive": pos_text,
-            "all_positive_ids": list(positive_ids),
-            "hard_negatives": neg_chunks,
-            "num_negatives_found": len(neg_chunks),
-            "num_candidates_after_filter": len(filtered),
-        }
+        # Expand into one training example per positive chunk (N-to-N design)
+        base_query_id = f"{query_data.get('date', 'unknown')}_q{query_data.get('query_index', 0)}"
+        examples = []
+        for i, pos_id in enumerate(sorted(positive_ids)):
+            pos_idx = self.chunk_id_to_idx.get(pos_id)
+            if pos_idx is None:
+                continue
+            pos_chunk = self.chunks[pos_idx]
+            pos_text = pos_chunk.get("text_without_prefix") or pos_chunk.get("text", "")
+            examples.append({
+                "query_id": f"{base_query_id}_pos{i}",
+                "query": query_text,
+                "query_type": query_data.get("query_type", "unknown"),
+                "layer": query_data.get("layer", "unknown"),
+                "date": query_data.get("date", "unknown"),
+                "volume_id": query_data.get("volume_id", "unknown"),
+                "positive_chunk_id": pos_id,
+                "positive": pos_text,
+                "all_positive_ids": list(positive_ids),
+                "hard_negatives": neg_chunks,
+                "num_negatives_found": len(neg_chunks),
+                "num_candidates_after_filter": len(filtered),
+            })
+        return examples if examples else None
 
     def mine_all(self, queries: List[Dict], retrieval_k: int = 200, num_negatives: int = 7) -> List[Dict]:
         print(f"\nMining hard negatives for {len(queries)} queries (retrieval_k={retrieval_k}, num_negatives={num_negatives})...")
@@ -151,11 +153,12 @@ class HardNegativeMinerBGE:
         skipped = 0
         partial = 0
         for i, q in enumerate(queries):
-            record = self.mine_for_query(q, retrieval_k=retrieval_k, num_negatives=num_negatives)
-            if record:
-                if record["num_negatives_found"] < num_negatives:
-                    partial += 1
-                results.append(record)
+            records = self.mine_for_query(q, retrieval_k=retrieval_k, num_negatives=num_negatives)
+            if records:
+                for record in records:
+                    if record["num_negatives_found"] < num_negatives:
+                        partial += 1
+                    results.append(record)
             else:
                 skipped += 1
             if (i + 1) % 50 == 0:
@@ -183,7 +186,7 @@ class HardNegativeMinerBGE:
                 "retrieval_k": retrieval_k,
                 "num_negatives": num_negatives,
                 "negative_selection": "ranks 2 to retrieval_k after filtering positives",
-                "positive_selection": "random 1 from relevant_chunks",
+                "positive_selection": "all positives expanded (one example per positive chunk)",
                 "total_examples": len(examples),
                 "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
             },
