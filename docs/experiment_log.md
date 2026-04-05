@@ -4,22 +4,35 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
-## 2026-04-05 — Layer 1 Full FT Complete; Planning Gap Identified
+## 2026-04-05 — Layer 1 Eval Results + LoRA Implementation
 
-**Status**: Layer 1 model trained. Evaluation pending. Major lesson: need explicit plan before each phase transition.
+**Status**: Layer 1 full FT evaluated. LoRA patch written and pushed. Pending: apply patch on Pelle + submit training job.
 
 **Actions**:
-- Training job 4779908 completed overnight: 3 epochs, 2h53min, train_loss 1.402, model saved to `output/models/layer1-bge-m3-unified`
-- Identified planning gap: transitioned from pilot to Layer 1 scale-up without explicitly revisiting LoRA, epochs, hyperparameters, or curriculum learning strategy
-- **Decision: always write a plan before implementing any phase transition** — this session exposed that we copied pilot hyperparameters without review
+- Layer 1 full FT evaluation complete (`layer1-full-ft-v1`):
+  - MAP: 0.1229, nDCG@10: 0.1828, Recall@10: 0.1647, nDCG@100: 0.2233, Recall@100: 0.2998
+  - **+89% MAP vs baseline** (0.0649) on 7300-chunk corpus, 551 val queries
+- Created `docs/results.md` — dedicated results tracking table for all runs
+- **Lessons learned**: always write explicit plan before phase transitions; don't copy pilot hyperparameters blindly
+- Wrote plan for Layer 1 LoRA training: r=16, alpha=32, target=Q+K+V, lr=1e-4, batch=8, 3 epochs
+- Patched FlagEmbedding to support LoRA (`patches/flagembedding_lora.patch`):
+  - `arguments.py`: added use_lora, lora_rank, lora_alpha, lora_dropout, lora_target_modules fields
+  - `runner.py`: split get_model() call, inject PEFT LoRA on base encoder before FlagEmbedding wrapper
+- Wrote `slurm/layer1_lora.sh` and `slurm/layer1_lora_evaluate.sh`
+- All pushed to GitHub
 
-**Open questions requiring a plan before next action**:
-1. LoRA vs full FT — FlagEmbedding encoder-only m3 doesn't support LoRA yet; patch it or switch to custom PEFT loop?
-2. Epochs/hyperparameters at 19,716 examples — are pilot settings still appropriate?
-3. Curriculum learning — train each layer from BGE-M3 base or continue from previous layer's checkpoint?
-4. Evaluation — run evaluation on this Layer 1 model before proceeding to Layer 2
+**Pending**:
+- Verify peft installed in UPPMAX venv (`python -c "import peft"`)
+- Apply patch: `patch -p1 -d /proj/uppmax2025-2-505/xilu1878/FlagEmbedding < patches/flagembedding_lora.patch`
+- Submit: `sbatch slurm/layer1_lora.sh`
+- After training: `sbatch slurm/layer1_lora_evaluate.sh` → 3-way comparison
 
-**Next**: Evaluate current Layer 1 model → write explicit plan for Layer 2+ and LoRA strategy → implement
+**Key decisions**:
+- LoRA target modules: Q+K+V only (no dense/output) for clean baseline; add dense in v2
+- Start from BGE-M3 base (not full FT checkpoint) for clean comparison
+- Curriculum learning: each layer continues from previous layer's checkpoint (decided, not yet implemented)
+
+**Next**: Apply patch on Pelle → submit layer1_lora.sh → evaluate → plan Layer 2
 
 ---
 
