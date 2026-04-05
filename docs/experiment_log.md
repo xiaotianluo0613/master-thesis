@@ -4,6 +4,25 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
+## 2026-04-05 — Layer 1 Full FT Complete; Planning Gap Identified
+
+**Status**: Layer 1 model trained. Evaluation pending. Major lesson: need explicit plan before each phase transition.
+
+**Actions**:
+- Training job 4779908 completed overnight: 3 epochs, 2h53min, train_loss 1.402, model saved to `output/models/layer1-bge-m3-unified`
+- Identified planning gap: transitioned from pilot to Layer 1 scale-up without explicitly revisiting LoRA, epochs, hyperparameters, or curriculum learning strategy
+- **Decision: always write a plan before implementing any phase transition** — this session exposed that we copied pilot hyperparameters without review
+
+**Open questions requiring a plan before next action**:
+1. LoRA vs full FT — FlagEmbedding encoder-only m3 doesn't support LoRA yet; patch it or switch to custom PEFT loop?
+2. Epochs/hyperparameters at 19,716 examples — are pilot settings still appropriate?
+3. Curriculum learning — train each layer from BGE-M3 base or continue from previous layer's checkpoint?
+4. Evaluation — run evaluation on this Layer 1 model before proceeding to Layer 2
+
+**Next**: Evaluate current Layer 1 model → write explicit plan for Layer 2+ and LoRA strategy → implement
+
+---
+
 ## 2026-04-04 — Layer 1 Query Generation Complete + GitHub Portfolio
 
 **Status**: Layer 1 data ready. SLURM jobs being written. Waiting to run on UPPMAX.
@@ -23,7 +42,16 @@ Running log of experiments, results, and decisions. Most recent entry first.
 - Added `docs/TODO.md` as persistent task tracker across sessions
 - Added `docs/experiment_log.md` update rule to memory — update at end of every session
 
-**Next**: Run SLURM jobs on UPPMAX in order: split → mine → score → finetune → evaluate
+**Layer 1 SLURM pipeline (evening)**:
+- `layer1_split.sh`: ran directly on Pelle — 4962 train / 551 val
+- `layer1_mine.sh` (job 4779905): ran but used old 1-positive-per-query logic
+- Identified bug: N-to-N design requires one training example per positive, not random 1
+- Fixed `mine_hard_negatives_bge.py`: expand each query into one example per positive chunk; negatives shared across all expansions of same query
+- Re-ran mining (job 4779906): **19,716 examples** (vs 4,962 before), all with full 7 negatives
+- `layer1_score.sh`: completed — `output/layer1_bge_training_data_scored.jsonl` (19,716 lines)
+- `layer1_finetune.sh` (job 4779908): submitted before sleep
+
+**Next**: Check training results in morning → evaluate → plan Layer 2
 
 ---
 
