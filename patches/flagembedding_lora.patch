@@ -1,0 +1,44 @@
+--- a/FlagEmbedding/finetune/embedder/encoder_only/m3/arguments.py
++++ b/FlagEmbedding/finetune/embedder/encoder_only/m3/arguments.py
+@@ -20,3 +20,8 @@ class EncoderOnlyEmbedderM3TrainingArguments(AbsEmbedderTrainingArguments):
+     unified_finetuning: bool = field(default=False, metadata={"help": "use unify fine-tuning"})
+     use_self_distill: bool = field(default=False, metadata={"help": "use self-distill when using unify fine-tuning"})
+     fix_encoder: bool = field(default=False, metadata={"help": "Freeze the parameters of encoder"})
+     self_distill_start_step: int = field(default=-1, metadata={"help": "Num of step when using self-distill"})
++    use_lora: bool = field(default=False, metadata={"help": "Use LoRA for parameter-efficient fine-tuning"})
++    lora_rank: int = field(default=16, metadata={"help": "LoRA rank r"})
++    lora_alpha: int = field(default=32, metadata={"help": "LoRA alpha scaling factor"})
++    lora_dropout: float = field(default=0.05, metadata={"help": "LoRA dropout"})
++    lora_target_modules: str = field(default="query,key,value", metadata={"help": "Comma-separated modules to apply LoRA"})
+--- a/FlagEmbedding/finetune/embedder/encoder_only/m3/runner.py
++++ b/FlagEmbedding/finetune/embedder/encoder_only/m3/runner.py
+@@ -112,9 +112,27 @@ class EncoderOnlyEmbedderM3Runner(AbsEmbedderRunner):
+         logger.info('Config: %s', config)
+
+-        model = EncoderOnlyEmbedderM3Model(
+-            self.get_model(self.model_args.model_name_or_path, self.model_args.trust_remote_code, self.model_args.colbert_dim),
+-            tokenizer=tokenizer,
+-            negatives_cross_device=self.training_args.negatives_cross_device,
++        model_dict = self.get_model(
++            self.model_args.model_name_or_path,
++            self.model_args.trust_remote_code,
++            self.model_args.colbert_dim
++        )
++
++        if self.training_args.use_lora:
++            from peft import get_peft_model, LoraConfig
++            lora_config = LoraConfig(
++                r=self.training_args.lora_rank,
++                lora_alpha=self.training_args.lora_alpha,
++                target_modules=[m.strip() for m in self.training_args.lora_target_modules.split(",")],
++                lora_dropout=self.training_args.lora_dropout,
++                bias="none",
++            )
++            model_dict['model'] = get_peft_model(model_dict['model'], lora_config)
++            model_dict['model'].enable_input_require_grads()
++            model_dict['model'].print_trainable_parameters()
++
++        model = EncoderOnlyEmbedderM3Model(
++            model_dict,
++            tokenizer=tokenizer,
++            negatives_cross_device=self.training_args.negatives_cross_device,
