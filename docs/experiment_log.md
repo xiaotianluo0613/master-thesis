@@ -4,6 +4,33 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
+## 2026-04-06 — Layer 1 LoRA Experiments Complete
+
+**Status**: All Layer 1 experiments done. LoRA+dense is the recommended approach going forward.
+
+**Actions**:
+- Applied FlagEmbedding LoRA patch on Pelle (`patches/apply_lora_patch.py`)
+- Ran 3 LoRA variants and 5-way evaluation (`layer1_eval_all.sh`):
+
+| Run | Batch | Target | MAP | nDCG@10 | vs baseline |
+|-----|-------|--------|-----|---------|-------------|
+| LoRA-v1 | 8 | Q,K,V | 0.0999 | 0.1453 | +54% |
+| LoRA-b4 | 4 | Q,K,V | 0.1128 | 0.1655 | +74% |
+| LoRA+dense-b4 | 4 | Q,K,V,O | 0.1183 | 0.1749 | +82% |
+| Full FT | 4 | all | 0.1229 | 0.1828 | +89% |
+
+**Key findings**:
+- Batch size was a confound in LoRA-v1 (b8 = 2x fewer gradient steps than full FT)
+- Fixing to b4: LoRA-b4 jumps from +54% to +74% MAP
+- Adding dense: further +5%, closes gap to only 4% vs full FT
+- LoRA+dense trains only 0.4% of parameters, runs 2.5x faster
+
+**Decision**: Use LoRA+dense (Q,K,V,O, r=16, alpha=32, batch=4, lr=1e-4) for Layer 2+
+
+**Next**: Supervisor meeting 2026-04-07 11:00 → then Layer 2 data prep and training
+
+---
+
 ## 2026-04-05 — Layer 1 Eval Results + LoRA Implementation
 
 **Status**: Layer 1 full FT evaluated. LoRA patch written and pushed. Pending: apply patch on Pelle + submit training job.
