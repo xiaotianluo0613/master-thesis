@@ -1,12 +1,67 @@
-# Fine-tuning Methodology: GPL vs BGE-M3 Official
+# Fine-tuning Methodology
 
 ## Overview
 
-Pilot experiment comparing two BGE-M3 fine-tuning paradigms on Swedish historical archive documents (Swedish National Archives, 19th century police reports and court records).
+Fine-tuning BGE-M3 for dense retrieval over 19th century Swedish archive documents (Swedish National Archives). The approach uses LoRA (parameter-efficient fine-tuning) with the BGE unified training objective, applied in four progressive layers of increasing domain specialisation.
 
-**Research question**: Which fine-tuning paradigm produces better dense retrieval on this domain?
+**Research questions**:
+1. Does LoRA fine-tuning improve retrieval quality over the BGE-M3 baseline on this domain?
+2. Does cumulative domain expansion prevent catastrophic forgetting across layers?
+3. At what point does adding more training data stop helping (saturation)?
 
-**Dataset**: 417 queries generated via Generative Pseudo Labelling (GPL) from 550 document chunks. Queries follow a 2 entity + 1 social pattern ratio per document group, designed so that each query requires semantic matching to find the answer and does not reveal specific details from the source text.
+---
+
+## Full-Scale Approach (Layer 1–4)
+
+### Fine-tuning Method: LoRA
+
+**Decision**: LoRA (Low-Rank Adaptation) with target modules Q, K, V, O (dense/output projection included).
+
+**Config**: r=16, alpha=32, dropout=0.05, lr=1e-4, batch=4, 3 epochs.
+
+**Rationale**:
+- Full fine-tuning risks catastrophic forgetting of multilingual pretraining
+- LoRA trains only 0.4% of parameters; inference latency is identical to base model
+- Layer 1 experiments confirmed LoRA+dense closes 96% of full FT's MAP gain
+
+**Implementation**: FlagEmbedding patched to support LoRA (`patches/apply_lora_patch.py`). Patch adds PEFT LoRA on the base encoder before FlagEmbedding wraps it.
+
+---
+
+### Training Strategy: Cumulative Domain Expansion
+
+Each layer trains on **all previous layers' data combined**, starting from the previous layer's checkpoint.
+
+| Layer | New types | Cumulative types | Approx. training examples |
+|-------|-----------|-----------------|--------------------------|
+| Layer 1 | Court Book, Court Records, Reports | same | ~19,700 |
+| Layer 2 | + District, Protocols | all 5 | ~30,000 |
+| Layer 3 | + Legal | all 6 | ~40,000 |
+| Layer 4 | + City | all 7 | ~46,000 |
+
+**Why cumulative, not sequential**: LoRA adapters are small (few parameters) and highly susceptible to catastrophic forgetting when trained on new data alone. Replaying all previous data is cheap relative to the benefit. Each layer expands the domain distribution the adapter has seen — hence "cumulative domain expansion" rather than strict curriculum learning (easy→hard).
+
+**Note**: "Curriculum learning" is a loose analogy here. The ordering (narrative-rich → geographic → legal → noisy) is motivated by domain difficulty and data quality, not a formal easy-to-hard curriculum.
+
+---
+
+### Evaluation: Global Validation Set
+
+**Design**: One fixed validation set, sampled proportionally from all 4 layers' generated queries, with group-aware split (no query group spans train/val boundary).
+
+**Purpose**: Same exam across all training stages — scores after Layer 1, 2, 3, 4 training are directly comparable. Any drop reveals catastrophic forgetting.
+
+**Construction**: Built incrementally as each layer's queries become available. Layer 1 and 2 models are retroactively evaluated on the complete global val set once all 4 layers are done.
+
+**Sampling**: ~10% of total training data, proportional by layer size (to confirm with supervisor).
+
+**Alongside**: Each layer also has its own layer-specific val set for tracking per-layer training dynamics.
+
+---
+
+## Pilot Experiment (archived — 2026-03-27)
+
+*The pilot compared GPL vs BGE unified on 550 chunks / 417 queries. BGE unified won (+31% MRR vs +22% for GPL). GPL approach dropped after pilot. The sections below document the pilot methodology for reference.*
 
 ---
 
