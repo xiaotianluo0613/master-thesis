@@ -160,20 +160,28 @@ def main() -> None:
         if t in TARGET_TYPES:
             vols_by_type[t].append(vid)
 
+    # Compute per-type caps proportional to volume counts so District doesn't
+    # crowd out Protocols (District: ~39 vols, Protocols: ~499 vols)
+    vol_counts = {t: len(vols_by_type.get(t, [])) for t in TARGET_TYPES}
+    total_vols = max(1, sum(vol_counts.values()))
+    type_caps = {
+        t: max(1, round(args.target_chunks * vol_counts[t] / total_vols))
+        for t in TARGET_TYPES
+    }
+
     # Gather candidate chunks per type with early stopping
-    cap_per_type = args.target_chunks
     candidates: Dict[str, List[Dict]] = defaultdict(list)
     for t in TARGET_TYPES:
         vols = vols_by_type.get(t, [])
         random.shuffle(vols)
         for vid in vols:
-            if len(candidates[t]) >= cap_per_type:
+            if len(candidates[t]) >= type_caps[t]:
                 break
             vdir = root / vid
             if not vdir.exists():
                 continue
             for xf in sorted(vdir.glob("*.xml")):
-                if len(candidates[t]) >= cap_per_type:
+                if len(candidates[t]) >= type_caps[t]:
                     break
                 txt = extract_text(xf)
                 if len(txt) < args.min_text_chars:
