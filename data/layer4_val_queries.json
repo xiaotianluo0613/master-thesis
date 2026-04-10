@@ -1,0 +1,2425 @@
+{
+  "metadata": {
+    "method": "layered-baseprompt-fewshot-n2n",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "temperature": 1.0,
+    "generation_date": "2026-04-09 14:13:20",
+    "dry_run": false,
+    "baseline_filter_disabled": true,
+    "total_days_processed": 376,
+    "successful_days": 376,
+    "total_queries": 1128,
+    "failed_days": 0,
+    "fewshot_file": "data/n_to_n_fewshot_examples.json",
+    "pool_dir": "output/data_pools",
+    "queries_per_call": 3,
+    "query_types": [
+      "entity",
+      "entity",
+      "social_pattern"
+    ],
+    "split": "val",
+    "size": 150,
+    "eval_note": "all positives kept"
+  },
+  "queries": [
+    {
+      "query": "Vad är känt om nämndemannen Anders Hansson i Skamarbo?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0052",
+      "volume_id": "A0067159",
+      "case_summary": "Om nu Notariens befattning med\nAuctionen och upforder för öfwerskotts span¬\nnemälan samt thet therföre orselnin¬\nwanlige arfwode skall räknas för en\nsök låg åtföljande förmohn, som gömda\nsig på then Ädle henne Rtns benäg...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00209",
+        "A0067159_A0067159_00210",
+        "A0067159_A0067159_00211",
+        "A0067159_A0067159_00212"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer dammsamlaren Zacharias Graff i arkivhandlingarna?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0052",
+      "volume_id": "A0067159",
+      "case_summary": "Om nu Notariens befattning med\nAuctionen och upforder för öfwerskotts span¬\nnemälan samt thet therföre orselnin¬\nwanlige arfwode skall räknas för en\nsök låg åtföljande förmohn, som gömda\nsig på then Ädle henne Rtns benäg...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00209",
+        "A0067159_A0067159_00210",
+        "A0067159_A0067159_00211",
+        "A0067159_A0067159_00212"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades konflikter rörande vattenförvaltning inom bergshanteringen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0052",
+      "volume_id": "A0067159",
+      "case_summary": "Om nu Notariens befattning med\nAuctionen och upforder för öfwerskotts span¬\nnemälan samt thet therföre orselnin¬\nwanlige arfwode skall räknas för en\nsök låg åtföljande förmohn, som gömda\nsig på then Ädle henne Rtns benäg...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00209",
+        "A0067159_A0067159_00210",
+        "A0067159_A0067159_00211",
+        "A0067159_A0067159_00212"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om torparen Olof Ersson från Häromås?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0067",
+      "volume_id": "A0067159",
+      "case_summary": "Sr h.r 1782 den 23 dje Januarii\nwid Sala Grufweling; Närwaran¬\nda: Bergs härutmannen Herr Bern¬\nhard Berndtson, Bergmästaren Herr\nPehr Haaff, Rådmannen Lars Brök\nman, Pehr Salsten, Eric Mölia, Sven\nPihl och Olof Fredric ...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00269",
+        "A0067159_A0067159_00270",
+        "A0067159_A0067159_00271",
+        "A0067159_A0067159_00272"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Kyllinge Krono qvarn i andra handlingar?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0067",
+      "volume_id": "A0067159",
+      "case_summary": "Sr h.r 1782 den 23 dje Januarii\nwid Sala Grufweling; Närwaran¬\nda: Bergs härutmannen Herr Bern¬\nhard Berndtson, Bergmästaren Herr\nPehr Haaff, Rådmannen Lars Brök\nman, Pehr Salsten, Eric Mölia, Sven\nPihl och Olof Fredric ...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00269",
+        "A0067159_A0067159_00270",
+        "A0067159_A0067159_00271",
+        "A0067159_A0067159_00272"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades fusk med mått och vikter vid leveranser av varor från allmogen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0067",
+      "volume_id": "A0067159",
+      "case_summary": "Sr h.r 1782 den 23 dje Januarii\nwid Sala Grufweling; Närwaran¬\nda: Bergs härutmannen Herr Bern¬\nhard Berndtson, Bergmästaren Herr\nPehr Haaff, Rådmannen Lars Brök\nman, Pehr Salsten, Eric Mölia, Sven\nPihl och Olof Fredric ...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00269",
+        "A0067159_A0067159_00270",
+        "A0067159_A0067159_00271",
+        "A0067159_A0067159_00272"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer ryttmästaren Eric Kornman i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0050",
+      "volume_id": "A0067159",
+      "case_summary": "at thermed till hästen innehålla, och at\nnu i wåla, något betydeligit inljög\naf Säljelse icke widare är här Bergs¬\nlaren nödigt samt en thet mera, kund\ngjöraresig innehåller Calmogen, i allmä¬\nbetingstämma, på thärut och...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00201",
+        "A0067159_A0067159_00202",
+        "A0067159_A0067159_00203",
+        "A0067159_A0067159_00204"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns det om skomakaren Anders Forström?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0050",
+      "volume_id": "A0067159",
+      "case_summary": "at thermed till hästen innehålla, och at\nnu i wåla, något betydeligit inljög\naf Säljelse icke widare är här Bergs¬\nlaren nödigt samt en thet mera, kund\ngjöraresig innehåller Calmogen, i allmä¬\nbetingstämma, på thärut och...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00201",
+        "A0067159_A0067159_00202",
+        "A0067159_A0067159_00203",
+        "A0067159_A0067159_00204"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka former av socialt understöd fanns för arbetare inom bergsbruket?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0050",
+      "volume_id": "A0067159",
+      "case_summary": "at thermed till hästen innehålla, och at\nnu i wåla, något betydeligit inljög\naf Säljelse icke widare är här Bergs¬\nlaren nödigt samt en thet mera, kund\ngjöraresig innehåller Calmogen, i allmä¬\nbetingstämma, på thärut och...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00201",
+        "A0067159_A0067159_00202",
+        "A0067159_A0067159_00203",
+        "A0067159_A0067159_00204"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det ytterligare uppgifter om nämndemannen Lars Hansson i Öfweråberby i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0004",
+      "volume_id": "A0027902",
+      "case_summary": "der 22dra Maji¬\nhade till thetta Bergsting uträt¬\ncket laga stämning uppå nämn¬\nMännen Lars Hansson therfar\nmastädes, med påståend om\nåterbetalning af de 1 1/4 Skpund\nTackjern, som förledne Höst skulle\nblifwit Mats Erson...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00015",
+        "A0027902_A0027902_00016",
+        "A0027902_A0027902_00017",
+        "A0027902_A0027902_00018"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer änkan Anna Andersdotter från Grångrytter i arkivmaterial från sent 1700-tal?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0004",
+      "volume_id": "A0027902",
+      "case_summary": "der 22dra Maji¬\nhade till thetta Bergsting uträt¬\ncket laga stämning uppå nämn¬\nMännen Lars Hansson therfar\nmastädes, med påståend om\nåterbetalning af de 1 1/4 Skpund\nTackjern, som förledne Höst skulle\nblifwit Mats Erson...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00015",
+        "A0027902_A0027902_00016",
+        "A0027902_A0027902_00017",
+        "A0027902_A0027902_00018"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka sociala mönster framträder i tvister om vägning av järnprodukter vid bergsrätten?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0004",
+      "volume_id": "A0027902",
+      "case_summary": "der 22dra Maji¬\nhade till thetta Bergsting uträt¬\ncket laga stämning uppå nämn¬\nMännen Lars Hansson therfar\nmastädes, med påståend om\nåterbetalning af de 1 1/4 Skpund\nTackjern, som förledne Höst skulle\nblifwit Mats Erson...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00015",
+        "A0027902_A0027902_00016",
+        "A0027902_A0027902_00017",
+        "A0027902_A0027902_00018"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns det om J. Cap. Hellsten i Grånghyttan som ombud eller representant?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0209",
+      "volume_id": "A0027902",
+      "case_summary": "sig hwarigenom hafwa styrkt sin ny\nderätt till den afhämtade wälmen\nNu som Pne på Rättens förestäl¬\nning sluteligen siäländes förente\nått beålet fingo förfallia, emot de\nJan Mattsson till Jan Olsson och d\nhan Olsson utbe...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00841",
+        "A0027902_A0027902_00842",
+        "A0027902_A0027902_00843",
+        "A0027902_A0027902_00844"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Israel Carlsson i Björkjön?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0209",
+      "volume_id": "A0027902",
+      "case_summary": "sig hwarigenom hafwa styrkt sin ny\nderätt till den afhämtade wälmen\nNu som Pne på Rättens förestäl¬\nning sluteligen siäländes förente\nått beålet fingo förfallia, emot de\nJan Mattsson till Jan Olsson och d\nhan Olsson utbe...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00841",
+        "A0027902_A0027902_00842",
+        "A0027902_A0027902_00843",
+        "A0027902_A0027902_00844"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilken roll spelade vittnesmål vid skuldtvister?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0209",
+      "volume_id": "A0027902",
+      "case_summary": "sig hwarigenom hafwa styrkt sin ny\nderätt till den afhämtade wälmen\nNu som Pne på Rättens förestäl¬\nning sluteligen siäländes förente\nått beålet fingo förfallia, emot de\nJan Mattsson till Jan Olsson och d\nhan Olsson utbe...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00841",
+        "A0027902_A0027902_00842",
+        "A0027902_A0027902_00843",
+        "A0027902_A0027902_00844"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om auditören och vice häradshövdingen Pehr Wikander i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0002",
+      "volume_id": "A0067159",
+      "case_summary": "ännu obetalte äro; Altså skulle\nsöderström genom Gewaldigern till\nsägas, at thenne återstod uti Bergz¬\nLagens Caffe forderligast ensätta\noch bewis deröfwer för Grufwa\nRätten upta.\nS: D: Medelst behörigen undertecknat\noch...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00010",
+        "A0067159_A0067159_00011",
+        "A0067159_A0067159_00012"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Vad är känt om pigan Anna Hellforss?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0002",
+      "volume_id": "A0067159",
+      "case_summary": "ännu obetalte äro; Altså skulle\nsöderström genom Gewaldigern till\nsägas, at thenne återstod uti Bergz¬\nLagens Caffe forderligast ensätta\noch bewis deröfwer för Grufwa\nRätten upta.\nS: D: Medelst behörigen undertecknat\noch...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00010",
+        "A0067159_A0067159_00011",
+        "A0067159_A0067159_00012"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Vilka typer av olyckor eller incidenter i gruvmiljö kopplades till alkoholpåverkan?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0002",
+      "volume_id": "A0067159",
+      "case_summary": "ännu obetalte äro; Altså skulle\nsöderström genom Gewaldigern till\nsägas, at thenne återstod uti Bergz¬\nLagens Caffe forderligast ensätta\noch bewis deröfwer för Grufwa\nRätten upta.\nS: D: Medelst behörigen undertecknat\noch...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00010",
+        "A0067159_A0067159_00011",
+        "A0067159_A0067159_00012"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Förekommer Petter Danielssons Enka i arkivet, och i vilka sammanhang omnämns hon?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0021",
+      "volume_id": "A0027902",
+      "case_summary": "År 1703 then 21 Maii, efter\nföregångne tidige kundgörelser,\ninställa sig underteknad Gefkarneij,\nefter förordnande af Kongl. Maijts\noch Rikets Höglofle Bergs Collegium\naf den 6te i thenna månad på Huud¬\natt börja\nsiö Gäs...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00083",
+        "A0027902_A0027902_00084",
+        "A0027902_A0027902_00085",
+        "A0027902_A0027902_00086"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Kohl dräng Erich Persson vid Bredsjö Bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0021",
+      "volume_id": "A0027902",
+      "case_summary": "År 1703 then 21 Maii, efter\nföregångne tidige kundgörelser,\ninställa sig underteknad Gefkarneij,\nefter förordnande af Kongl. Maijts\noch Rikets Höglofle Bergs Collegium\naf den 6te i thenna månad på Huud¬\natt börja\nsiö Gäs...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00083",
+        "A0027902_A0027902_00084",
+        "A0027902_A0027902_00085",
+        "A0027902_A0027902_00086"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka påföljder utdömdes vid bergsting och gruvstämmor för uteblivande eller försenad betalning?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0021",
+      "volume_id": "A0027902",
+      "case_summary": "År 1703 then 21 Maii, efter\nföregångne tidige kundgörelser,\ninställa sig underteknad Gefkarneij,\nefter förordnande af Kongl. Maijts\noch Rikets Höglofle Bergs Collegium\naf den 6te i thenna månad på Huud¬\natt börja\nsiö Gäs...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00083",
+        "A0027902_A0027902_00084",
+        "A0027902_A0027902_00085",
+        "A0027902_A0027902_00086"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer grufarbetaren Jan Lindström, som omkom i gruvan, i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0031",
+      "volume_id": "A0067159",
+      "case_summary": "wederbörande Grufwe¬ och Hytte¬\nskrifwaren wid wärket må läm¬\nwas tilfälle, thenne Partals kängd\nwid förefallande utbyten afskrif¬\nwa och densamma BergsCauseuren\ntill efter rättelse aflemna.\nS. D. Peter Grufwa Rätten beh...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00125",
+        "A0067159_A0067159_00126",
+        "A0067159_A0067159_00127",
+        "A0067159_A0067159_00128"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Skogsamman Petter Westling och hans olika befattningar?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0031",
+      "volume_id": "A0067159",
+      "case_summary": "wederbörande Grufwe¬ och Hytte¬\nskrifwaren wid wärket må läm¬\nwas tilfälle, thenne Partals kängd\nwid förefallande utbyten afskrif¬\nwa och densamma BergsCauseuren\ntill efter rättelse aflemna.\nS. D. Peter Grufwa Rätten beh...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00125",
+        "A0067159_A0067159_00126",
+        "A0067159_A0067159_00127",
+        "A0067159_A0067159_00128"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades försummelser bland ämbetsmän vid leveranser av ved och kol till gruvbruk?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0031",
+      "volume_id": "A0067159",
+      "case_summary": "wederbörande Grufwe¬ och Hytte¬\nskrifwaren wid wärket må läm¬\nwas tilfälle, thenne Partals kängd\nwid förefallande utbyten afskrif¬\nwa och densamma BergsCauseuren\ntill efter rättelse aflemna.\nS. D. Peter Grufwa Rätten beh...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00125",
+        "A0067159_A0067159_00126",
+        "A0067159_A0067159_00127",
+        "A0067159_A0067159_00128"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergscommissarie och hyttskrivaren Nils Moëll i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0027",
+      "volume_id": "A0067159",
+      "case_summary": "myrligit sielf bestrida Hytteskrifware\ntjensten, inför Bergs Rätten anslan\ngit Fyra hundrade femtio daler kop\npärnigat i årlig Lön för den, hwil¬\nken under Mdelis så beskaffade till¬\nstånd kommo at såsom vicarius\nförmatt...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00109",
+        "A0067159_A0067159_00110",
+        "A0067159_A0067159_00111",
+        "A0067159_A0067159_00112"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Landslags Kastmästaren Fredric Duse i stadens handlingar?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0027",
+      "volume_id": "A0067159",
+      "case_summary": "myrligit sielf bestrida Hytteskrifware\ntjensten, inför Bergs Rätten anslan\ngit Fyra hundrade femtio daler kop\npärnigat i årlig Lön för den, hwil¬\nken under Mdelis så beskaffade till¬\nstånd kommo at såsom vicarius\nförmatt...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00109",
+        "A0067159_A0067159_00110",
+        "A0067159_A0067159_00111",
+        "A0067159_A0067159_00112"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av förseelser eller försummelser ledde till böter inom bergsbruket?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0027",
+      "volume_id": "A0067159",
+      "case_summary": "myrligit sielf bestrida Hytteskrifware\ntjensten, inför Bergs Rätten anslan\ngit Fyra hundrade femtio daler kop\npärnigat i årlig Lön för den, hwil¬\nken under Mdelis så beskaffade till¬\nstånd kommo at såsom vicarius\nförmatt...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00109",
+        "A0067159_A0067159_00110",
+        "A0067159_A0067159_00111",
+        "A0067159_A0067159_00112"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Arf Bierson från Skroppsjöfallet i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0133",
+      "volume_id": "A0027902",
+      "case_summary": "in natura den grufverödskap\nsom Kden ensamd vid Sahlbohären\ngrufvad tillsläpt; 1do Likaledes\ndade sig då uthi öfrige\naf Järn och Krud i berörde\ngrufwa, såsom års Smt i Com¬\nupager om brytninge d, 3o Olof\nOlsson ensam bef...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00533",
+        "A0027902_A0027902_00534",
+        "A0027902_A0027902_00535",
+        "A0027902_A0027902_00536"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsfogden And.n Wiskling?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0133",
+      "volume_id": "A0027902",
+      "case_summary": "in natura den grufverödskap\nsom Kden ensamd vid Sahlbohären\ngrufvad tillsläpt; 1do Likaledes\ndade sig då uthi öfrige\naf Järn och Krud i berörde\ngrufwa, såsom års Smt i Com¬\nupager om brytninge d, 3o Olof\nOlsson ensam bef...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00533",
+        "A0027902_A0027902_00534",
+        "A0027902_A0027902_00535",
+        "A0027902_A0027902_00536"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka mönster kan observeras i domslut gällande \"ohemult käromål\" i gruvdriftsrelaterade tvister?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0133",
+      "volume_id": "A0027902",
+      "case_summary": "in natura den grufverödskap\nsom Kden ensamd vid Sahlbohären\ngrufvad tillsläpt; 1do Likaledes\ndade sig då uthi öfrige\naf Järn och Krud i berörde\ngrufwa, såsom års Smt i Com¬\nupager om brytninge d, 3o Olof\nOlsson ensam bef...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00533",
+        "A0027902_A0027902_00534",
+        "A0027902_A0027902_00535",
+        "A0027902_A0027902_00536"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Eric Ersson från Bergatorp i anknytning till gruvmål eller tvister?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0120",
+      "volume_id": "A0027902",
+      "case_summary": "deligenom efterdående therförfa\noch åfwen merhafwa den åberopade\nöfverenskommelse, at å sam til\nrala Interessenterne wägnar\nutföre; så hade de PKn af s\nanledning lämnat anstånd och\namlet til detta ting, med för¬\nför PKn ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00480",
+        "A0027902_A0027902_00481",
+        "A0027902_A0027902_00482",
+        "A0027902_A0027902_00483"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Assessorn Nils i arkivet och vilka ärenden behandlade han?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0120",
+      "volume_id": "A0027902",
+      "case_summary": "deligenom efterdående therförfa\noch åfwen merhafwa den åberopade\nöfverenskommelse, at å sam til\nrala Interessenterne wägnar\nutföre; så hade de PKn af s\nanledning lämnat anstånd och\namlet til detta ting, med för¬\nför PKn ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00480",
+        "A0027902_A0027902_00481",
+        "A0027902_A0027902_00482",
+        "A0027902_A0027902_00483"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister gällande skador eller avtalsbrott i samband med gruvdrift?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0120",
+      "volume_id": "A0027902",
+      "case_summary": "deligenom efterdående therförfa\noch åfwen merhafwa den åberopade\nöfverenskommelse, at å sam til\nrala Interessenterne wägnar\nutföre; så hade de PKn af s\nanledning lämnat anstånd och\namlet til detta ting, med för¬\nför PKn ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00480",
+        "A0027902_A0027902_00481",
+        "A0027902_A0027902_00482",
+        "A0027902_A0027902_00483"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om smältaren Abraham Berg i Bergslagen?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0043",
+      "volume_id": "A0067159",
+      "case_summary": "det at hälst wara må i Partals\nLängderne icke införa, innan om\nhans ägande Tomtadehl wid Grufde¬\nRätten blifwit undersökt och bewis\nderöfwer samt behörige Ordres til\ninförslön från Grefwe Rätten\nför them uptedde.\nS: D: H...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00173",
+        "A0067159_A0067159_00174",
+        "A0067159_A0067159_00175",
+        "A0067159_A0067159_00176"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns om rådmannen Lars Biörkman i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0043",
+      "volume_id": "A0067159",
+      "case_summary": "det at hälst wara må i Partals\nLängderne icke införa, innan om\nhans ägande Tomtadehl wid Grufde¬\nRätten blifwit undersökt och bewis\nderöfwer samt behörige Ordres til\ninförslön från Grefwe Rätten\nför them uptedde.\nS: D: H...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00173",
+        "A0067159_A0067159_00174",
+        "A0067159_A0067159_00175",
+        "A0067159_A0067159_00176"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av förseelser ledde till avskedanden bland arbetare i bergverksmiljöer?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0043",
+      "volume_id": "A0067159",
+      "case_summary": "det at hälst wara må i Partals\nLängderne icke införa, innan om\nhans ägande Tomtadehl wid Grufde¬\nRätten blifwit undersökt och bewis\nderöfwer samt behörige Ordres til\ninförslön från Grefwe Rätten\nför them uptedde.\nS: D: H...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00173",
+        "A0067159_A0067159_00174",
+        "A0067159_A0067159_00175",
+        "A0067159_A0067159_00176"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om hyttefogden Eric Ersson?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0065",
+      "volume_id": "A0027902",
+      "case_summary": "Den 4de Junii 1800.\nallmän\ninlemnad Skrift, att en dehl wanartiga\nPersoner företagit sig den dhör att med¬\nter nyttjande af gemrar gång öfwer den\naf honom efter en klandt wädor upodlade\nMåsen, sommaraden och underståen¬\n...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00259",
+        "A0027902_A0027902_00260",
+        "A0027902_A0027902_00261",
+        "A0027902_A0027902_00262"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer hammarsmederna Matts Jansson och Jonas Hane vid Bredsjö Bruk i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0065",
+      "volume_id": "A0027902",
+      "case_summary": "Den 4de Junii 1800.\nallmän\ninlemnad Skrift, att en dehl wanartiga\nPersoner företagit sig den dhör att med¬\nter nyttjande af gemrar gång öfwer den\naf honom efter en klandt wädor upodlade\nMåsen, sommaraden och underståen¬\n...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00259",
+        "A0027902_A0027902_00260",
+        "A0027902_A0027902_00261",
+        "A0027902_A0027902_00262"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av konflikter uppstod kring obehörigt nyttjande av gång- och körvägar över annans mark?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0065",
+      "volume_id": "A0027902",
+      "case_summary": "Den 4de Junii 1800.\nallmän\ninlemnad Skrift, att en dehl wanartiga\nPersoner företagit sig den dhör att med¬\nter nyttjande af gemrar gång öfwer den\naf honom efter en klandt wädor upodlade\nMåsen, sommaraden och underståen¬\n...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00259",
+        "A0027902_A0027902_00260",
+        "A0027902_A0027902_00261",
+        "A0027902_A0027902_00262"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Bergsfogden Sterling i arkivet, och i vilket sammanhang?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0107",
+      "volume_id": "A0027902",
+      "case_summary": "Sedan de instämde Malm sålunda\nafgjorde, och i öfrige ej vidare wi\ntillgöra aflystes Tingetz och hw\nLius och dagar föreskrefne\nPå HerrbackingsRättens\nlofwades Nämnden\nSa. 17. April 1810.\nling\nNärwarande den rans nämden o...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00428",
+        "A0027902_A0027902_00429",
+        "A0027902_A0027902_00430",
+        "A0027902_A0027902_00431"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns det om Spikhytte masugn i arkivet, och vilka roller spelade den i lokala ärenden?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0107",
+      "volume_id": "A0027902",
+      "case_summary": "Sedan de instämde Malm sålunda\nafgjorde, och i öfrige ej vidare wi\ntillgöra aflystes Tingetz och hw\nLius och dagar föreskrefne\nPå HerrbackingsRättens\nlofwades Nämnden\nSa. 17. April 1810.\nling\nNärwarande den rans nämden o...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00428",
+        "A0027902_A0027902_00429",
+        "A0027902_A0027902_00430",
+        "A0027902_A0027902_00431"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades utmätningar av tillgångar i bergslagssamhällen under tidigt 1800-tal?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0107",
+      "volume_id": "A0027902",
+      "case_summary": "Sedan de instämde Malm sålunda\nafgjorde, och i öfrige ej vidare wi\ntillgöra aflystes Tingetz och hw\nLius och dagar föreskrefne\nPå HerrbackingsRättens\nlofwades Nämnden\nSa. 17. April 1810.\nling\nNärwarande den rans nämden o...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00428",
+        "A0027902_A0027902_00429",
+        "A0027902_A0027902_00430",
+        "A0027902_A0027902_00431"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Kostmästaren Carl Sundell i Nora Stad?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0009",
+      "volume_id": "A0027902",
+      "case_summary": "den 26 Maji\nmed Sex procents förskrifwen rän¬\ntill den 4te Januarii 1790, då se¬\nwar till wilöhn förfallen.\nOlof Ohlsson instälte sig ensa\nföregifwerne ande, at i anseen¬\ntill en för handen waran¬\nLandtmätare förrättni¬\n...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00035",
+        "A0027902_A0027902_00036",
+        "A0027902_A0027902_00037",
+        "A0027902_A0027902_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Nils Jansson i Elgikan i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0009",
+      "volume_id": "A0027902",
+      "case_summary": "den 26 Maji\nmed Sex procents förskrifwen rän¬\ntill den 4te Januarii 1790, då se¬\nwar till wilöhn förfallen.\nOlof Ohlsson instälte sig ensa\nföregifwerne ande, at i anseen¬\ntill en för handen waran¬\nLandtmätare förrättni¬\n...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00035",
+        "A0027902_A0027902_00036",
+        "A0027902_A0027902_00037",
+        "A0027902_A0027902_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades finansiella tvister och likvidationer inom bergsbruket?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0009",
+      "volume_id": "A0027902",
+      "case_summary": "den 26 Maji\nmed Sex procents förskrifwen rän¬\ntill den 4te Januarii 1790, då se¬\nwar till wilöhn förfallen.\nOlof Ohlsson instälte sig ensa\nföregifwerne ande, at i anseen¬\ntill en för handen waran¬\nLandtmätare förrättni¬\n...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00035",
+        "A0027902_A0027902_00036",
+        "A0027902_A0027902_00037",
+        "A0027902_A0027902_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer sexmannen Nils Andersson vid Björksjön i arkivet utöver nämnda ting?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0041",
+      "volume_id": "A0027902",
+      "case_summary": "den 20 Maii\n§32\nden stämning Handelsmannen i Nora\nDetlof Fischier till Petter Ting utwärkat åbergs\nmannen Karl Karlsson det yggre wid Björk¬\nsitt angående Skuldfordrans utbekommande\nmed ränta och expenser ingafs efter up...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00163",
+        "A0027902_A0027902_00164",
+        "A0027902_A0027902_00165",
+        "A0027902_A0027902_00166"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Enkan Margareta Andersdotter, nämnd i samband med Gudaksjön eller Bjärksjön?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0041",
+      "volume_id": "A0027902",
+      "case_summary": "den 20 Maii\n§32\nden stämning Handelsmannen i Nora\nDetlof Fischier till Petter Ting utwärkat åbergs\nmannen Karl Karlsson det yggre wid Björk¬\nsitt angående Skuldfordrans utbekommande\nmed ränta och expenser ingafs efter up...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00163",
+        "A0027902_A0027902_00164",
+        "A0027902_A0027902_00165",
+        "A0027902_A0027902_00166"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades otillåten avverkning eller utvinning av naturresurser i bergslagen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0041",
+      "volume_id": "A0027902",
+      "case_summary": "den 20 Maii\n§32\nden stämning Handelsmannen i Nora\nDetlof Fischier till Petter Ting utwärkat åbergs\nmannen Karl Karlsson det yggre wid Björk¬\nsitt angående Skuldfordrans utbekommande\nmed ränta och expenser ingafs efter up...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00163",
+        "A0027902_A0027902_00164",
+        "A0027902_A0027902_00165",
+        "A0027902_A0027902_00166"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer vittnet Anders Andersson från Solsabeth i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0210",
+      "volume_id": "A0027902",
+      "case_summary": "upplupen och tills betalning följer iag\nre beläpande 6 proc ränta, jemte\n34 D Sko i Rättegångs kostnad till\nders Qvarnström owangerligen gäl¬\n§ 41\nS D: Genom utslag den 22 oc April\nsistl år, hade Bergsbys Rätten på an¬\nf...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00845",
+        "A0027902_A0027902_00846",
+        "A0027902_A0027902_00847",
+        "A0027902_A0027902_00848"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om brukspersonalen vid Björköjö hytta?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0210",
+      "volume_id": "A0027902",
+      "case_summary": "upplupen och tills betalning följer iag\nre beläpande 6 proc ränta, jemte\n34 D Sko i Rättegångs kostnad till\nders Qvarnström owangerligen gäl¬\n§ 41\nS D: Genom utslag den 22 oc April\nsistl år, hade Bergsbys Rätten på an¬\nf...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00845",
+        "A0027902_A0027902_00846",
+        "A0027902_A0027902_00847",
+        "A0027902_A0027902_00848"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilka sätt kungjordes rättsliga förbud och viten i kyrkan?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0210",
+      "volume_id": "A0027902",
+      "case_summary": "upplupen och tills betalning följer iag\nre beläpande 6 proc ränta, jemte\n34 D Sko i Rättegångs kostnad till\nders Qvarnström owangerligen gäl¬\n§ 41\nS D: Genom utslag den 22 oc April\nsistl år, hade Bergsbys Rätten på an¬\nf...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00845",
+        "A0027902_A0027902_00846",
+        "A0027902_A0027902_00847",
+        "A0027902_A0027902_00848"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer någon med namnet Andersson från Björksjön i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0017",
+      "volume_id": "A0027902",
+      "case_summary": "Den 11 Decembr.\nannan gehne Kongl: försättningar, hos Konungi¬\nfallningshafvande i Örebr Län, anmätt oss å egne\nöfrige Hyttelags Interessenders vägnar, om bättre\natt lösa dessa Bergmanshoinman till skatte\nför att bebomäl...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00067",
+        "A0027902_A0027902_00068",
+        "A0027902_A0027902_00069",
+        "A0027902_A0027902_00070"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om änkor som erhöll utbetalningar från Bergslagens medel?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0017",
+      "volume_id": "A0027902",
+      "case_summary": "Den 11 Decembr.\nannan gehne Kongl: försättningar, hos Konungi¬\nfallningshafvande i Örebr Län, anmätt oss å egne\nöfrige Hyttelags Interessenders vägnar, om bättre\natt lösa dessa Bergmanshoinman till skatte\nför att bebomäl...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00067",
+        "A0027902_A0027902_00068",
+        "A0027902_A0027902_00069",
+        "A0027902_A0027902_00070"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister rörande ägande och nyttjande av bergsmanshemman förekom inom bergslagorna?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0017",
+      "volume_id": "A0027902",
+      "case_summary": "Den 11 Decembr.\nannan gehne Kongl: försättningar, hos Konungi¬\nfallningshafvande i Örebr Län, anmätt oss å egne\nöfrige Hyttelags Interessenders vägnar, om bättre\natt lösa dessa Bergmanshoinman till skatte\nför att bebomäl...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00067",
+        "A0027902_A0027902_00068",
+        "A0027902_A0027902_00069",
+        "A0027902_A0027902_00070"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter i arkivet om Carl Bergskarls änka?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0079",
+      "volume_id": "A0067159",
+      "case_summary": "Eric Sandberg.\n8 3/4\nÅker i Olbomstorp\nläng dito.\nDo i Långtomter\n1 ½\n½\nDo i Skarattappan\n8 3/4\n2o\nEric Norman\n17 2/3\nÅker i Beutenants torp\n24\nEric Lund¬\n23 3/4\nÅker i Ciemmers torp\n25 1/25\nAng dito.\nR:o\n23 3/4\nAnd: Per...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00317",
+        "A0067159_A0067159_00318",
+        "A0067159_A0067159_00319",
+        "A0067159_A0067159_00320"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bokaren Lars Östman i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0079",
+      "volume_id": "A0067159",
+      "case_summary": "Eric Sandberg.\n8 3/4\nÅker i Olbomstorp\nläng dito.\nDo i Långtomter\n1 ½\n½\nDo i Skarattappan\n8 3/4\n2o\nEric Norman\n17 2/3\nÅker i Beutenants torp\n24\nEric Lund¬\n23 3/4\nÅker i Ciemmers torp\n25 1/25\nAng dito.\nR:o\n23 3/4\nAnd: Per...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00317",
+        "A0067159_A0067159_00318",
+        "A0067159_A0067159_00319",
+        "A0067159_A0067159_00320"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka mönster kan urskiljas kring arbetsfördelning och eventuellt utnyttjande av yngre arbetare inom gruvnäringen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0079",
+      "volume_id": "A0067159",
+      "case_summary": "Eric Sandberg.\n8 3/4\nÅker i Olbomstorp\nläng dito.\nDo i Långtomter\n1 ½\n½\nDo i Skarattappan\n8 3/4\n2o\nEric Norman\n17 2/3\nÅker i Beutenants torp\n24\nEric Lund¬\n23 3/4\nÅker i Ciemmers torp\n25 1/25\nAng dito.\nR:o\n23 3/4\nAnd: Per...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00317",
+        "A0067159_A0067159_00318",
+        "A0067159_A0067159_00319",
+        "A0067159_A0067159_00320"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Petter Persson vid Grönhult i arkivhandlingarna?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0032",
+      "volume_id": "A0027902",
+      "case_summary": "den 22 maii\ndetta säkerhet\nwar i uppsåt att så Jan Pärtson men hon und¬\nsprång Olof Pärsson och gick hem, som jag med\nEd fästa kan om så påfordras. Hjulssjoby den\n22 maii maii 1725 Petter 173 Persson wid Grön¬\nhutt wittn...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00127",
+        "A0027902_A0027902_00128",
+        "A0027902_A0027902_00129",
+        "A0027902_A0027902_00130"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om orten Hjulssjöby eller dess variationer i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0032",
+      "volume_id": "A0027902",
+      "case_summary": "den 22 maii\ndetta säkerhet\nwar i uppsåt att så Jan Pärtson men hon und¬\nsprång Olof Pärsson och gick hem, som jag med\nEd fästa kan om så påfordras. Hjulssjoby den\n22 maii maii 1725 Petter 173 Persson wid Grön¬\nhutt wittn...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00127",
+        "A0027902_A0027902_00128",
+        "A0027902_A0027902_00129",
+        "A0027902_A0027902_00130"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister rörande gruvdrift och skogsresurser återkommer i protokollen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0032",
+      "volume_id": "A0027902",
+      "case_summary": "den 22 maii\ndetta säkerhet\nwar i uppsåt att så Jan Pärtson men hon und¬\nsprång Olof Pärsson och gick hem, som jag med\nEd fästa kan om så påfordras. Hjulssjoby den\n22 maii maii 1725 Petter 173 Persson wid Grön¬\nhutt wittn...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00127",
+        "A0027902_A0027902_00128",
+        "A0027902_A0027902_00129",
+        "A0027902_A0027902_00130"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Bergs Sexaren Erik Hansson i Bjulsjöby?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0054",
+      "volume_id": "A0027902",
+      "case_summary": "1799 Maii d. 7.\n2o års Jernbergs ordning.\n7.o 1741 och 1757 urens Kongl. Utmåls Förordningar\n42 1759 års förordning om tjufnades insamt.\nterilers afstraffande wid Bruken och Berg¬\nwärken\n5o 1793 åhrs Kongl. Förordning om...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00215",
+        "A0027902_A0027902_00216",
+        "A0027902_A0027902_00217",
+        "A0027902_A0027902_00218"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer arbetaren Oli Frönlund vid Oljoberget i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0054",
+      "volume_id": "A0027902",
+      "case_summary": "1799 Maii d. 7.\n2o års Jernbergs ordning.\n7.o 1741 och 1757 urens Kongl. Utmåls Förordningar\n42 1759 års förordning om tjufnades insamt.\nterilers afstraffande wid Bruken och Berg¬\nwärken\n5o 1793 åhrs Kongl. Förordning om...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00215",
+        "A0027902_A0027902_00216",
+        "A0027902_A0027902_00217",
+        "A0027902_A0027902_00218"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades ärenden rörande olovligt fiske, jakt och avverkning av skog?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0054",
+      "volume_id": "A0027902",
+      "case_summary": "1799 Maii d. 7.\n2o års Jernbergs ordning.\n7.o 1741 och 1757 urens Kongl. Utmåls Förordningar\n42 1759 års förordning om tjufnades insamt.\nterilers afstraffande wid Bruken och Berg¬\nwärken\n5o 1793 åhrs Kongl. Förordning om...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00215",
+        "A0027902_A0027902_00216",
+        "A0027902_A0027902_00217",
+        "A0027902_A0027902_00218"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om gruvfogden Olof Pehrson Grönteure i Sahlboberget?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0102",
+      "volume_id": "A0027902",
+      "case_summary": "as deröfwer försätta ordentligt Syne\nRument, med hwilket Pne försedde\nat sig nästa Ting infinna för att\nRns widare Utslag i målet erhållas\nEmedlertid och som det aldeles strider\nhos författningarne at på dylikt\nkaffadt j...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00408",
+        "A0027902_A0027902_00409",
+        "A0027902_A0027902_00410",
+        "A0027902_A0027902_00411"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Enkefru Holmgren i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0102",
+      "volume_id": "A0027902",
+      "case_summary": "as deröfwer försätta ordentligt Syne\nRument, med hwilket Pne försedde\nat sig nästa Ting infinna för att\nRns widare Utslag i målet erhållas\nEmedlertid och som det aldeles strider\nhos författningarne at på dylikt\nkaffadt j...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00408",
+        "A0027902_A0027902_00409",
+        "A0027902_A0027902_00410",
+        "A0027902_A0027902_00411"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister rörande skog och mark förekommer i arkivet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0102",
+      "volume_id": "A0027902",
+      "case_summary": "as deröfwer försätta ordentligt Syne\nRument, med hwilket Pne försedde\nat sig nästa Ting infinna för att\nRns widare Utslag i målet erhållas\nEmedlertid och som det aldeles strider\nhos författningarne at på dylikt\nkaffadt j...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00408",
+        "A0027902_A0027902_00409",
+        "A0027902_A0027902_00410",
+        "A0027902_A0027902_00411"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer StadsCasseuren Axel Tidberg i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0062",
+      "volume_id": "A0067159",
+      "case_summary": "År 1781 den 3dje October, när den\nGrufTing; Närwarande Bergz högt\nmännen Emed Berukn Berndtthog Råd¬\nmannen Gustaf Petter Holmberg, Johan\nSchröter och Daniel Stenholtz.\nS. d.o Bergsfiscarne hwarie Zerrck åter¬\nstälte sko...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00249",
+        "A0067159_A0067159_00250",
+        "A0067159_A0067159_00251",
+        "A0067159_A0067159_00252"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om konstmästaren Daniel Stensson?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0062",
+      "volume_id": "A0067159",
+      "case_summary": "År 1781 den 3dje October, när den\nGrufTing; Närwarande Bergz högt\nmännen Emed Berukn Berndtthog Råd¬\nmannen Gustaf Petter Holmberg, Johan\nSchröter och Daniel Stenholtz.\nS. d.o Bergsfiscarne hwarie Zerrck åter¬\nstälte sko...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00249",
+        "A0067159_A0067159_00250",
+        "A0067159_A0067159_00251",
+        "A0067159_A0067159_00252"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av konflikter uppstod gällande utnyttjande av skogsresurser?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0062",
+      "volume_id": "A0067159",
+      "case_summary": "År 1781 den 3dje October, när den\nGrufTing; Närwarande Bergz högt\nmännen Emed Berukn Berndtthog Råd¬\nmannen Gustaf Petter Holmberg, Johan\nSchröter och Daniel Stenholtz.\nS. d.o Bergsfiscarne hwarie Zerrck åter¬\nstälte sko...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00249",
+        "A0067159_A0067159_00250",
+        "A0067159_A0067159_00251",
+        "A0067159_A0067159_00252"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer uppgifter om Sexmannen Nils Andersson i Björksjön i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0038",
+      "volume_id": "A0027902",
+      "case_summary": "den 20 Maii\nden öfwerklagade stora stängsel och inkrättning som\nafledne Jan Thomssons Enka innehafwer af\nunga Anders Hanssons skog tå wid långtjäres\nhögden; Och Ifants tienhrara sin stor att björk\nsjö wettelags bostaren ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00151",
+        "A0027902_A0027902_00152",
+        "A0027902_A0027902_00153",
+        "A0027902_A0027902_00154"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om kommissionstidmästare Johan Härvid Gravander och de delningsinstrument han förrättade?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0038",
+      "volume_id": "A0027902",
+      "case_summary": "den 20 Maii\nden öfwerklagade stora stängsel och inkrättning som\nafledne Jan Thomssons Enka innehafwer af\nunga Anders Hanssons skog tå wid långtjäres\nhögden; Och Ifants tienhrara sin stor att björk\nsjö wettelags bostaren ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00151",
+        "A0027902_A0027902_00152",
+        "A0027902_A0027902_00153",
+        "A0027902_A0027902_00154"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka var de vanligaste anledningarna till tvister om skogsmark och stängsel inför Bergstingsrätten?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0038",
+      "volume_id": "A0027902",
+      "case_summary": "den 20 Maii\nden öfwerklagade stora stängsel och inkrättning som\nafledne Jan Thomssons Enka innehafwer af\nunga Anders Hanssons skog tå wid långtjäres\nhögden; Och Ifants tienhrara sin stor att björk\nsjö wettelags bostaren ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00151",
+        "A0027902_A0027902_00152",
+        "A0027902_A0027902_00153",
+        "A0027902_A0027902_00154"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer qvarndrängen Anders Hulphert vid Kylinge qvarn i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0039",
+      "volume_id": "A0067159",
+      "case_summary": "så wäl til någon Lindring å utgifter\nför kyllinge qwarnhaga med tala up¬\nläggningar af nya trädkak öfwer\nqwarnhuset såsom och thet arrendator\nicke för mycket måtte med slike\nbrachtaks underhållande blifwa be¬\nswarade, fu...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00157",
+        "A0067159_A0067159_00158",
+        "A0067159_A0067159_00159",
+        "A0067159_A0067159_00160"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om enkefru Christina Brita Wellauders som arrendator vid Kylinge?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0039",
+      "volume_id": "A0067159",
+      "case_summary": "så wäl til någon Lindring å utgifter\nför kyllinge qwarnhaga med tala up¬\nläggningar af nya trädkak öfwer\nqwarnhuset såsom och thet arrendator\nicke för mycket måtte med slike\nbrachtaks underhållande blifwa be¬\nswarade, fu...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00157",
+        "A0067159_A0067159_00158",
+        "A0067159_A0067159_00159",
+        "A0067159_A0067159_00160"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister och förseelser uppstod kring vattenhantering och dammar vid kvarnar?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0039",
+      "volume_id": "A0067159",
+      "case_summary": "så wäl til någon Lindring å utgifter\nför kyllinge qwarnhaga med tala up¬\nläggningar af nya trädkak öfwer\nqwarnhuset såsom och thet arrendator\nicke för mycket måtte med slike\nbrachtaks underhållande blifwa be¬\nswarade, fu...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00157",
+        "A0067159_A0067159_00158",
+        "A0067159_A0067159_00159",
+        "A0067159_A0067159_00160"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer nämndeman Eric Persson i Norra Skeberg i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0203",
+      "volume_id": "A0027902",
+      "case_summary": "den 23 April 1819\n§. 52\nS. D: Till detta Ting hade ej mindre Herr Bergs¬\ntogden Cl. Aspling å Embetes, en ock Herr Ouc¬\nnomie Directeuren C: Brogren å Bredsjö hyttelagd\nwägnar, inkallat Bergsmauenl Jan Jansson i\nGrönhult...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00817",
+        "A0027902_A0027902_00818",
+        "A0027902_A0027902_00819",
+        "A0027902_A0027902_00820"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om kyparen Eric Andersson i Jönskyttan?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0203",
+      "volume_id": "A0027902",
+      "case_summary": "den 23 April 1819\n§. 52\nS. D: Till detta Ting hade ej mindre Herr Bergs¬\ntogden Cl. Aspling å Embetes, en ock Herr Ouc¬\nnomie Directeuren C: Brogren å Bredsjö hyttelagd\nwägnar, inkallat Bergsmauenl Jan Jansson i\nGrönhult...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00817",
+        "A0027902_A0027902_00818",
+        "A0027902_A0027902_00819",
+        "A0027902_A0027902_00820"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av olovlig handel med skogsprodukter var vanligast under 1800-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0203",
+      "volume_id": "A0027902",
+      "case_summary": "den 23 April 1819\n§. 52\nS. D: Till detta Ting hade ej mindre Herr Bergs¬\ntogden Cl. Aspling å Embetes, en ock Herr Ouc¬\nnomie Directeuren C: Brogren å Bredsjö hyttelagd\nwägnar, inkallat Bergsmauenl Jan Jansson i\nGrönhult...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00817",
+        "A0027902_A0027902_00818",
+        "A0027902_A0027902_00819",
+        "A0027902_A0027902_00820"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Härads Bokhållaren Johan Fredric Schoultzberg och Madame Anna Elisabeth Wallberg?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0059",
+      "volume_id": "A0067159",
+      "case_summary": "Collegio tillkänna gifwa at Godhets wärds\nskall wid hwarje krutlefwereants af\ngrufwe Rätten innehållas, och Lius widare\nigenom Rättens förande anstalt, hos Hög¬\nbemälte Kong. Collegium inbetalas, på\nthet ther egenom, ick...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00237",
+        "A0067159_A0067159_00238",
+        "A0067159_A0067159_00239",
+        "A0067159_A0067159_00240"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det ytterligare uppgifter om Grufwubetaren Jan Forstin och hans hus vid \"urwädens torpet\"?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0059",
+      "volume_id": "A0067159",
+      "case_summary": "Collegio tillkänna gifwa at Godhets wärds\nskall wid hwarje krutlefwereants af\ngrufwe Rätten innehållas, och Lius widare\nigenom Rättens förande anstalt, hos Hög¬\nbemälte Kong. Collegium inbetalas, på\nthet ther egenom, ick...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00237",
+        "A0067159_A0067159_00238",
+        "A0067159_A0067159_00239",
+        "A0067159_A0067159_00240"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka problem relaterade till vattenförsörjning för bergsbruk och gruvdrift diskuteras, och vilka lösningar föreslås?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0059",
+      "volume_id": "A0067159",
+      "case_summary": "Collegio tillkänna gifwa at Godhets wärds\nskall wid hwarje krutlefwereants af\ngrufwe Rätten innehållas, och Lius widare\nigenom Rättens förande anstalt, hos Hög¬\nbemälte Kong. Collegium inbetalas, på\nthet ther egenom, ick...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00237",
+        "A0067159_A0067159_00238",
+        "A0067159_A0067159_00239",
+        "A0067159_A0067159_00240"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Nils Jansson Björn, bosatt i Grönhatt?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0081",
+      "volume_id": "A0027902",
+      "case_summary": "Anders Andersson I arbappar kom innehållaren\ninsthåt af Skilphet och ingen mer\ntill sit belopp icke upgifwa, äfwenledas\nwarit uti St Sexmannen Hans Erichsons Hans Hansson\nSpanmålsbod det han glömd in påstå\noch förut inko...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00323",
+        "A0027902_A0027902_00324",
+        "A0027902_A0027902_00325",
+        "A0027902_A0027902_00326"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka notiser finns om Bruks Bokhållaren C. S. Nem?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0081",
+      "volume_id": "A0027902",
+      "case_summary": "Anders Andersson I arbappar kom innehållaren\ninsthåt af Skilphet och ingen mer\ntill sit belopp icke upgifwa, äfwenledas\nwarit uti St Sexmannen Hans Erichsons Hans Hansson\nSpanmålsbod det han glömd in påstå\noch förut inko...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00323",
+        "A0027902_A0027902_00324",
+        "A0027902_A0027902_00325",
+        "A0027902_A0027902_00326"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister rörande naturresurser, som malm eller skog, förekom under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0081",
+      "volume_id": "A0027902",
+      "case_summary": "Anders Andersson I arbappar kom innehållaren\ninsthåt af Skilphet och ingen mer\ntill sit belopp icke upgifwa, äfwenledas\nwarit uti St Sexmannen Hans Erichsons Hans Hansson\nSpanmålsbod det han glömd in påstå\noch förut inko...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00323",
+        "A0027902_A0027902_00324",
+        "A0027902_A0027902_00325",
+        "A0027902_A0027902_00326"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer löjtnant Hans Matzson i Eske i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0035",
+      "volume_id": "40009745",
+      "case_summary": "Eva för Rätta S. Anna Perßdotter i Wijnäs och Lämde till Olof\nOllßon Hans Erstens på Åhsen i Fahlun, om den någon Jordh: Nisad\nlandh som hon förmehnte honom hafwa öf.r sin syttnad står han\nefter afsagde domb den 20 Decem...",
+      "relevant_chunks": [
+        "40009745_40009745_00143",
+        "40009745_40009745_00144",
+        "40009745_40009745_00145",
+        "40009745_40009745_00146"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om orten Mångberg i relation till markaffärer?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0035",
+      "volume_id": "40009745",
+      "case_summary": "Eva för Rätta S. Anna Perßdotter i Wijnäs och Lämde till Olof\nOllßon Hans Erstens på Åhsen i Fahlun, om den någon Jordh: Nisad\nlandh som hon förmehnte honom hafwa öf.r sin syttnad står han\nefter afsagde domb den 20 Decem...",
+      "relevant_chunks": [
+        "40009745_40009745_00143",
+        "40009745_40009745_00144",
+        "40009745_40009745_00145",
+        "40009745_40009745_00146"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka straff utdömdes för utomäktenskapliga förbindelser eller faderskap i 1600-talets Mora?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0035",
+      "volume_id": "40009745",
+      "case_summary": "Eva för Rätta S. Anna Perßdotter i Wijnäs och Lämde till Olof\nOllßon Hans Erstens på Åhsen i Fahlun, om den någon Jordh: Nisad\nlandh som hon förmehnte honom hafwa öf.r sin syttnad står han\nefter afsagde domb den 20 Decem...",
+      "relevant_chunks": [
+        "40009745_40009745_00143",
+        "40009745_40009745_00144",
+        "40009745_40009745_00145",
+        "40009745_40009745_00146"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Hans Ersson, ägare av skog i Bjuhlsjöby eller liknande bynamn, i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0130",
+      "volume_id": "A0027902",
+      "case_summary": "Eric deß 16 ß Bco i Expenser, Men\nhwad angår denne sednares nu\ngjorde yrkande at Israel Lars¬\nson måtto för framtiden\nskiljas ifrån masmästare\narbete, så kan BKn\nderöfwer något utlåtande\nicke meddela, hälst def an¬\nkomme...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00521",
+        "A0027902_A0027902_00522",
+        "A0027902_A0027902_00523",
+        "A0027902_A0027902_00524"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om masmästare Israel Larsson och hans anställning eller tjänsteförhållanden?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0130",
+      "volume_id": "A0027902",
+      "case_summary": "Eric deß 16 ß Bco i Expenser, Men\nhwad angår denne sednares nu\ngjorde yrkande at Israel Lars¬\nson måtto för framtiden\nskiljas ifrån masmästare\narbete, så kan BKn\nderöfwer något utlåtande\nicke meddela, hälst def an¬\nkomme...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00521",
+        "A0027902_A0027902_00522",
+        "A0027902_A0027902_00523",
+        "A0027902_A0027902_00524"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister och brottslighet uppstår i samband med skogsbruk och järnproduktion?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0130",
+      "volume_id": "A0027902",
+      "case_summary": "Eric deß 16 ß Bco i Expenser, Men\nhwad angår denne sednares nu\ngjorde yrkande at Israel Lars¬\nson måtto för framtiden\nskiljas ifrån masmästare\narbete, så kan BKn\nderöfwer något utlåtande\nicke meddela, hälst def an¬\nkomme...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00521",
+        "A0027902_A0027902_00522",
+        "A0027902_A0027902_00523",
+        "A0027902_A0027902_00524"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Jan Jansson som bodde i Högthytte Bergs lag?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0020",
+      "volume_id": "A0027902",
+      "case_summary": "den 22 Maii\nytterligare samråd the twistande emel¬\nlan kunde wärka att wanligt slut pröf¬\nwade Bergsotings Rätten skäligt upskju¬\nta thetta måls afgörande till nästa\nBergsting, tit Parterne wid Tio da¬\nler Silfwermynts w...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00079",
+        "A0027902_A0027902_00080",
+        "A0027902_A0027902_00081",
+        "A0027902_A0027902_00082"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer skogvaktaren Anders Eda i Ån sjö och Kullliuts almenningar i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0020",
+      "volume_id": "A0027902",
+      "case_summary": "den 22 Maii\nytterligare samråd the twistande emel¬\nlan kunde wärka att wanligt slut pröf¬\nwade Bergsotings Rätten skäligt upskju¬\nta thetta måls afgörande till nästa\nBergsting, tit Parterne wid Tio da¬\nler Silfwermynts w...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00079",
+        "A0027902_A0027902_00080",
+        "A0027902_A0027902_00081",
+        "A0027902_A0027902_00082"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av böter eller vitesbestämmelser användes för att skydda skogsmark och reglera hyttdriften?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0020",
+      "volume_id": "A0027902",
+      "case_summary": "den 22 Maii\nytterligare samråd the twistande emel¬\nlan kunde wärka att wanligt slut pröf¬\nwade Bergsotings Rätten skäligt upskju¬\nta thetta måls afgörande till nästa\nBergsting, tit Parterne wid Tio da¬\nler Silfwermynts w...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00079",
+        "A0027902_A0027902_00080",
+        "A0027902_A0027902_00081",
+        "A0027902_A0027902_00082"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Olof Andersson i Skarbysfallet i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0079",
+      "volume_id": "A0027902",
+      "case_summary": "ej warit åtrönt min Sackjernet,\nNore blifwit afwägit kunnande han ej\nneka det ju han förstått at detta jäm¬\nicke wore rätt fångit. I öfrigt har\nåter någon kunskap kunnat erhålla\nKorströms\nhwarken om de af dessa ömse plas...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00315",
+        "A0027902_A0027902_00316",
+        "A0027902_A0027902_00317",
+        "A0027902_A0027902_00318"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om skogvaktaren Vertman i Nora?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0079",
+      "volume_id": "A0027902",
+      "case_summary": "ej warit åtrönt min Sackjernet,\nNore blifwit afwägit kunnande han ej\nneka det ju han förstått at detta jäm¬\nicke wore rätt fångit. I öfrigt har\nåter någon kunskap kunnat erhålla\nKorströms\nhwarken om de af dessa ömse plas...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00315",
+        "A0027902_A0027902_00316",
+        "A0027902_A0027902_00317",
+        "A0027902_A0027902_00318"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka sociala mönster framträder vid stölder av tackjärn från hyttor under 1600-1800-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0079",
+      "volume_id": "A0027902",
+      "case_summary": "ej warit åtrönt min Sackjernet,\nNore blifwit afwägit kunnande han ej\nneka det ju han förstått at detta jäm¬\nicke wore rätt fångit. I öfrigt har\nåter någon kunskap kunnat erhålla\nKorströms\nhwarken om de af dessa ömse plas...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00315",
+        "A0027902_A0027902_00316",
+        "A0027902_A0027902_00317",
+        "A0027902_A0027902_00318"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om fogden Anders Westling i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0169",
+      "volume_id": "A0027902",
+      "case_summary": "Ting tillstädes komma för ett\nde widare utföra.\n§: 25\nS: D: Genom utverkad stemning\nHandelsm. H. A: Hammarin i Skilinsås\ndetta Ting lagl. låtit inkalla der¬\nJan Olsson i Bjöksjön med påstående,\nbekomme bristande Tackjern...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00678",
+        "A0027902_A0027902_00680",
+        "A0027902_A0027902_00681",
+        "A0027902_A0027902_00682"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer gamla Hjulso Masugn i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0169",
+      "volume_id": "A0027902",
+      "case_summary": "Ting tillstädes komma för ett\nde widare utföra.\n§: 25\nS: D: Genom utverkad stemning\nHandelsm. H. A: Hammarin i Skilinsås\ndetta Ting lagl. låtit inkalla der¬\nJan Olsson i Bjöksjön med påstående,\nbekomme bristande Tackjern...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00678",
+        "A0027902_A0027902_00680",
+        "A0027902_A0027902_00681",
+        "A0027902_A0027902_00682"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister gällande leveranser av tackjärn vid masugnar?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0169",
+      "volume_id": "A0027902",
+      "case_summary": "Ting tillstädes komma för ett\nde widare utföra.\n§: 25\nS: D: Genom utverkad stemning\nHandelsm. H. A: Hammarin i Skilinsås\ndetta Ting lagl. låtit inkalla der¬\nJan Olsson i Bjöksjön med påstående,\nbekomme bristande Tackjern...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00678",
+        "A0027902_A0027902_00680",
+        "A0027902_A0027902_00681",
+        "A0027902_A0027902_00682"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Bergsfogden Westling i några handlingar i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0177",
+      "volume_id": "A0027902",
+      "case_summary": "och utan ordning\nöfverkar hijt reda efter behag. Detta hu¬\natt jag utan föregången utredning af\noch ens becknings dygn m: m:, omgäligen\nupgöra Hytterättning för min förwaltn\nhvarder jag ödmiukast wågar anhålla, a\nBergsFo...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00711",
+        "A0027902_A0027902_00712",
+        "A0027902_A0027902_00713",
+        "A0027902_A0027902_00714"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Sexmans Enkan Kristina i Hjulfjöby?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0177",
+      "volume_id": "A0027902",
+      "case_summary": "och utan ordning\nöfverkar hijt reda efter behag. Detta hu¬\natt jag utan föregången utredning af\noch ens becknings dygn m: m:, omgäligen\nupgöra Hytterättning för min förwaltn\nhvarder jag ödmiukast wågar anhålla, a\nBergsFo...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00711",
+        "A0027902_A0027902_00712",
+        "A0027902_A0027902_00713",
+        "A0027902_A0027902_00714"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister gällande skador på gärdesgårdar och grödor orsakade av boskap eller obehörigt intrång?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0177",
+      "volume_id": "A0027902",
+      "case_summary": "och utan ordning\nöfverkar hijt reda efter behag. Detta hu¬\natt jag utan föregången utredning af\noch ens becknings dygn m: m:, omgäligen\nupgöra Hytterättning för min förwaltn\nhvarder jag ödmiukast wågar anhålla, a\nBergsFo...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00711",
+        "A0027902_A0027902_00712",
+        "A0027902_A0027902_00713",
+        "A0027902_A0027902_00714"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer pigan Catharina Vitalesdotter vid Bücketorp i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0012",
+      "volume_id": "A0027902",
+      "case_summary": "Den 9 Junii\nnågon annan kjöpa ett på Bergmans hus\nsgor beläget Torp, sedan det ingång till\nDes och ahlbara omdöme om at sjelfva Torn¬\nannläggande på Skogen försörjande egentel\nTwinännen, men at det sedan vore ald¬\nlika m...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00047",
+        "A0027902_A0027902_00048",
+        "A0027902_A0027902_00049",
+        "A0027902_A0027902_00050"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Bruksinspektor Carl Petter Dyreen?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0012",
+      "volume_id": "A0027902",
+      "case_summary": "Den 9 Junii\nnågon annan kjöpa ett på Bergmans hus\nsgor beläget Torp, sedan det ingång till\nDes och ahlbara omdöme om at sjelfva Torn¬\nannläggande på Skogen försörjande egentel\nTwinännen, men at det sedan vore ald¬\nlika m...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00047",
+        "A0027902_A0027902_00048",
+        "A0027902_A0027902_00049",
+        "A0027902_A0027902_00050"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister eller brott relaterade till järnframställning förekom vid bergstingen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0012",
+      "volume_id": "A0027902",
+      "case_summary": "Den 9 Junii\nnågon annan kjöpa ett på Bergmans hus\nsgor beläget Torp, sedan det ingång till\nDes och ahlbara omdöme om at sjelfva Torn¬\nannläggande på Skogen försörjande egentel\nTwinännen, men at det sedan vore ald¬\nlika m...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00047",
+        "A0027902_A0027902_00048",
+        "A0027902_A0027902_00049",
+        "A0027902_A0027902_00050"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer vittnet Eric Svensson från Grangz hyttan i andra domstolsärenden eller protokoll?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0083",
+      "volume_id": "A0027902",
+      "case_summary": "det lemnas härmedelst till bewis\nat wintran 1304. under det\nNils Nilson i Lindeby skickadt bud\ntill Grångsytta til nemdemannen\nJernström för at efterfråga med\nhwilka han skulle utbyta sig enhalfs\nHer Malm wid Herrgrufwan...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00331",
+        "A0027902_A0027902_00332",
+        "A0027902_A0027902_00334",
+        "A0027902_A0027902_00335"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Slotterberg gruva eller Rösbergskråp gruva i arkivet, särskilt kring 1804-1805?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0083",
+      "volume_id": "A0027902",
+      "case_summary": "det lemnas härmedelst till bewis\nat wintran 1304. under det\nNils Nilson i Lindeby skickadt bud\ntill Grångsytta til nemdemannen\nJernström för at efterfråga med\nhwilka han skulle utbyta sig enhalfs\nHer Malm wid Herrgrufwan...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00331",
+        "A0027902_A0027902_00332",
+        "A0027902_A0027902_00334",
+        "A0027902_A0027902_00335"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister om skogsåverkan i 1700-talets domböcker, och vilka typer av skador var vanligast?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0083",
+      "volume_id": "A0027902",
+      "case_summary": "det lemnas härmedelst till bewis\nat wintran 1304. under det\nNils Nilson i Lindeby skickadt bud\ntill Grångsytta til nemdemannen\nJernström för at efterfråga med\nhwilka han skulle utbyta sig enhalfs\nHer Malm wid Herrgrufwan...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00331",
+        "A0027902_A0027902_00332",
+        "A0027902_A0027902_00334",
+        "A0027902_A0027902_00335"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Jan Jansson i Hästnäs i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0101",
+      "volume_id": "A0027902",
+      "case_summary": "på Grufwetaget öfwerlåter; Örfwerling\när Engberg särskild förbehållit, att för¬\nom flere Windkörors samt Grufwe\nkörs gjörande jemte En Rsd för inlit\naf Gruffogdens Instruction, som be¬\nn.ul. sin gifne räkning upfördt.\nMe...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00404",
+        "A0027902_A0027902_00405",
+        "A0027902_A0027902_00406",
+        "A0027902_A0027902_00407"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om sexmännen Hans Pehrsson och F. P. Qvarnström från Hjulsjö By i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0101",
+      "volume_id": "A0027902",
+      "case_summary": "på Grufwetaget öfwerlåter; Örfwerling\när Engberg särskild förbehållit, att för¬\nom flere Windkörors samt Grufwe\nkörs gjörande jemte En Rsd för inlit\naf Gruffogdens Instruction, som be¬\nn.ul. sin gifne räkning upfördt.\nMe...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00404",
+        "A0027902_A0027902_00405",
+        "A0027902_A0027902_00406",
+        "A0027902_A0027902_00407"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister uppstod rörande utnyttjandet av allmänningar och bruksägda skogar under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0101",
+      "volume_id": "A0027902",
+      "case_summary": "på Grufwetaget öfwerlåter; Örfwerling\när Engberg särskild förbehållit, att för¬\nom flere Windkörors samt Grufwe\nkörs gjörande jemte En Rsd för inlit\naf Gruffogdens Instruction, som be¬\nn.ul. sin gifne räkning upfördt.\nMe...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00404",
+        "A0027902_A0027902_00405",
+        "A0027902_A0027902_00406",
+        "A0027902_A0027902_00407"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Bergsert Ringberg i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0143",
+      "volume_id": "A0027902",
+      "case_summary": "i samma hop som Eric Olsson blifwit\nfrånwaran; hvarförutan hvari\naf annan fordrat Expenser.\nWid uprop af målet instälte\nsig Pne, Olof Olsson genom Sexan\nJän Olsson i Grönhult efter fullmagt¬\nsamt Eric Orsson personligen;...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00574",
+        "A0027902_A0027902_00575",
+        "A0027902_A0027902_00576",
+        "A0027902_A0027902_00577"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om vittnet Nils Hindricshon från Kjerfvingebom?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0143",
+      "volume_id": "A0027902",
+      "case_summary": "i samma hop som Eric Olsson blifwit\nfrånwaran; hvarförutan hvari\naf annan fordrat Expenser.\nWid uprop af målet instälte\nsig Pne, Olof Olsson genom Sexan\nJän Olsson i Grönhult efter fullmagt¬\nsamt Eric Orsson personligen;...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00574",
+        "A0027902_A0027902_00575",
+        "A0027902_A0027902_00576",
+        "A0027902_A0027902_00577"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av avtal och villkor förekom vid försäljning av mark till gruvlag?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0143",
+      "volume_id": "A0027902",
+      "case_summary": "i samma hop som Eric Olsson blifwit\nfrånwaran; hvarförutan hvari\naf annan fordrat Expenser.\nWid uprop af målet instälte\nsig Pne, Olof Olsson genom Sexan\nJän Olsson i Grönhult efter fullmagt¬\nsamt Eric Orsson personligen;...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00574",
+        "A0027902_A0027902_00575",
+        "A0027902_A0027902_00576",
+        "A0027902_A0027902_00577"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Brita Johansdotter i Söderåhs i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0054",
+      "volume_id": "40009745",
+      "case_summary": "7o Oso 19. att Engie widh botärken belägat om 1/3 skrinnelag\nsten Anderß Peerßon i Nästl hafwer kiöpt af Hans Pärrs\ni Liurmo och Erich Andersson i Uthby för 10 Rd kmt Norh 2 /:\nlandh Jordh i Näsåhren, Löpa af Knäl Jonßon...",
+      "relevant_chunks": [
+        "40009745_40009745_00224",
+        "40009745_40009745_00225",
+        "40009745_40009745_00227",
+        "40009745_40009745_00228"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Olof Halfwandson i Maje?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0054",
+      "volume_id": "40009745",
+      "case_summary": "7o Oso 19. att Engie widh botärken belägat om 1/3 skrinnelag\nsten Anderß Peerßon i Nästl hafwer kiöpt af Hans Pärrs\ni Liurmo och Erich Andersson i Uthby för 10 Rd kmt Norh 2 /:\nlandh Jordh i Näsåhren, Löpa af Knäl Jonßon...",
+      "relevant_chunks": [
+        "40009745_40009745_00224",
+        "40009745_40009745_00225",
+        "40009745_40009745_00227",
+        "40009745_40009745_00228"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades äldre personers överlåtelse av gård eller hushållsägande på grund av ålderdom eller svaghet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0054",
+      "volume_id": "40009745",
+      "case_summary": "7o Oso 19. att Engie widh botärken belägat om 1/3 skrinnelag\nsten Anderß Peerßon i Nästl hafwer kiöpt af Hans Pärrs\ni Liurmo och Erich Andersson i Uthby för 10 Rd kmt Norh 2 /:\nlandh Jordh i Näsåhren, Löpa af Knäl Jonßon...",
+      "relevant_chunks": [
+        "40009745_40009745_00224",
+        "40009745_40009745_00225",
+        "40009745_40009745_00227",
+        "40009745_40009745_00228"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Carin i Krås?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0196",
+      "volume_id": "A0027902",
+      "case_summary": "Bärbacks grufwan ersätta\nsamt denne Rättegångskostnad; Hwar¬\nemot Bergmannen och Grufwe¬\nförestånderen Nils Nilsson i Björksiö,\nå egne och öfrige GrufweInteressentanes\nwägnar genstämt Jan Andersson med\nyrkande, att som h...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00789",
+        "A0027902_A0027902_00790",
+        "A0027902_A0027902_00791",
+        "A0027902_A0027902_00792"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer gruffogden Olof Petersson Grönlund från Skroppsjöfallet i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0196",
+      "volume_id": "A0027902",
+      "case_summary": "Bärbacks grufwan ersätta\nsamt denne Rättegångskostnad; Hwar¬\nemot Bergmannen och Grufwe¬\nförestånderen Nils Nilsson i Björksiö,\nå egne och öfrige GrufweInteressentanes\nwägnar genstämt Jan Andersson med\nyrkande, att som h...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00789",
+        "A0027902_A0027902_00790",
+        "A0027902_A0027902_00791",
+        "A0027902_A0027902_00792"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister om intrång och skadegörelse på mark och egendom förekommer?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0196",
+      "volume_id": "A0027902",
+      "case_summary": "Bärbacks grufwan ersätta\nsamt denne Rättegångskostnad; Hwar¬\nemot Bergmannen och Grufwe¬\nförestånderen Nils Nilsson i Björksiö,\nå egne och öfrige GrufweInteressentanes\nwägnar genstämt Jan Andersson med\nyrkande, att som h...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00789",
+        "A0027902_A0027902_00790",
+        "A0027902_A0027902_00791",
+        "A0027902_A0027902_00792"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer torparen Eric Anderssons hustru Christina Bengtsdotter vid Pichögden i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0071",
+      "volume_id": "A0027902",
+      "case_summary": "den 11 Junii\nsentorne emellan, och äro följande:\nSr Arf\nJan Mattßon 8 af: dagsvärken af 5 Skr 4./.\n— 428\n— Dito män 16 do nya á 4\n, Dito män 16 do nya.\n1: 16.\ni Eric Mattsson 10. g. nya\nEric Mattsson 10 mC. nya a 4 do\n1:...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00283",
+        "A0027902_A0027902_00284",
+        "A0027902_A0027902_00285",
+        "A0027902_A0027902_00286"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns om Wargbergs Grufva i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0071",
+      "volume_id": "A0027902",
+      "case_summary": "den 11 Junii\nsentorne emellan, och äro följande:\nSr Arf\nJan Mattßon 8 af: dagsvärken af 5 Skr 4./.\n— 428\n— Dito män 16 do nya á 4\n, Dito män 16 do nya.\n1: 16.\ni Eric Mattsson 10. g. nya\nEric Mattsson 10 mC. nya a 4 do\n1:...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00283",
+        "A0027902_A0027902_00284",
+        "A0027902_A0027902_00285",
+        "A0027902_A0027902_00286"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av konflikter eller tvister var vanliga i gruvmiljö under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0071",
+      "volume_id": "A0027902",
+      "case_summary": "den 11 Junii\nsentorne emellan, och äro följande:\nSr Arf\nJan Mattßon 8 af: dagsvärken af 5 Skr 4./.\n— 428\n— Dito män 16 do nya á 4\n, Dito män 16 do nya.\n1: 16.\ni Eric Mattsson 10. g. nya\nEric Mattsson 10 mC. nya a 4 do\n1:...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00283",
+        "A0027902_A0027902_00284",
+        "A0027902_A0027902_00285",
+        "A0027902_A0027902_00286"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Anders Hansson från Björksjön i andra tvister eller uppgifter i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0170",
+      "volume_id": "A0027902",
+      "case_summary": "då det åligger Itten, Sde wid tala\nluff, sig inställa, samt Kden att de\nnifonn intalla el. Sexman Eric S\nsamtel. Sterbhus delägare, hwar¬\nBilE: 4 will. will, Lag och beskaffenheten\nmätigt sig widare utlåta.\n§: 30 –\n1/3. ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00683",
+        "A0027902_A0027902_00684",
+        "A0027902_A0027902_00685",
+        "A0027902_A0027902_00686"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Sexman Jan Olsson i Grödhult i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0170",
+      "volume_id": "A0027902",
+      "case_summary": "då det åligger Itten, Sde wid tala\nluff, sig inställa, samt Kden att de\nnifonn intalla el. Sexman Eric S\nsamtel. Sterbhus delägare, hwar¬\nBilE: 4 will. will, Lag och beskaffenheten\nmätigt sig widare utlåta.\n§: 30 –\n1/3. ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00683",
+        "A0027902_A0027902_00684",
+        "A0027902_A0027902_00685",
+        "A0027902_A0027902_00686"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka betalningsmetoder för skulder var vanliga, utöver kontant betalning, i periodens domböcker?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0170",
+      "volume_id": "A0027902",
+      "case_summary": "då det åligger Itten, Sde wid tala\nluff, sig inställa, samt Kden att de\nnifonn intalla el. Sexman Eric S\nsamtel. Sterbhus delägare, hwar¬\nBilE: 4 will. will, Lag och beskaffenheten\nmätigt sig widare utlåta.\n§: 30 –\n1/3. ...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00683",
+        "A0027902_A0027902_00684",
+        "A0027902_A0027902_00685",
+        "A0027902_A0027902_00686"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Brita Larsdotter i Rästa i arkivmaterialet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0067",
+      "volume_id": "40009745",
+      "case_summary": "Olof Andersson i Miärk anklagade S. Brita Anders Socko rigen\nmal Käring i Gräda för dett hon haf.r måttet hans risken\nsåsom och at hon i höstas wed Michaelis tydh hafr bortstulit\nen ungbäck och den slachtat. H. Britu kun...",
+      "relevant_chunks": [
+        "40009745_40009745_00277",
+        "40009745_40009745_00278",
+        "40009745_40009745_00279",
+        "40009745_40009745_00280"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om pastor Gustaf Ebrius?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0067",
+      "volume_id": "40009745",
+      "case_summary": "Olof Andersson i Miärk anklagade S. Brita Anders Socko rigen\nmal Käring i Gräda för dett hon haf.r måttet hans risken\nsåsom och at hon i höstas wed Michaelis tydh hafr bortstulit\nen ungbäck och den slachtat. H. Britu kun...",
+      "relevant_chunks": [
+        "40009745_40009745_00277",
+        "40009745_40009745_00278",
+        "40009745_40009745_00279",
+        "40009745_40009745_00280"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka påföljder fick personer dömda för lägersmål?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0067",
+      "volume_id": "40009745",
+      "case_summary": "Olof Andersson i Miärk anklagade S. Brita Anders Socko rigen\nmal Käring i Gräda för dett hon haf.r måttet hans risken\nsåsom och at hon i höstas wed Michaelis tydh hafr bortstulit\nen ungbäck och den slachtat. H. Britu kun...",
+      "relevant_chunks": [
+        "40009745_40009745_00277",
+        "40009745_40009745_00278",
+        "40009745_40009745_00279",
+        "40009745_40009745_00280"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer sexmannen Eric Swensson vid Grenghyttan i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0150",
+      "volume_id": "A0027902",
+      "case_summary": "D. 1. 1813.\nden 10de May, Instäl¬\nke sig efter föregån¬\ngen kunnigörelse\nundertecknad Berg¬\nmästare i wän¬\ntiga Tingz Staden,\nwar själfte hustru Herr Om¬\natt förrätta inne¬\nwarande års Lag¬\ntima BergsTing\nmed Hjulsjö Sen...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00602",
+        "A0027902_A0027902_00603",
+        "A0027902_A0027902_00604",
+        "A0027902_A0027902_00605"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om \"Kirsten\" som omnämns i anslutning till Hjulsjö by?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0150",
+      "volume_id": "A0027902",
+      "case_summary": "D. 1. 1813.\nden 10de May, Instäl¬\nke sig efter föregån¬\ngen kunnigörelse\nundertecknad Berg¬\nmästare i wän¬\ntiga Tingz Staden,\nwar själfte hustru Herr Om¬\natt förrätta inne¬\nwarande års Lag¬\ntima BergsTing\nmed Hjulsjö Sen...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00602",
+        "A0027902_A0027902_00603",
+        "A0027902_A0027902_00604",
+        "A0027902_A0027902_00605"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur behandlades våldsamma ordningsstörningar och skadegörelse i tidiga bruksmiljöer?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0150",
+      "volume_id": "A0027902",
+      "case_summary": "D. 1. 1813.\nden 10de May, Instäl¬\nke sig efter föregån¬\ngen kunnigörelse\nundertecknad Berg¬\nmästare i wän¬\ntiga Tingz Staden,\nwar själfte hustru Herr Om¬\natt förrätta inne¬\nwarande års Lag¬\ntima BergsTing\nmed Hjulsjö Sen...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00602",
+        "A0027902_A0027902_00603",
+        "A0027902_A0027902_00604",
+        "A0027902_A0027902_00605"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Anders Kihlberg i arkivet och i vilka sammanhang?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0078",
+      "volume_id": "A0067159",
+      "case_summary": "7 1/8\nTransport\n2 1/8\nEn del i Högre Ängen.\n19 ½\nWisängen wid Tullsta\n3 1/4\nEn toge Swartslag\n1 ½\n¬\nD: öfmbjörs Hagen\n¾\n3/4\nDo i Lillhagen\nÅker wid Johannes bäck\n6.\nläng i Källarherrn\nD:r Kmt eller Kolarhagen\n2.\n¼.\nDo i ...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00313",
+        "A0067159_A0067159_00314",
+        "A0067159_A0067159_00315",
+        "A0067159_A0067159_00316"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om platser som Kilvägen, Kihlwägen, Kilwågen eller liknande i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0078",
+      "volume_id": "A0067159",
+      "case_summary": "7 1/8\nTransport\n2 1/8\nEn del i Högre Ängen.\n19 ½\nWisängen wid Tullsta\n3 1/4\nEn toge Swartslag\n1 ½\n¬\nD: öfmbjörs Hagen\n¾\n3/4\nDo i Lillhagen\nÅker wid Johannes bäck\n6.\nläng i Källarherrn\nD:r Kmt eller Kolarhagen\n2.\n¼.\nDo i ...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00313",
+        "A0067159_A0067159_00314",
+        "A0067159_A0067159_00315",
+        "A0067159_A0067159_00316"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilket sätt beskrivs änkors landinnehav och förvaltning i arkivmaterialet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0078",
+      "volume_id": "A0067159",
+      "case_summary": "7 1/8\nTransport\n2 1/8\nEn del i Högre Ängen.\n19 ½\nWisängen wid Tullsta\n3 1/4\nEn toge Swartslag\n1 ½\n¬\nD: öfmbjörs Hagen\n¾\n3/4\nDo i Lillhagen\nÅker wid Johannes bäck\n6.\nläng i Källarherrn\nD:r Kmt eller Kolarhagen\n2.\n¼.\nDo i ...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00313",
+        "A0067159_A0067159_00314",
+        "A0067159_A0067159_00315",
+        "A0067159_A0067159_00316"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Enkan Brita Nilsdotter i Sånges enäs i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0031",
+      "volume_id": "A0027902",
+      "case_summary": "den 21 Maii\n§.14.\nOlof Pärsson Ruckhugre i Grönhult instämd af Ci\nErik Jönsson wid Hårdshun angående en från Wargbergs\nGrufwen olofl. borttagen Malachop samt expenser. Och\nfant, efter något twistande, sig wara skyldig Mi...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00123",
+        "A0027902_A0027902_00124",
+        "A0027902_A0027902_00125",
+        "A0027902_A0027902_00126"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Wargbergs Grufwen?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0031",
+      "volume_id": "A0027902",
+      "case_summary": "den 21 Maii\n§.14.\nOlof Pärsson Ruckhugre i Grönhult instämd af Ci\nErik Jönsson wid Hårdshun angående en från Wargbergs\nGrufwen olofl. borttagen Malachop samt expenser. Och\nfant, efter något twistande, sig wara skyldig Mi...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00123",
+        "A0027902_A0027902_00124",
+        "A0027902_A0027902_00125",
+        "A0027902_A0027902_00126"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister rörande markgränser och markanvändning förekommer i Bergstingets protokoll?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0031",
+      "volume_id": "A0027902",
+      "case_summary": "den 21 Maii\n§.14.\nOlof Pärsson Ruckhugre i Grönhult instämd af Ci\nErik Jönsson wid Hårdshun angående en från Wargbergs\nGrufwen olofl. borttagen Malachop samt expenser. Och\nfant, efter något twistande, sig wara skyldig Mi...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00123",
+        "A0027902_A0027902_00124",
+        "A0027902_A0027902_00125",
+        "A0027902_A0027902_00126"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om fältväbel Carl Lundh i Nora i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0160",
+      "volume_id": "A0027902",
+      "case_summary": "afgifne Hytterrätningen, som af så¬\nden orsak nu till han Svensson öfwer¬\nlemnades, hwarefter Ed:bit, om ej\nFöreningz mellankommen, will sig\ni saken bidare utlåta.\n§. 20.\nS: D: Nämde och Appitel. Johanna Olofson\ni Grelså...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00642",
+        "A0027902_A0027902_00643",
+        "A0027902_A0027902_00644",
+        "A0027902_A0027902_00645"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om drängen Johannes Elisson i Ronobohögden i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0160",
+      "volume_id": "A0027902",
+      "case_summary": "afgifne Hytterrätningen, som af så¬\nden orsak nu till han Svensson öfwer¬\nlemnades, hwarefter Ed:bit, om ej\nFöreningz mellankommen, will sig\ni saken bidare utlåta.\n§. 20.\nS: D: Nämde och Appitel. Johanna Olofson\ni Grelså...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00642",
+        "A0027902_A0027902_00643",
+        "A0027902_A0027902_00644",
+        "A0027902_A0027902_00645"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilka grunder beviljades ersättning eller understöd till smeder eller deras anhöriga?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0160",
+      "volume_id": "A0027902",
+      "case_summary": "afgifne Hytterrätningen, som af så¬\nden orsak nu till han Svensson öfwer¬\nlemnades, hwarefter Ed:bit, om ej\nFöreningz mellankommen, will sig\ni saken bidare utlåta.\n§. 20.\nS: D: Nämde och Appitel. Johanna Olofson\ni Grelså...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00642",
+        "A0027902_A0027902_00643",
+        "A0027902_A0027902_00644",
+        "A0027902_A0027902_00645"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Margreta Andersdotter, änka efter korpral Olof Echtens, i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0027",
+      "volume_id": "40009745",
+      "case_summary": "I blef afsagd af hans Exellentio LitsRådet och Landshöfdingen\nbegiorde borre beswära sig syssligen\natt alldhenstundh och wederom ingen hafwa stort klaga åth\nexhifwer Stiggerboerne i dhz at när dhe stode hafwa uth¬\ndheras...",
+      "relevant_chunks": [
+        "40009745_40009745_00109",
+        "40009745_40009745_00110",
+        "40009745_40009745_00111",
+        "40009745_40009745_00112"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Sollbyggarna och deras förehavanden?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0027",
+      "volume_id": "40009745",
+      "case_summary": "I blef afsagd af hans Exellentio LitsRådet och Landshöfdingen\nbegiorde borre beswära sig syssligen\natt alldhenstundh och wederom ingen hafwa stort klaga åth\nexhifwer Stiggerboerne i dhz at när dhe stode hafwa uth¬\ndheras...",
+      "relevant_chunks": [
+        "40009745_40009745_00109",
+        "40009745_40009745_00110",
+        "40009745_40009745_00111",
+        "40009745_40009745_00112"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka sociala mönster framkommer i mål rörande lägersmål i arkivet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-40009745-0027",
+      "volume_id": "40009745",
+      "case_summary": "I blef afsagd af hans Exellentio LitsRådet och Landshöfdingen\nbegiorde borre beswära sig syssligen\natt alldhenstundh och wederom ingen hafwa stort klaga åth\nexhifwer Stiggerboerne i dhz at när dhe stode hafwa uth¬\ndheras...",
+      "relevant_chunks": [
+        "40009745_40009745_00109",
+        "40009745_40009745_00110",
+        "40009745_40009745_00111",
+        "40009745_40009745_00112"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Sexmannen Örnson i Gränshyttan?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0094",
+      "volume_id": "A0027902",
+      "case_summary": "underrättad, och ej uid samma\nför\nvarande, utan anhöll det ny be\nmåtte i dess nämard blifwa innställ¬\nStöfwade äfven 15 R. Skälige.\nhwadan\nuprän¬\nbifalla, och uppehöllde målet till\nkommande Laga BergTing då\näga att sig à...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00376",
+        "A0027902_A0027902_00377",
+        "A0027902_A0027902_00378",
+        "A0027902_A0027902_00379"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om orten Nyhammar i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0094",
+      "volume_id": "A0027902",
+      "case_summary": "underrättad, och ej uid samma\nför\nvarande, utan anhöll det ny be\nmåtte i dess nämard blifwa innställ¬\nStöfwade äfven 15 R. Skälige.\nhwadan\nuprän¬\nbifalla, och uppehöllde målet till\nkommande Laga BergTing då\näga att sig à...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00376",
+        "A0027902_A0027902_00377",
+        "A0027902_A0027902_00378",
+        "A0027902_A0027902_00379"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister uppstår vanligen inom Bergslagens hyttelag?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0027902-0094",
+      "volume_id": "A0027902",
+      "case_summary": "underrättad, och ej uid samma\nför\nvarande, utan anhöll det ny be\nmåtte i dess nämard blifwa innställ¬\nStöfwade äfven 15 R. Skälige.\nhwadan\nuprän¬\nbifalla, och uppehöllde målet till\nkommande Laga BergTing då\näga att sig à...",
+      "relevant_chunks": [
+        "A0027902_A0027902_00376",
+        "A0027902_A0027902_00377",
+        "A0027902_A0027902_00378",
+        "A0027902_A0027902_00379"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om arrendatorn Nils Spångberg i Kylings Krono Engel Hware?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0064",
+      "volume_id": "A0067159",
+      "case_summary": "Stugu, från Qwarnen affära och then\nsamma at någon annan annan Stuf¬\nlagens district färgder.\nlagens districte föryckra.\nS: d: Just GrefweRätten afkortmästa¬\nren Wälbetrodde Daniel Skinnellä wid\nanden thet han, til följe...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00257",
+        "A0067159_A0067159_00258",
+        "A0067159_A0067159_00259",
+        "A0067159_A0067159_00260"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Färgsbacka hemman i Kihla socken i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0064",
+      "volume_id": "A0067159",
+      "case_summary": "Stugu, från Qwarnen affära och then\nsamma at någon annan annan Stuf¬\nlagens district färgder.\nlagens districte föryckra.\nS: d: Just GrefweRätten afkortmästa¬\nren Wälbetrodde Daniel Skinnellä wid\nanden thet han, til följe...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00257",
+        "A0067159_A0067159_00258",
+        "A0067159_A0067159_00259",
+        "A0067159_A0067159_00260"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister rörande kvarnbyggen och vattenrättigheter vid gruvting?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer4",
+      "date": "GROUP-A0067159-0064",
+      "volume_id": "A0067159",
+      "case_summary": "Stugu, från Qwarnen affära och then\nsamma at någon annan annan Stuf¬\nlagens district färgder.\nlagens districte föryckra.\nS: d: Just GrefweRätten afkortmästa¬\nren Wälbetrodde Daniel Skinnellä wid\nanden thet han, til följe...",
+      "relevant_chunks": [
+        "A0067159_A0067159_00257",
+        "A0067159_A0067159_00258",
+        "A0067159_A0067159_00259",
+        "A0067159_A0067159_00260"
+      ],
+      "num_relevant": 4
+    }
+  ]
+}

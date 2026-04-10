@@ -1,0 +1,4022 @@
+{
+  "metadata": {
+    "method": "layered-baseprompt-fewshot-n2n",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "temperature": 1.0,
+    "generation_date": "2026-04-09 01:29:22",
+    "dry_run": false,
+    "baseline_filter_disabled": true,
+    "total_days_processed": 627,
+    "successful_days": 627,
+    "total_queries": 1881,
+    "failed_days": 0,
+    "fewshot_file": "data/n_to_n_fewshot_examples.json",
+    "pool_dir": "output/data_pools",
+    "queries_per_call": 3,
+    "query_types": [
+      "entity",
+      "entity",
+      "social_pattern"
+    ],
+    "split": "val",
+    "size": 250,
+    "eval_note": "all positives kept"
+  },
+  "queries": [
+    {
+      "query": "Förekommer hammarsmeden Olof Paulsson, dömd för snatteri och sabbatsbrott, i andra mål i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0190",
+      "volume_id": "A0067286",
+      "case_summary": "Olof Embergs antagande till deß afträ¬\nderi så at han i sin fatt w stad och ställe må¬\nmed Bälgander i arbetet få Bergzlegen\ntill handa på honom han Olof Emberg\noch\njemwäl nu sielf anhållit; så emedan\nhon alt ifrån ungdo...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00769",
+        "A0067286_A0067286_00770",
+        "A0067286_A0067286_00771",
+        "A0067286_A0067286_00772"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns det om sjömannen Jonas Westberg i arkivet, särskilt gällande misstankar om olovlig handel?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0190",
+      "volume_id": "A0067286",
+      "case_summary": "Olof Embergs antagande till deß afträ¬\nderi så at han i sin fatt w stad och ställe må¬\nmed Bälgander i arbetet få Bergzlegen\ntill handa på honom han Olof Emberg\noch\njemwäl nu sielf anhållit; så emedan\nhon alt ifrån ungdo...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00769",
+        "A0067286_A0067286_00770",
+        "A0067286_A0067286_00771",
+        "A0067286_A0067286_00772"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka mönster kan urskiljas i domstolarnas hantering av olovlig handel med järnprodukter och de sanktioner som utdömdes för detta brott under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0190",
+      "volume_id": "A0067286",
+      "case_summary": "Olof Embergs antagande till deß afträ¬\nderi så at han i sin fatt w stad och ställe må¬\nmed Bälgander i arbetet få Bergzlegen\ntill handa på honom han Olof Emberg\noch\njemwäl nu sielf anhållit; så emedan\nhon alt ifrån ungdo...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00769",
+        "A0067286_A0067286_00770",
+        "A0067286_A0067286_00771",
+        "A0067286_A0067286_00772"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Jan Ersson, som omnämns i samband med upprepat snatteri av lösjärn från bruk?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0047",
+      "volume_id": "A0067286",
+      "case_summary": "ren Jöns Anderßon icke med\nwißhet Kunnat intyga, det\nErik Janßon, när den här¬\nofwanomförmälte upwäg¬\nningen i Hyttan skiedde, wid\ngådt sig hafwa besagde Klot\ntagit och som sagt är i la¬\ndan undangiömt; Och åter\npå uppsä...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00189",
+        "A0067286_A0067286_00190",
+        "A0067286_A0067286_00191",
+        "A0067286_A0067286_00192"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer länsmannen Sven Brandtström från Ugglebo i andra handlingar gällande intyganden eller transportavtal?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0047",
+      "volume_id": "A0067286",
+      "case_summary": "ren Jöns Anderßon icke med\nwißhet Kunnat intyga, det\nErik Janßon, när den här¬\nofwanomförmälte upwäg¬\nningen i Hyttan skiedde, wid\ngådt sig hafwa besagde Klot\ntagit och som sagt är i la¬\ndan undangiömt; Och åter\npå uppsä...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00189",
+        "A0067286_A0067286_00190",
+        "A0067286_A0067286_00191",
+        "A0067286_A0067286_00192"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur påverkades påföljderna för stöld av järn från industriella anläggningar av tidigare brottslighet under 1700-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0047",
+      "volume_id": "A0067286",
+      "case_summary": "ren Jöns Anderßon icke med\nwißhet Kunnat intyga, det\nErik Janßon, när den här¬\nofwanomförmälte upwäg¬\nningen i Hyttan skiedde, wid\ngådt sig hafwa besagde Klot\ntagit och som sagt är i la¬\ndan undangiömt; Och åter\npå uppsä...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00189",
+        "A0067286_A0067286_00190",
+        "A0067286_A0067286_00191",
+        "A0067286_A0067286_00192"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer skomakaren Christ: Stenius och hans hustru Maria Jöransdotter i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0013",
+      "volume_id": "A0067435",
+      "case_summary": "den 27 Aprill\nHandellman Jonas Metander¬\nefter Stämning, Bergman¬\nnen Bengt Olßon wid\ninventen. 1u emedan\nSden erkiänner sig wara\nskyldig på bekommit ut\nlag 131 C:r 14./. Koppmt, Ty pröf¬\nwar BergzTingz Rätten skiä¬\nligi...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00051",
+        "A0067435_A0067435_00052",
+        "A0067435_A0067435_00053",
+        "A0067435_A0067435_00054"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om grufwebytaren Olof Swenßon vid Nogmarcki grufwor?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0013",
+      "volume_id": "A0067435",
+      "case_summary": "den 27 Aprill\nHandellman Jonas Metander¬\nefter Stämning, Bergman¬\nnen Bengt Olßon wid\ninventen. 1u emedan\nSden erkiänner sig wara\nskyldig på bekommit ut\nlag 131 C:r 14./. Koppmt, Ty pröf¬\nwar BergzTingz Rätten skiä¬\nligi...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00051",
+        "A0067435_A0067435_00052",
+        "A0067435_A0067435_00053",
+        "A0067435_A0067435_00054"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades fall av förskingring eller olovlig tillägnelse av medel i rätten, och vilka påföljder följde enligt dåtida lagstiftning?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0013",
+      "volume_id": "A0067435",
+      "case_summary": "den 27 Aprill\nHandellman Jonas Metander¬\nefter Stämning, Bergman¬\nnen Bengt Olßon wid\ninventen. 1u emedan\nSden erkiänner sig wara\nskyldig på bekommit ut\nlag 131 C:r 14./. Koppmt, Ty pröf¬\nwar BergzTingz Rätten skiä¬\nligi...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00051",
+        "A0067435_A0067435_00052",
+        "A0067435_A0067435_00053",
+        "A0067435_A0067435_00054"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bruksförvaltaren C. R. Wallmos engagemang i rättsliga mål?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0076",
+      "volume_id": "A0030234",
+      "case_summary": "§. 3. Litt. D.\nHammarsmeders vid Sik¬\nMagast på stadde Hammarsmerer och Tik¬\nAugust på stadde\nWj:tt för Smederiet 1847.\nSmederiet 1847.\nsorsk\nMästaren\nNordgren\nAnders\nGillberg\nDito\nNils\nRoswall\nbud\nBecker\nCarl\nDito\nmedde...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00316",
+        "A0030234_A0030234_00317",
+        "A0030234_A0030234_00318",
+        "A0030234_A0030234_00319"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om ägande eller tvister rörande Silfvergrufvan i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0076",
+      "volume_id": "A0030234",
+      "case_summary": "§. 3. Litt. D.\nHammarsmeders vid Sik¬\nMagast på stadde Hammarsmerer och Tik¬\nAugust på stadde\nWj:tt för Smederiet 1847.\nSmederiet 1847.\nsorsk\nMästaren\nNordgren\nAnders\nGillberg\nDito\nNils\nRoswall\nbud\nBecker\nCarl\nDito\nmedde...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00316",
+        "A0030234_A0030234_00317",
+        "A0030234_A0030234_00318",
+        "A0030234_A0030234_00319"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av fastighetsskador ledde till rättsliga tvister, och hur värderades dessa skador i domstol?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0076",
+      "volume_id": "A0030234",
+      "case_summary": "§. 3. Litt. D.\nHammarsmeders vid Sik¬\nMagast på stadde Hammarsmerer och Tik¬\nAugust på stadde\nWj:tt för Smederiet 1847.\nSmederiet 1847.\nsorsk\nMästaren\nNordgren\nAnders\nGillberg\nDito\nNils\nRoswall\nbud\nBecker\nCarl\nDito\nmedde...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00316",
+        "A0030234_A0030234_00317",
+        "A0030234_A0030234_00318",
+        "A0030234_A0030234_00319"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer soldaten Anders Mallm i domstolshandlingar rörande skogsåverkan?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0021",
+      "volume_id": "A0067286",
+      "case_summary": "hädanefter uti Hoo Hytta för¬\nrätta någon blåsning utom\nHyttelagets lof och goda min¬\nne.\n12. §.\nUti saken som Probsten Hög¬\närewördige Herr Olof Solenius\noch Bergsmannen Lars\nLarßon i Fors instämt e¬\nmot Soldaten Anders...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00084",
+        "A0067286_A0067286_00085",
+        "A0067286_A0067286_00086",
+        "A0067286_A0067286_00087"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns det om gruvfogden Jacob Anton Sundberg i egenskap av fullmäktig i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0021",
+      "volume_id": "A0067286",
+      "case_summary": "hädanefter uti Hoo Hytta för¬\nrätta någon blåsning utom\nHyttelagets lof och goda min¬\nne.\n12. §.\nUti saken som Probsten Hög¬\närewördige Herr Olof Solenius\noch Bergsmannen Lars\nLarßon i Fors instämt e¬\nmot Soldaten Anders...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00084",
+        "A0067286_A0067286_00085",
+        "A0067286_A0067286_00086",
+        "A0067286_A0067286_00087"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur avgjordes tvister om skogsåverkan eller markrättigheter vid Bergstinget, och vilka påföljder var vanliga?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0021",
+      "volume_id": "A0067286",
+      "case_summary": "hädanefter uti Hoo Hytta för¬\nrätta någon blåsning utom\nHyttelagets lof och goda min¬\nne.\n12. §.\nUti saken som Probsten Hög¬\närewördige Herr Olof Solenius\noch Bergsmannen Lars\nLarßon i Fors instämt e¬\nmot Soldaten Anders...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00084",
+        "A0067286_A0067286_00085",
+        "A0067286_A0067286_00086",
+        "A0067286_A0067286_00087"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns det om ledamoten Thomas Nilsson från Lönnhöjden i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0013",
+      "volume_id": "A0030234",
+      "case_summary": "Son 23 Maji\nvid Gustafströms Wakets\nHärmedshusmästare Carl Kock¬\nMästusaren. Nils Kock\nde Jan Peter Kusabeth\ni Kullräng - Olof Hellsing\nOlof Magnusson försichtag\ntid Sälje Herhen\nslåtsmed\nJohannes Berg.\nH. Johannes Hedli...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00051",
+        "A0030234_A0030234_00052",
+        "A0030234_A0030234_00053",
+        "A0030234_A0030234_00054"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer det mål rörande åverkan på Hellefors virkes skogar?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0013",
+      "volume_id": "A0030234",
+      "case_summary": "Son 23 Maji\nvid Gustafströms Wakets\nHärmedshusmästare Carl Kock¬\nMästusaren. Nils Kock\nde Jan Peter Kusabeth\ni Kullräng - Olof Hellsing\nOlof Magnusson försichtag\ntid Sälje Herhen\nslåtsmed\nJohannes Berg.\nH. Johannes Hedli...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00051",
+        "A0030234_A0030234_00052",
+        "A0030234_A0030234_00053",
+        "A0030234_A0030234_00054"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av påföljder utdömdes vid åverkan på skog under 1800-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0013",
+      "volume_id": "A0030234",
+      "case_summary": "Son 23 Maji\nvid Gustafströms Wakets\nHärmedshusmästare Carl Kock¬\nMästusaren. Nils Kock\nde Jan Peter Kusabeth\ni Kullräng - Olof Hellsing\nOlof Magnusson försichtag\ntid Sälje Herhen\nslåtsmed\nJohannes Berg.\nH. Johannes Hedli...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00051",
+        "A0030234_A0030234_00052",
+        "A0030234_A0030234_00053",
+        "A0030234_A0030234_00054"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Bergs Sexmannen Pehr Larsson i Wy i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0201",
+      "volume_id": "A0067286",
+      "case_summary": "fastställande af den liquide förlags\nfordran, som bemälte handelsman\nhos Johan Pehrsson äger. Handelsman\nnen Maus inlämnade Räkning hwil¬\nken efter jämnförande fans med\nmotboken wara enlig, påförer Jan\nPehrson att Saldo ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00813",
+        "A0067286_A0067286_00814",
+        "A0067286_A0067286_00815",
+        "A0067286_A0067286_00816"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka ärenden förekommer Fagersta Hyttelagare i Thorsåkers socken i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0201",
+      "volume_id": "A0067286",
+      "case_summary": "fastställande af den liquide förlags\nfordran, som bemälte handelsman\nhos Johan Pehrsson äger. Handelsman\nnen Maus inlämnade Räkning hwil¬\nken efter jämnförande fans med\nmotboken wara enlig, påförer Jan\nPehrson att Saldo ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00813",
+        "A0067286_A0067286_00814",
+        "A0067286_A0067286_00815",
+        "A0067286_A0067286_00816"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades ansökningar om att återuppta gamla gruvor, särskilt gällande jordägares rättigheter och allmänningar?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0201",
+      "volume_id": "A0067286",
+      "case_summary": "fastställande af den liquide förlags\nfordran, som bemälte handelsman\nhos Johan Pehrsson äger. Handelsman\nnen Maus inlämnade Räkning hwil¬\nken efter jämnförande fans med\nmotboken wara enlig, påförer Jan\nPehrson att Saldo ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00813",
+        "A0067286_A0067286_00814",
+        "A0067286_A0067286_00815",
+        "A0067286_A0067286_00816"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om brukspatron Herr Hendric Bratt i relation till andra tvister eller affärsrelationer?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0154",
+      "volume_id": "A0067435",
+      "case_summary": "den 30 Junii\nJ E: 18.\nI anledning af BruksPa¬\ntron Herr Hendric Bratts\nwid jorledit års Cammar¬\nTing anmälte As til thetta\nsielf stämde kiäromål\nemot Per Anderßon i Bo¬\nra Grälmarck Sockn\nför återstående Skohl för\nlag sk...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00621",
+        "A0067435_A0067435_00622",
+        "A0067435_A0067435_00623",
+        "A0067435_A0067435_00624"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer belgemakaregesällen Olof Hammarström i andra sammanhang i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0154",
+      "volume_id": "A0067435",
+      "case_summary": "den 30 Junii\nJ E: 18.\nI anledning af BruksPa¬\ntron Herr Hendric Bratts\nwid jorledit års Cammar¬\nTing anmälte As til thetta\nsielf stämde kiäromål\nemot Per Anderßon i Bo¬\nra Grälmarck Sockn\nför återstående Skohl för\nlag sk...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00621",
+        "A0067435_A0067435_00622",
+        "A0067435_A0067435_00623",
+        "A0067435_A0067435_00624"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister om skogsåverkan och vilken typ av sanktioner utdömdes för olovlig avverkning?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0154",
+      "volume_id": "A0067435",
+      "case_summary": "den 30 Junii\nJ E: 18.\nI anledning af BruksPa¬\ntron Herr Hendric Bratts\nwid jorledit års Cammar¬\nTing anmälte As til thetta\nsielf stämde kiäromål\nemot Per Anderßon i Bo¬\nra Grälmarck Sockn\nför återstående Skohl för\nlag sk...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00621",
+        "A0067435_A0067435_00622",
+        "A0067435_A0067435_00623",
+        "A0067435_A0067435_00624"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer uppgifter om gruvfastigheten Skålkiärn i Norrmark i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0026",
+      "volume_id": "A0067435",
+      "case_summary": "den 28 Aprill\nom på förlaget betalas.\npår emot förklaring\nAnders Cruskopf mig å Lag¬\nmännen wälborne Herr\nMeph Herman Anrephss råg\nner nögd och lofwar att\nBergmannen Jöns Sandberg\nskall årligen wid marcknads\ntidnad und p...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00103",
+        "A0067435_A0067435_00104",
+        "A0067435_A0067435_00105",
+        "A0067435_A0067435_00106"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergmannen Jöns Sandberg från Norrmark?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0026",
+      "volume_id": "A0067435",
+      "case_summary": "den 28 Aprill\nom på förlaget betalas.\npår emot förklaring\nAnders Cruskopf mig å Lag¬\nmännen wälborne Herr\nMeph Herman Anrephss råg\nner nögd och lofwar att\nBergmannen Jöns Sandberg\nskall årligen wid marcknads\ntidnad und p...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00103",
+        "A0067435_A0067435_00104",
+        "A0067435_A0067435_00105",
+        "A0067435_A0067435_00106"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga mönster fanns för värdering och avyttring av egendom vid obetalda skulder inom bergsmansståndet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0026",
+      "volume_id": "A0067435",
+      "case_summary": "den 28 Aprill\nom på förlaget betalas.\npår emot förklaring\nAnders Cruskopf mig å Lag¬\nmännen wälborne Herr\nMeph Herman Anrephss råg\nner nögd och lofwar att\nBergmannen Jöns Sandberg\nskall årligen wid marcknads\ntidnad und p...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00103",
+        "A0067435_A0067435_00104",
+        "A0067435_A0067435_00105",
+        "A0067435_A0067435_00106"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer smeden Nils Mattsson i Siö i andra dokument i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0022",
+      "volume_id": "A0067260",
+      "case_summary": "att fordra dem derföre till något answar, hemstäl¬\nte dock om icke de kunde härutinnan blifwa hörde,\nHenric Biörpe yrkade på förenämde wittnens edeliga\nafhörande uti det mot honom angifne senare mål,\nhwarföre sådan Parte...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00087",
+        "A0067260_A0067260_00088",
+        "A0067260_A0067260_00089",
+        "A0067260_A0067260_00090"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om att en \"wärballance af No 1\" har stulits eller efterlysts i andra rättsfall?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0022",
+      "volume_id": "A0067260",
+      "case_summary": "att fordra dem derföre till något answar, hemstäl¬\nte dock om icke de kunde härutinnan blifwa hörde,\nHenric Biörpe yrkade på förenämde wittnens edeliga\nafhörande uti det mot honom angifne senare mål,\nhwarföre sådan Parte...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00087",
+        "A0067260_A0067260_00088",
+        "A0067260_A0067260_00089",
+        "A0067260_A0067260_00090"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades vittnesmål från angivare i brottmål under 1700-talet och påverkade det deras rätt att avlägga ed?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0022",
+      "volume_id": "A0067260",
+      "case_summary": "att fordra dem derföre till något answar, hemstäl¬\nte dock om icke de kunde härutinnan blifwa hörde,\nHenric Biörpe yrkade på förenämde wittnens edeliga\nafhörande uti det mot honom angifne senare mål,\nhwarföre sådan Parte...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00087",
+        "A0067260_A0067260_00088",
+        "A0067260_A0067260_00089",
+        "A0067260_A0067260_00090"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Lars Larsson, svärfadern i Nyhyttan?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0125",
+      "volume_id": "A0067286",
+      "case_summary": "ej allenast förnyelse af\nBruks Patron Runers d. 5 Mar¬\ntii 1755 erhållne inteckning\npå deß den tiden egande,\nfordran 5194 D. 4./. Kopprmt\nutan ock inteckning för\nde sedermera tillökte\n1598 D 28./. Kopprmt alt till\nWänerb...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00506",
+        "A0067286_A0067286_00507",
+        "A0067286_A0067286_00508",
+        "A0067286_A0067286_00509"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer expeditionsbefallningsmannen Petter Östling i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0125",
+      "volume_id": "A0067286",
+      "case_summary": "ej allenast förnyelse af\nBruks Patron Runers d. 5 Mar¬\ntii 1755 erhållne inteckning\npå deß den tiden egande,\nfordran 5194 D. 4./. Kopprmt\nutan ock inteckning för\nde sedermera tillökte\n1598 D 28./. Kopprmt alt till\nWänerb...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00506",
+        "A0067286_A0067286_00507",
+        "A0067286_A0067286_00508",
+        "A0067286_A0067286_00509"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilka grunder och under vilka omständigheter förnyades eller överlämnades inteckningar av fastigheter i 1700-talets rättsprotokoll?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0125",
+      "volume_id": "A0067286",
+      "case_summary": "ej allenast förnyelse af\nBruks Patron Runers d. 5 Mar¬\ntii 1755 erhållne inteckning\npå deß den tiden egande,\nfordran 5194 D. 4./. Kopprmt\nutan ock inteckning för\nde sedermera tillökte\n1598 D 28./. Kopprmt alt till\nWänerb...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00506",
+        "A0067286_A0067286_00507",
+        "A0067286_A0067286_00508",
+        "A0067286_A0067286_00509"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om handelsman Hising i Giöteborg?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0087",
+      "volume_id": "A0067435",
+      "case_summary": "den 19 Maii\nsion den 13 Septemb. 1751, i anse\nende herr til Carlstedt pröf¬\nwäl berättigad til then\nsökte jämkning, och delning\nthem emellan för then skull\ntro öde Sexmännen Swen¬\nChristofferßon och Lars Jons¬\nson förord...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00347",
+        "A0067435_A0067435_00348",
+        "A0067435_A0067435_00349",
+        "A0067435_A0067435_00350"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer änkan Ingebor Fjrellsdotter i Torska bäcken i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0087",
+      "volume_id": "A0067435",
+      "case_summary": "den 19 Maii\nsion den 13 Septemb. 1751, i anse\nende herr til Carlstedt pröf¬\nwäl berättigad til then\nsökte jämkning, och delning\nthem emellan för then skull\ntro öde Sexmännen Swen¬\nChristofferßon och Lars Jons¬\nson förord...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00347",
+        "A0067435_A0067435_00348",
+        "A0067435_A0067435_00349",
+        "A0067435_A0067435_00350"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister rörande skogs- och markägande ledde till rättsliga förbud och viten?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0087",
+      "volume_id": "A0067435",
+      "case_summary": "den 19 Maii\nsion den 13 Septemb. 1751, i anse\nende herr til Carlstedt pröf¬\nwäl berättigad til then\nsökte jämkning, och delning\nthem emellan för then skull\ntro öde Sexmännen Swen¬\nChristofferßon och Lars Jons¬\nson förord...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00347",
+        "A0067435_A0067435_00348",
+        "A0067435_A0067435_00349",
+        "A0067435_A0067435_00350"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Bergsfogden Anders Wijbergs roll vid författandet av likvidationer i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0105",
+      "volume_id": "A0067286",
+      "case_summary": "swaranden egande Förlags¬\nfordran måtte blifwa fast¬\nstäld, till hwilcken ända up¬\nwistes liquidationen, som Bergs¬\nFogden wälbetrodde Anders Wijberg\nförfattadt öfwer Förlagshan¬\ndelen parterne emellan ifrån\noch med d. 2...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00426",
+        "A0067286_A0067286_00427",
+        "A0067286_A0067286_00428",
+        "A0067286_A0067286_00429"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Bergsmannen Jöris Andersson från Prästhyttan i Torsåkers socken i andra mål om förlagsfordringar?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0105",
+      "volume_id": "A0067286",
+      "case_summary": "swaranden egande Förlags¬\nfordran måtte blifwa fast¬\nstäld, till hwilcken ända up¬\nwistes liquidationen, som Bergs¬\nFogden wälbetrodde Anders Wijberg\nförfattadt öfwer Förlagshan¬\ndelen parterne emellan ifrån\noch med d. 2...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00426",
+        "A0067286_A0067286_00427",
+        "A0067286_A0067286_00428",
+        "A0067286_A0067286_00429"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur bedömdes priset på varor och stångjärn som användes som förlag eller betalning i mål om förlagsfordringar vid Bergstingsrätten?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0105",
+      "volume_id": "A0067286",
+      "case_summary": "swaranden egande Förlags¬\nfordran måtte blifwa fast¬\nstäld, till hwilcken ända up¬\nwistes liquidationen, som Bergs¬\nFogden wälbetrodde Anders Wijberg\nförfattadt öfwer Förlagshan¬\ndelen parterne emellan ifrån\noch med d. 2...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00426",
+        "A0067286_A0067286_00427",
+        "A0067286_A0067286_00428",
+        "A0067286_A0067286_00429"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om mästersmeden Tomas Jansson som arbetat vid Torsby Bruk och Billingfors?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0139",
+      "volume_id": "A0067435",
+      "case_summary": "den 26 Junii\ndringar, och har han jämte\nFrön ändringarne för 8 och 1/4\ndell steg fått 9 D: Smt och nå¬\ngrefft, war, som han eij\nkan, å noga minnas: På\nBruks Patron Bomans begie¬\nran frågades om han fått sin\nbetalning ful...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00561",
+        "A0067435_A0067435_00562",
+        "A0067435_A0067435_00563",
+        "A0067435_A0067435_00564"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om rättstvister kopplade till Billingfors manufakturverk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0139",
+      "volume_id": "A0067435",
+      "case_summary": "den 26 Junii\ndringar, och har han jämte\nFrön ändringarne för 8 och 1/4\ndell steg fått 9 D: Smt och nå¬\ngrefft, war, som han eij\nkan, å noga minnas: På\nBruks Patron Bomans begie¬\nran frågades om han fått sin\nbetalning ful...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00561",
+        "A0067435_A0067435_00562",
+        "A0067435_A0067435_00563",
+        "A0067435_A0067435_00564"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "I vilka situationer eller för vilka förseelser kunde rätten utdöma böter för försummelser i rättegången?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0139",
+      "volume_id": "A0067435",
+      "case_summary": "den 26 Junii\ndringar, och har han jämte\nFrön ändringarne för 8 och 1/4\ndell steg fått 9 D: Smt och nå¬\ngrefft, war, som han eij\nkan, å noga minnas: På\nBruks Patron Bomans begie¬\nran frågades om han fått sin\nbetalning ful...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00561",
+        "A0067435_A0067435_00562",
+        "A0067435_A0067435_00563",
+        "A0067435_A0067435_00564"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer sexmannen Per Larsson från Torßåkers sockn i andra arkivhandlingar?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0083",
+      "volume_id": "A0067286",
+      "case_summary": "hyttan Torßåkers sockn\nKiärade Handelsmannen\ni Gefle Herr Axel Johan\nWennerberg genom des biu¬\nbud Rådmannen der¬\nsammastädes Herr\nAnders Westin med påstå¬\nende at utbekomma sin\nhos bemälte Bergs¬\nman eijande förlags¬\nfo...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00333",
+        "A0067286_A0067286_00334",
+        "A0067286_A0067286_00335",
+        "A0067286_A0067286_00336"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om hantering av 'förlagsfordran' i Bergstingets protokoll?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0083",
+      "volume_id": "A0067286",
+      "case_summary": "hyttan Torßåkers sockn\nKiärade Handelsmannen\ni Gefle Herr Axel Johan\nWennerberg genom des biu¬\nbud Rådmannen der¬\nsammastädes Herr\nAnders Westin med påstå¬\nende at utbekomma sin\nhos bemälte Bergs¬\nman eijande förlags¬\nfo...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00333",
+        "A0067286_A0067286_00334",
+        "A0067286_A0067286_00335",
+        "A0067286_A0067286_00336"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur påverkade utestående 'förlagsfordringar' relationen mellan handelsmän och bergsbönder i 1700-talets Bergslag?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0083",
+      "volume_id": "A0067286",
+      "case_summary": "hyttan Torßåkers sockn\nKiärade Handelsmannen\ni Gefle Herr Axel Johan\nWennerberg genom des biu¬\nbud Rådmannen der¬\nsammastädes Herr\nAnders Westin med påstå¬\nende at utbekomma sin\nhos bemälte Bergs¬\nman eijande förlags¬\nfo...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00333",
+        "A0067286_A0067286_00334",
+        "A0067286_A0067286_00335",
+        "A0067286_A0067286_00336"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Lars Larsson Kemo, arbetare vid Junusvando Masugn?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0037",
+      "volume_id": "A0067260",
+      "case_summary": "1770 den 16 Junii\ninfant sig undertecknad.\nBergmästare wid Svap¬\nravara Kopparwärk,\natt therstädes efter\nföregången kundegiö¬\nrelse hålla laga Bergs¬\nTing, närwarande\nsamtelige detta wärks\narbetare.\n§. 1.\nSedan Allmänt T...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00148",
+        "A0067260_A0067260_00149",
+        "A0067260_A0067260_00150",
+        "A0067260_A0067260_00151"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bruksorten Kiengis Bruk i samband med skuldmål?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0037",
+      "volume_id": "A0067260",
+      "case_summary": "1770 den 16 Junii\ninfant sig undertecknad.\nBergmästare wid Svap¬\nravara Kopparwärk,\natt therstädes efter\nföregången kundegiö¬\nrelse hålla laga Bergs¬\nTing, närwarande\nsamtelige detta wärks\narbetare.\n§. 1.\nSedan Allmänt T...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00148",
+        "A0067260_A0067260_00149",
+        "A0067260_A0067260_00150",
+        "A0067260_A0067260_00151"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister gällande arbetares skulder och arbetsvärdering vid bergsbruk under 1700-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0037",
+      "volume_id": "A0067260",
+      "case_summary": "1770 den 16 Junii\ninfant sig undertecknad.\nBergmästare wid Svap¬\nravara Kopparwärk,\natt therstädes efter\nföregången kundegiö¬\nrelse hålla laga Bergs¬\nTing, närwarande\nsamtelige detta wärks\narbetare.\n§. 1.\nSedan Allmänt T...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00148",
+        "A0067260_A0067260_00149",
+        "A0067260_A0067260_00150",
+        "A0067260_A0067260_00151"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Boute Inspector Wallmo på Hellifors?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0063",
+      "volume_id": "A0030234",
+      "case_summary": "No 4.\nKoldrängen Jan Tangring vid Carlsdahl\nder härmed, på begäran af Boute Inspec¬\nWallmo på Hellifors, Kallad och stämd\nnästpågande Hr Hofors Silfwers\nLagtima BergsTing, som börjar vid Hemför¬\nden 23de Denne till hwaro...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00260",
+        "A0030234_A0030234_00261",
+        "A0030234_A0030234_00262",
+        "A0030234_A0030234_00263"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns om Petter Stabe i samband med vittnesmål?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0063",
+      "volume_id": "A0030234",
+      "case_summary": "No 4.\nKoldrängen Jan Tangring vid Carlsdahl\nder härmed, på begäran af Boute Inspec¬\nWallmo på Hellifors, Kallad och stämd\nnästpågande Hr Hofors Silfwers\nLagtima BergsTing, som börjar vid Hemför¬\nden 23de Denne till hwaro...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00260",
+        "A0030234_A0030234_00261",
+        "A0030234_A0030234_00262",
+        "A0030234_A0030234_00263"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilken betydelse hade kristendomskunskap för vittnesed under 1800-talet i svensk rättspraxis?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0063",
+      "volume_id": "A0030234",
+      "case_summary": "No 4.\nKoldrängen Jan Tangring vid Carlsdahl\nder härmed, på begäran af Boute Inspec¬\nWallmo på Hellifors, Kallad och stämd\nnästpågande Hr Hofors Silfwers\nLagtima BergsTing, som börjar vid Hemför¬\nden 23de Denne till hwaro...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00260",
+        "A0030234_A0030234_00261",
+        "A0030234_A0030234_00262",
+        "A0030234_A0030234_00263"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om sexmannen Håkan Jons i Ahlpnas?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0112",
+      "volume_id": "A0067435",
+      "case_summary": "den 2 Junii\nLars Perßon i ulfwettros\ntorp och Erick Nilßon i Näs\nmed påstående at alla\ntre stegz i egen på Hr Asso¬\ngen, hwar uti Käranden\nför hälsten ärsegaren till\nsom falt förmån, må stäl¬\nlas under något ansenli¬\ngit...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00447",
+        "A0067435_A0067435_00448",
+        "A0067435_A0067435_00449",
+        "A0067435_A0067435_00450"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bonden Erik Nilsson i Näs i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0112",
+      "volume_id": "A0067435",
+      "case_summary": "den 2 Junii\nLars Perßon i ulfwettros\ntorp och Erick Nilßon i Näs\nmed påstående at alla\ntre stegz i egen på Hr Asso¬\ngen, hwar uti Käranden\nför hälsten ärsegaren till\nsom falt förmån, må stäl¬\nlas under något ansenli¬\ngit...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00447",
+        "A0067435_A0067435_00448",
+        "A0067435_A0067435_00449",
+        "A0067435_A0067435_00450"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur reglerades tvister kring ägande och arv av bergshemman när en ägare åldrats eller blivit oförmögen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0112",
+      "volume_id": "A0067435",
+      "case_summary": "den 2 Junii\nLars Perßon i ulfwettros\ntorp och Erick Nilßon i Näs\nmed påstående at alla\ntre stegz i egen på Hr Asso¬\ngen, hwar uti Käranden\nför hälsten ärsegaren till\nsom falt förmån, må stäl¬\nlas under något ansenli¬\ngit...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00447",
+        "A0067435_A0067435_00448",
+        "A0067435_A0067435_00449",
+        "A0067435_A0067435_00450"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer husmannen Erik Nilsson i Grönhults höjden i arkivmaterialet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0088",
+      "volume_id": "A0030234",
+      "case_summary": "uti 17te han\nfälldt å¬\nJona Stora wägen norrät åt Silforsa Ma¬\nka, om att henne wäg lida åt Ströjö\nSma pemante kärja att han åtgå kor¬\nkol, tunner och Norwida då Brukjo Bo¬\nfrån Bridsjö skog men icke i än kärt\nKol förbi ...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00366",
+        "A0030234_A0030234_00367",
+        "A0030234_A0030234_00368",
+        "A0030234_A0030234_00369"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Anders Ersson Löf vid Engmåsen i de rättsliga handlingarna?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0088",
+      "volume_id": "A0030234",
+      "case_summary": "uti 17te han\nfälldt å¬\nJona Stora wägen norrät åt Silforsa Ma¬\nka, om att henne wäg lida åt Ströjö\nSma pemante kärja att han åtgå kor¬\nkol, tunner och Norwida då Brukjo Bo¬\nfrån Bridsjö skog men icke i än kärt\nKol förbi ...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00366",
+        "A0030234_A0030234_00367",
+        "A0030234_A0030234_00368",
+        "A0030234_A0030234_00369"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilken roll spelade informanter som belönades för uppgifter om brott i brottsutredningar under 1800-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0088",
+      "volume_id": "A0030234",
+      "case_summary": "uti 17te han\nfälldt å¬\nJona Stora wägen norrät åt Silforsa Ma¬\nka, om att henne wäg lida åt Ströjö\nSma pemante kärja att han åtgå kor¬\nkol, tunner och Norwida då Brukjo Bo¬\nfrån Bridsjö skog men icke i än kärt\nKol förbi ...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00366",
+        "A0030234_A0030234_00367",
+        "A0030234_A0030234_00368",
+        "A0030234_A0030234_00369"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer länsmannen Olof Glad i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0028",
+      "volume_id": "A0067260",
+      "case_summary": "han warit krönt; förthenskull pröfwar\nBergsTings Rätten skiäligt i förmågo af\n5. §. i Kong: koll Mandatet d. 6 Julii 1649 sakfäl¬\nla honom till Tio dal.r Silfmts böter.\n§. 6.\nEfter utwärkad stämning tilltalade Bokhål¬\nla...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00111",
+        "A0067260_A0067260_00112",
+        "A0067260_A0067260_00113",
+        "A0067260_A0067260_00114"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om hustru Sigrid Andersdotter i Torca By och nederCalla Sockn?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0028",
+      "volume_id": "A0067260",
+      "case_summary": "han warit krönt; förthenskull pröfwar\nBergsTings Rätten skiäligt i förmågo af\n5. §. i Kong: koll Mandatet d. 6 Julii 1649 sakfäl¬\nla honom till Tio dal.r Silfmts böter.\n§. 6.\nEfter utwärkad stämning tilltalade Bokhål¬\nla...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00111",
+        "A0067260_A0067260_00112",
+        "A0067260_A0067260_00113",
+        "A0067260_A0067260_00114"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur dömde BergsTingsRätten i fall där bönder inte uppfyllt sina skyldigheter gällande leverans av råvaror till bruken, både vad gäller kvantitet och kvalitet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0028",
+      "volume_id": "A0067260",
+      "case_summary": "han warit krönt; förthenskull pröfwar\nBergsTings Rätten skiäligt i förmågo af\n5. §. i Kong: koll Mandatet d. 6 Julii 1649 sakfäl¬\nla honom till Tio dal.r Silfmts böter.\n§. 6.\nEfter utwärkad stämning tilltalade Bokhål¬\nla...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00111",
+        "A0067260_A0067260_00112",
+        "A0067260_A0067260_00113",
+        "A0067260_A0067260_00114"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer kolaren vid Wihsiö Bruk Per Andersson i Klubbäcken i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0095",
+      "volume_id": "A0067286",
+      "case_summary": "huggit och bortfördt twen¬\nne stycken stockar: men\nnekade för öfrigit så wäl\nsom Anders Olofßon till\ndet öfrige uti Synings¬\nbewiset omförmälte hyg¬\nget, hwilcket de påstodo u¬\nke eller wara af de an¬\ndre swaranderne för...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00386",
+        "A0067286_A0067286_00387",
+        "A0067286_A0067286_00388",
+        "A0067286_A0067286_00389"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om mästersmeder vid Wiksiö Bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0095",
+      "volume_id": "A0067286",
+      "case_summary": "huggit och bortfördt twen¬\nne stycken stockar: men\nnekade för öfrigit så wäl\nsom Anders Olofßon till\ndet öfrige uti Synings¬\nbewiset omförmälte hyg¬\nget, hwilcket de påstodo u¬\nke eller wara af de an¬\ndre swaranderne för...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00386",
+        "A0067286_A0067286_00387",
+        "A0067286_A0067286_00388",
+        "A0067286_A0067286_00389"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades och vilka påföljder gavs för olovlig avverkning och bortförande av timmer från allmänningar under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0095",
+      "volume_id": "A0067286",
+      "case_summary": "huggit och bortfördt twen¬\nne stycken stockar: men\nnekade för öfrigit så wäl\nsom Anders Olofßon till\ndet öfrige uti Synings¬\nbewiset omförmälte hyg¬\nget, hwilcket de påstodo u¬\nke eller wara af de an¬\ndre swaranderne för...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00386",
+        "A0067286_A0067286_00387",
+        "A0067286_A0067286_00388",
+        "A0067286_A0067286_00389"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Masmästaren Jacob Anderssons hustru Brita Samuelsdotter i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0018",
+      "volume_id": "A0067260",
+      "case_summary": "af d. 11. Februarii Nils O.\noch nyttias, besynnerligen förefallen här största\nswårighet, efter som arbetarne härstädes undan¬\nstundom på längre tider måste giöra arbeta wid,\nde andre wärkan, utan att Bokhållaren härstäde...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00071",
+        "A0067260_A0067260_00072",
+        "A0067260_A0067260_00073",
+        "A0067260_A0067260_00074"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Junuufvando masugn i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0018",
+      "volume_id": "A0067260",
+      "case_summary": "af d. 11. Februarii Nils O.\noch nyttias, besynnerligen förefallen här största\nswårighet, efter som arbetarne härstädes undan¬\nstundom på längre tider måste giöra arbeta wid,\nde andre wärkan, utan att Bokhållaren härstäde...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00071",
+        "A0067260_A0067260_00072",
+        "A0067260_A0067260_00073",
+        "A0067260_A0067260_00074"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilka grunder bestred bruksarbetare påförda skulder och kronoutskylder, och hur hanterades sådana tvister av rätten?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0018",
+      "volume_id": "A0067260",
+      "case_summary": "af d. 11. Februarii Nils O.\noch nyttias, besynnerligen förefallen här största\nswårighet, efter som arbetarne härstädes undan¬\nstundom på längre tider måste giöra arbeta wid,\nde andre wärkan, utan att Bokhållaren härstäde...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00071",
+        "A0067260_A0067260_00072",
+        "A0067260_A0067260_00073",
+        "A0067260_A0067260_00074"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bonden Olof Hansson från Lavika?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0073",
+      "volume_id": "A0067260",
+      "case_summary": "i närwaro af Samuel Larsson och Anders Spett från¬\nMerrasjerswi, då Käranden yrkade sitt i stämningen\ngiorde påstående, med förmälan, det han redan\ntill 1773 års BergsTing honom i samma sak instämdt,\ndå Parterne derom så...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00292",
+        "A0067260_A0067260_00293",
+        "A0067260_A0067260_00294",
+        "A0067260_A0067260_00295"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer kronolänsman Isac Bucht i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0073",
+      "volume_id": "A0067260",
+      "case_summary": "i närwaro af Samuel Larsson och Anders Spett från¬\nMerrasjerswi, då Käranden yrkade sitt i stämningen\ngiorde påstående, med förmälan, det han redan\ntill 1773 års BergsTing honom i samma sak instämdt,\ndå Parterne derom så...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00292",
+        "A0067260_A0067260_00293",
+        "A0067260_A0067260_00294",
+        "A0067260_A0067260_00295"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades skulder som uppstått genom förlag för bruksarbete i domstol, och vilka påföljder var vanliga?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0073",
+      "volume_id": "A0067260",
+      "case_summary": "i närwaro af Samuel Larsson och Anders Spett från¬\nMerrasjerswi, då Käranden yrkade sitt i stämningen\ngiorde påstående, med förmälan, det han redan\ntill 1773 års BergsTing honom i samma sak instämdt,\ndå Parterne derom så...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00292",
+        "A0067260_A0067260_00293",
+        "A0067260_A0067260_00294",
+        "A0067260_A0067260_00295"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om brukspatron Nils Petter Fougt, särskilt rörande hans affärsverksamhet eller släktskap med prosten Abraham Fougt?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0009",
+      "volume_id": "A0067260",
+      "case_summary": "derefter och lydde som följer: För den skuld till\nen summa af Siuhundrade Sextio try dahlr 24\nöre kopparmynt, med ränta till sig för hundra\nde om året, ifrån denne dag, tills skulden till\nfullo är betald, hwilken Giäld t...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00035",
+        "A0067260_A0067260_00036",
+        "A0067260_A0067260_00037",
+        "A0067260_A0067260_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om vittnet Anders Hellandt som signerade dokument i Torneå?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0009",
+      "volume_id": "A0067260",
+      "case_summary": "derefter och lydde som följer: För den skuld till\nen summa af Siuhundrade Sextio try dahlr 24\nöre kopparmynt, med ränta till sig för hundra\nde om året, ifrån denne dag, tills skulden till\nfullo är betald, hwilken Giäld t...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00035",
+        "A0067260_A0067260_00036",
+        "A0067260_A0067260_00037",
+        "A0067260_A0067260_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga mönster kan observeras i domstolshandlingar vid tvister rörande gränsdragningen mellan pantförskrivning och villkorligt köp av fast egendom?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0009",
+      "volume_id": "A0067260",
+      "case_summary": "derefter och lydde som följer: För den skuld till\nen summa af Siuhundrade Sextio try dahlr 24\nöre kopparmynt, med ränta till sig för hundra\nde om året, ifrån denne dag, tills skulden till\nfullo är betald, hwilken Giäld t...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00035",
+        "A0067260_A0067260_00036",
+        "A0067260_A0067260_00037",
+        "A0067260_A0067260_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om masmästaren Thomas Spett i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0072",
+      "volume_id": "A0067260",
+      "case_summary": "att samma försträckning skedt till modren Brita Jo¬\nhans dotter: Och som hon ej någon egendom efter sig\nlämnadt, så förmodade han att för slik betalning war¬\nda befriad. Lars Johansson åberopade såsom witt¬\nnen härutinna...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00288",
+        "A0067260_A0067260_00289",
+        "A0067260_A0067260_00290",
+        "A0067260_A0067260_00291"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer gästgifwaren Esaias Olofsson från Låvika i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0072",
+      "volume_id": "A0067260",
+      "case_summary": "att samma försträckning skedt till modren Brita Jo¬\nhans dotter: Och som hon ej någon egendom efter sig\nlämnadt, så förmodade han att för slik betalning war¬\nda befriad. Lars Johansson åberopade såsom witt¬\nnen härutinna...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00288",
+        "A0067260_A0067260_00289",
+        "A0067260_A0067260_00290",
+        "A0067260_A0067260_00291"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterade domstolarna fall av kollektiv arbetsvägran eller uppstudsighet bland bruksarbetare?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0072",
+      "volume_id": "A0067260",
+      "case_summary": "att samma försträckning skedt till modren Brita Jo¬\nhans dotter: Och som hon ej någon egendom efter sig\nlämnadt, så förmodade han att för slik betalning war¬\nda befriad. Lars Johansson åberopade såsom witt¬\nnen härutinna...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00288",
+        "A0067260_A0067260_00289",
+        "A0067260_A0067260_00290",
+        "A0067260_A0067260_00291"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om hyttefogden Erik Larsson i Åsmanshyttan?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0135",
+      "volume_id": "A0067286",
+      "case_summary": "lemnadt någon betal¬\nning; Så är nu på\ndet sättet slutat. At\ntill Hyttans behof på be¬\nmälte Kärandernes\ngor på en Hollma ne¬\ndan för Ryttan belägen\ni Öster ut med ån brede¬\nwid en qwarndam,\nhwarwid förbehölts,\nat denne ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00546",
+        "A0067286_A0067286_00548",
+        "A0067286_A0067286_00549",
+        "A0067286_A0067286_00550"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bekmakaren Johan Wartin vid Långvinds Bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0135",
+      "volume_id": "A0067286",
+      "case_summary": "lemnadt någon betal¬\nning; Så är nu på\ndet sättet slutat. At\ntill Hyttans behof på be¬\nmälte Kärandernes\ngor på en Hollma ne¬\ndan för Ryttan belägen\ni Öster ut med ån brede¬\nwid en qwarndam,\nhwarwid förbehölts,\nat denne ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00546",
+        "A0067286_A0067286_00548",
+        "A0067286_A0067286_00549",
+        "A0067286_A0067286_00550"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka sanktioner eller viten tillämpades mot olovlig åverkan på mark eller egendom vid bergverk och hyttor?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0135",
+      "volume_id": "A0067286",
+      "case_summary": "lemnadt någon betal¬\nning; Så är nu på\ndet sättet slutat. At\ntill Hyttans behof på be¬\nmälte Kärandernes\ngor på en Hollma ne¬\ndan för Ryttan belägen\ni Öster ut med ån brede¬\nwid en qwarndam,\nhwarwid förbehölts,\nat denne ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00546",
+        "A0067286_A0067286_00548",
+        "A0067286_A0067286_00549",
+        "A0067286_A0067286_00550"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bergsman Tore Segelsson som fogde i arkivets handlingar?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0012",
+      "volume_id": "A0067435",
+      "case_summary": "den 26 Aprill\nminska. detta bör til efter\nrättelse allmäneligen kundgiöra\n§. 44.\nUti intaga dskrift andragne\nafledne Anders Swenskons\nänka Brita Jons dott. e¬\nwid nermorde Hr Han\nhuru som hon genom up¬\ndelning och Konst ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00047",
+        "A0067435_A0067435_00048",
+        "A0067435_A0067435_00049",
+        "A0067435_A0067435_00050"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka uppgifter finns det om den avlidne Brukspatron Geijers skogsägande och torpare?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0012",
+      "volume_id": "A0067435",
+      "case_summary": "den 26 Aprill\nminska. detta bör til efter\nrättelse allmäneligen kundgiöra\n§. 44.\nUti intaga dskrift andragne\nafledne Anders Swenskons\nänka Brita Jons dott. e¬\nwid nermorde Hr Han\nhuru som hon genom up¬\ndelning och Konst ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00047",
+        "A0067435_A0067435_00048",
+        "A0067435_A0067435_00049",
+        "A0067435_A0067435_00050"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur användes syningsförrättningar och sexmän i tvister om markrättigheter och etablering av torp?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0012",
+      "volume_id": "A0067435",
+      "case_summary": "den 26 Aprill\nminska. detta bör til efter\nrättelse allmäneligen kundgiöra\n§. 44.\nUti intaga dskrift andragne\nafledne Anders Swenskons\nänka Brita Jons dott. e¬\nwid nermorde Hr Han\nhuru som hon genom up¬\ndelning och Konst ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00047",
+        "A0067435_A0067435_00048",
+        "A0067435_A0067435_00049",
+        "A0067435_A0067435_00050"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer någon med namnet Hassellblad, som måg till familjen Landberg, i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0037",
+      "volume_id": "A0067435",
+      "case_summary": "den 3 Maii\nannor linda än på någon tid\nflyttat en til thes hustrus är\nmoder til thet the i wid Ta¬\nberget tilsamnade bygg\nneder blifwa färdig. tå\nhan genast är sinnad flytte\nhär i från.\nDirecteuren Herr Johan Geijer\nnärw...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00147",
+        "A0067435_A0067435_00148",
+        "A0067435_A0067435_00149",
+        "A0067435_A0067435_00150"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om skogvaktaren Bernt och hans ärenden i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0037",
+      "volume_id": "A0067435",
+      "case_summary": "den 3 Maii\nannor linda än på någon tid\nflyttat en til thes hustrus är\nmoder til thet the i wid Ta¬\nberget tilsamnade bygg\nneder blifwa färdig. tå\nhan genast är sinnad flytte\nhär i från.\nDirecteuren Herr Johan Geijer\nnärw...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00147",
+        "A0067435_A0067435_00148",
+        "A0067435_A0067435_00149",
+        "A0067435_A0067435_00150"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka brottstyper var vanliga gällande stöld eller undanhållande av råvaror i bergsbruksmiljö?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0037",
+      "volume_id": "A0067435",
+      "case_summary": "den 3 Maii\nannor linda än på någon tid\nflyttat en til thes hustrus är\nmoder til thet the i wid Ta¬\nberget tilsamnade bygg\nneder blifwa färdig. tå\nhan genast är sinnad flytte\nhär i från.\nDirecteuren Herr Johan Geijer\nnärw...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00147",
+        "A0067435_A0067435_00148",
+        "A0067435_A0067435_00149",
+        "A0067435_A0067435_00150"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Bergsfogden Anders Wijberg i arkivet, och i vilket sammanhang?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0115",
+      "volume_id": "A0067286",
+      "case_summary": "dationen, som Bergs¬\nFogden Wälbetrodde\nAnders Wijberg författadt,\nöfwer förlagshandeln\nparterne emellan\nifrån och med d. 9. Janua¬\nrii 1766, till och med d. 19 i\ndenne månad, och\nhwarutinnan Jan¬\nAnderßons af und¬\nbångi...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00466",
+        "A0067286_A0067286_00467",
+        "A0067286_A0067286_00468",
+        "A0067286_A0067286_00469"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsmannen Zachris Ersson från Kåfalet i Ofwansiö socken?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0115",
+      "volume_id": "A0067286",
+      "case_summary": "dationen, som Bergs¬\nFogden Wälbetrodde\nAnders Wijberg författadt,\nöfwer förlagshandeln\nparterne emellan\nifrån och med d. 9. Janua¬\nrii 1766, till och med d. 19 i\ndenne månad, och\nhwarutinnan Jan¬\nAnderßons af und¬\nbångi...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00466",
+        "A0067286_A0067286_00467",
+        "A0067286_A0067286_00468",
+        "A0067286_A0067286_00469"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur avgjorde BergsTingsrätten tvister gällande förlagshandeln, särskilt rörande varupriser och räntor?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0115",
+      "volume_id": "A0067286",
+      "case_summary": "dationen, som Bergs¬\nFogden Wälbetrodde\nAnders Wijberg författadt,\nöfwer förlagshandeln\nparterne emellan\nifrån och med d. 9. Janua¬\nrii 1766, till och med d. 19 i\ndenne månad, och\nhwarutinnan Jan¬\nAnderßons af und¬\nbångi...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00466",
+        "A0067286_A0067286_00467",
+        "A0067286_A0067286_00468",
+        "A0067286_A0067286_00469"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer smeden Jönsson i Hornkullen i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0053",
+      "volume_id": "A0067435",
+      "case_summary": "den 12 Maii\nwara annorlunda beskaf¬\nfet en et dricks fader.\nna, om Hångkunnat hwil¬\npå det broder Erick Ers¬\nson wid Sagen undmälan\nupkiöpande dock för hans\npengar, och roendet of¬\nwersson, hwilken tienst,\nhan eij tyckte...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00211",
+        "A0067435_A0067435_00212",
+        "A0067435_A0067435_00213",
+        "A0067435_A0067435_00214"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om borgmannen Nils Mattsson i Gamal Kroppa?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0053",
+      "volume_id": "A0067435",
+      "case_summary": "den 12 Maii\nwara annorlunda beskaf¬\nfet en et dricks fader.\nna, om Hångkunnat hwil¬\npå det broder Erick Ers¬\nson wid Sagen undmälan\nupkiöpande dock för hans\npengar, och roendet of¬\nwersson, hwilken tienst,\nhan eij tyckte...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00211",
+        "A0067435_A0067435_00212",
+        "A0067435_A0067435_00213",
+        "A0067435_A0067435_00214"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga påföljder tillämpades vid olovlig handel med malm under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0053",
+      "volume_id": "A0067435",
+      "case_summary": "den 12 Maii\nwara annorlunda beskaf¬\nfet en et dricks fader.\nna, om Hångkunnat hwil¬\npå det broder Erick Ers¬\nson wid Sagen undmälan\nupkiöpande dock för hans\npengar, och roendet of¬\nwersson, hwilken tienst,\nhan eij tyckte...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00211",
+        "A0067435_A0067435_00212",
+        "A0067435_A0067435_00213",
+        "A0067435_A0067435_00214"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Stens Hytte Hammar i arkivet, och vad är känt om dess verksamhet eller lagare?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0132",
+      "volume_id": "A0067286",
+      "case_summary": "wara skyldige at be¬\ntala den skuld in, å\nbeskaffad person på an¬\nnat ställe Kunde häf¬\nta före, utan at Di¬\nrecteuren Hillerström ha¬\nde at derföre hålla\nsig till Anders Eriks¬\nson sjelf i fall Hil¬\nlerström hade något\n...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00534",
+        "A0067286_A0067286_00535",
+        "A0067286_A0067286_00536",
+        "A0067286_A0067286_00537"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Nåd- och Handelsmannen Simon Ökman i Gefle i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0132",
+      "volume_id": "A0067286",
+      "case_summary": "wara skyldige at be¬\ntala den skuld in, å\nbeskaffad person på an¬\nnat ställe Kunde häf¬\nta före, utan at Di¬\nrecteuren Hillerström ha¬\nde at derföre hålla\nsig till Anders Eriks¬\nson sjelf i fall Hil¬\nlerström hade något\n...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00534",
+        "A0067286_A0067286_00535",
+        "A0067286_A0067286_00536",
+        "A0067286_A0067286_00537"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilka sätt hanterades obetalda förlagsskulder hos bergsmän, och hur verkställdes indrivningen av dessa skulder?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0132",
+      "volume_id": "A0067286",
+      "case_summary": "wara skyldige at be¬\ntala den skuld in, å\nbeskaffad person på an¬\nnat ställe Kunde häf¬\nta före, utan at Di¬\nrecteuren Hillerström ha¬\nde at derföre hålla\nsig till Anders Eriks¬\nson sjelf i fall Hil¬\nlerström hade något\n...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00534",
+        "A0067286_A0067286_00535",
+        "A0067286_A0067286_00536",
+        "A0067286_A0067286_00537"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om boraren Daniel Håkanßon i gruvmiljö?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0060",
+      "volume_id": "A0067435",
+      "case_summary": "den 11 Maii\nnågon skuldat och af tid, hwar¬\nförr icke eller för utzedar\nne kunnat åtaga sig se¬\nstig hetens förjatjande,\ndock likwäl och althen¬\nstund thenn, fast sig hit\nefter allmänt intygande\när af sådant skaffenhet, ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00239",
+        "A0067435_A0067435_00240",
+        "A0067435_A0067435_00241",
+        "A0067435_A0067435_00242"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer fru Lisa Simells löftesskrift i arkivet, och i vilka sammanhang?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0060",
+      "volume_id": "A0067435",
+      "case_summary": "den 11 Maii\nnågon skuldat och af tid, hwar¬\nförr icke eller för utzedar\nne kunnat åtaga sig se¬\nstig hetens förjatjande,\ndock likwäl och althen¬\nstund thenn, fast sig hit\nefter allmänt intygande\när af sådant skaffenhet, ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00239",
+        "A0067435_A0067435_00240",
+        "A0067435_A0067435_00241",
+        "A0067435_A0067435_00242"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka straff och påföljder dömdes ut för fysiska övergrepp och slagsmål i arbetsmiljöer som gruvor eller smedjor under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0060",
+      "volume_id": "A0067435",
+      "case_summary": "den 11 Maii\nnågon skuldat och af tid, hwar¬\nförr icke eller för utzedar\nne kunnat åtaga sig se¬\nstig hetens förjatjande,\ndock likwäl och althen¬\nstund thenn, fast sig hit\nefter allmänt intygande\när af sådant skaffenhet, ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00239",
+        "A0067435_A0067435_00240",
+        "A0067435_A0067435_00241",
+        "A0067435_A0067435_00242"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer vittnet Lars Petter Richan från Falken i andra mål i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0093",
+      "volume_id": "A0030234",
+      "case_summary": "instens wägnar hafva skäl att påyrka\nmålets fullföljande, ej kalla få partin\nnala tillstädeskommit och wäckt någon\nmonvention talan, men 1 st. J. Rätten kä¬\ntet att låta saken, bewid bero.\n.9.\n§. 9.\n1 D. Upropades från f...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00387",
+        "A0030234_A0030234_00388",
+        "A0030234_A0030234_00389",
+        "A0030234_A0030234_00390"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om hemmansägaren Jan Ersson i Ronnfallit i arkivets handlingar?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0093",
+      "volume_id": "A0030234",
+      "case_summary": "instens wägnar hafva skäl att påyrka\nmålets fullföljande, ej kalla få partin\nnala tillstädeskommit och wäckt någon\nmonvention talan, men 1 st. J. Rätten kä¬\ntet att låta saken, bewid bero.\n.9.\n§. 9.\n1 D. Upropades från f...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00387",
+        "A0030234_A0030234_00388",
+        "A0030234_A0030234_00389",
+        "A0030234_A0030234_00390"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av åverkan på skogsmark ledde oftast till rättsliga påföljder, och vilka sanktioner tillämpades?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0093",
+      "volume_id": "A0030234",
+      "case_summary": "instens wägnar hafva skäl att påyrka\nmålets fullföljande, ej kalla få partin\nnala tillstädeskommit och wäckt någon\nmonvention talan, men 1 st. J. Rätten kä¬\ntet att låta saken, bewid bero.\n.9.\n§. 9.\n1 D. Upropades från f...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00387",
+        "A0030234_A0030234_00388",
+        "A0030234_A0030234_00389",
+        "A0030234_A0030234_00390"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer uppgifter om hustru Kierstin Mickelsdotter i samband med bouppteckningar i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0006",
+      "volume_id": "A0067260",
+      "case_summary": "sig till Boupteckningens i ordning bringande;\nSå emedan genom en ny wärdering ej något\nkan utrönas, hwaremot den som redan för sig\ngått blifwit inrättad efter som hwarje persse¬\ndel wid döds timan warit wärd, men ej i an...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00024",
+        "A0067260_A0067260_00025",
+        "A0067260_A0067260_00026"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Vad är känt om fastigheten eller platsen Kurråvara i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0006",
+      "volume_id": "A0067260",
+      "case_summary": "sig till Boupteckningens i ordning bringande;\nSå emedan genom en ny wärdering ej något\nkan utrönas, hwaremot den som redan för sig\ngått blifwit inrättad efter som hwarje persse¬\ndel wid döds timan warit wärd, men ej i an...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00024",
+        "A0067260_A0067260_00025",
+        "A0067260_A0067260_00026"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Vilka typer av tvistemål uppstod kring värdering och förvaltning av egendom vid Bergstinget under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0006",
+      "volume_id": "A0067260",
+      "case_summary": "sig till Boupteckningens i ordning bringande;\nSå emedan genom en ny wärdering ej något\nkan utrönas, hwaremot den som redan för sig\ngått blifwit inrättad efter som hwarje persse¬\ndel wid döds timan warit wärd, men ej i an...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00024",
+        "A0067260_A0067260_00025",
+        "A0067260_A0067260_00026"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Finns det uppgifter om Joachim Berg, som agerade ombud i rättsfall, i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0068",
+      "volume_id": "A0067435",
+      "case_summary": "den 15 Maii\nfinner sig tog ther til ex\n§. 72.\nUti sök,ande puncter hafwa\nsamtelige inbrukaren i\nGåsbarnshjHjHälte Lag utwärc¬\nket stemning å Torpen\nne i nu grufs som det eller\nklockare torpet Olof Mats¬\nson med thes måg ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00271",
+        "A0067435_A0067435_00272",
+        "A0067435_A0067435_00273",
+        "A0067435_A0067435_00274"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Klockare Torpet och dess ägare genom tiderna i arkivmaterialet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0068",
+      "volume_id": "A0067435",
+      "case_summary": "den 15 Maii\nfinner sig tog ther til ex\n§. 72.\nUti sök,ande puncter hafwa\nsamtelige inbrukaren i\nGåsbarnshjHjHälte Lag utwärc¬\nket stemning å Torpen\nne i nu grufs som det eller\nklockare torpet Olof Mats¬\nson med thes måg ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00271",
+        "A0067435_A0067435_00272",
+        "A0067435_A0067435_00273",
+        "A0067435_A0067435_00274"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades markintrång, så kallade 'intag', juridiskt under 1700-talet, och vilka sanktioner tillämpades vid sådana tvister?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0068",
+      "volume_id": "A0067435",
+      "case_summary": "den 15 Maii\nfinner sig tog ther til ex\n§. 72.\nUti sök,ande puncter hafwa\nsamtelige inbrukaren i\nGåsbarnshjHjHälte Lag utwärc¬\nket stemning å Torpen\nne i nu grufs som det eller\nklockare torpet Olof Mats¬\nson med thes måg ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00271",
+        "A0067435_A0067435_00272",
+        "A0067435_A0067435_00273",
+        "A0067435_A0067435_00274"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om skjutsföraren Joseph Karinen i arkivmaterial från Norrland under perioden?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0101",
+      "volume_id": "A0067260",
+      "case_summary": "wärks gamla stångjerns märke, och förmodade bland an¬\nnat deraf nu kunna inhämtas att det Jern Johan Pien¬\nskall sålt, så wäl som hwad Forssman hos honom sedt, med\nkeligen är kommit från Bruket utan des och Bokhålla¬\nren...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00409",
+        "A0067260_A0067260_00410",
+        "A0067260_A0067260_00411",
+        "A0067260_A0067260_00412"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer gästgivaren Johan Mörtberg från Niemis i andra domstolsprotokoll?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0101",
+      "volume_id": "A0067260",
+      "case_summary": "wärks gamla stångjerns märke, och förmodade bland an¬\nnat deraf nu kunna inhämtas att det Jern Johan Pien¬\nskall sålt, så wäl som hwad Forssman hos honom sedt, med\nkeligen är kommit från Bruket utan des och Bokhålla¬\nren...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00409",
+        "A0067260_A0067260_00410",
+        "A0067260_A0067260_00411",
+        "A0067260_A0067260_00412"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka beviskrav och straffpåföljder var vanliga vid olovlig försäljning av stångjärn eller liknande bruksprodukter under 1700-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0101",
+      "volume_id": "A0067260",
+      "case_summary": "wärks gamla stångjerns märke, och förmodade bland an¬\nnat deraf nu kunna inhämtas att det Jern Johan Pien¬\nskall sålt, så wäl som hwad Forssman hos honom sedt, med\nkeligen är kommit från Bruket utan des och Bokhålla¬\nren...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00409",
+        "A0067260_A0067260_00410",
+        "A0067260_A0067260_00411",
+        "A0067260_A0067260_00412"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om länsmannen Abraham Gagberg i Gästrikland?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0147",
+      "volume_id": "A0067286",
+      "case_summary": "År 1770 d. 11 Junii\noch följande dagar\nblef Laga Bergs¬\nTing i Torss åker\noch Giästrikeland\naf undertecknad\nAssessor och Berg¬\nmästare hållit,\ndå Bisittare\ni Rätten woro\nBergsfogden\nWälbetrodde An¬\nders Wijberg, Gruf¬\nwe...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00595",
+        "A0067286_A0067286_00596",
+        "A0067286_A0067286_00597",
+        "A0067286_A0067286_00598"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om rättsliga ärenden kopplade till Kilafors Bruk under sent 1700-tal?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0147",
+      "volume_id": "A0067286",
+      "case_summary": "År 1770 d. 11 Junii\noch följande dagar\nblef Laga Bergs¬\nTing i Torss åker\noch Giästrikeland\naf undertecknad\nAssessor och Berg¬\nmästare hållit,\ndå Bisittare\ni Rätten woro\nBergsfogden\nWälbetrodde An¬\nders Wijberg, Gruf¬\nwe...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00595",
+        "A0067286_A0067286_00596",
+        "A0067286_A0067286_00597",
+        "A0067286_A0067286_00598"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka mönster kan urskiljas gällande otillåten handel med järn vid bergverk och hur reglerades värderingen av den beslagtagna egendomen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0147",
+      "volume_id": "A0067286",
+      "case_summary": "År 1770 d. 11 Junii\noch följande dagar\nblef Laga Bergs¬\nTing i Torss åker\noch Giästrikeland\naf undertecknad\nAssessor och Berg¬\nmästare hållit,\ndå Bisittare\ni Rätten woro\nBergsfogden\nWälbetrodde An¬\nders Wijberg, Gruf¬\nwe...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00595",
+        "A0067286_A0067286_00596",
+        "A0067286_A0067286_00597",
+        "A0067286_A0067286_00598"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om dagsverkskarlen Jan Lind som vittne vid Bergsting?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0088",
+      "volume_id": "A0067286",
+      "case_summary": "År 1769. d. 8. Maji\nblef Lagtima Bergs¬\nTing wid Dannemo¬\nra Grufwor hållit\naf undertecknad\nAssessor och Bergmä¬\nstare då Bisittia¬\nre i Rätten woro\nBergsFogden Wäl¬\nbetrodde Anton Mi¬\nneur KronoGrufwe¬\nFogden Augustin L...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00353",
+        "A0067286_A0067286_00354",
+        "A0067286_A0067286_00355",
+        "A0067286_A0067286_00356"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om inspektorn Nils Eric Wahlstedt från Ortala?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0088",
+      "volume_id": "A0067286",
+      "case_summary": "År 1769. d. 8. Maji\nblef Lagtima Bergs¬\nTing wid Dannemo¬\nra Grufwor hållit\naf undertecknad\nAssessor och Bergmä¬\nstare då Bisittia¬\nre i Rätten woro\nBergsFogden Wäl¬\nbetrodde Anton Mi¬\nneur KronoGrufwe¬\nFogden Augustin L...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00353",
+        "A0067286_A0067286_00354",
+        "A0067286_A0067286_00355",
+        "A0067286_A0067286_00356"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka sanktioner tillämpades för obehörig avverkning av timmer på allmänningar i bruksområden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0088",
+      "volume_id": "A0067286",
+      "case_summary": "År 1769. d. 8. Maji\nblef Lagtima Bergs¬\nTing wid Dannemo¬\nra Grufwor hållit\naf undertecknad\nAssessor och Bergmä¬\nstare då Bisittia¬\nre i Rätten woro\nBergsFogden Wäl¬\nbetrodde Anton Mi¬\nneur KronoGrufwe¬\nFogden Augustin L...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00353",
+        "A0067286_A0067286_00354",
+        "A0067286_A0067286_00355",
+        "A0067286_A0067286_00356"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Soldat Jan Höö i Carlscrona i arkivhandlingar från den aktuella perioden?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0052",
+      "volume_id": "A0067286",
+      "case_summary": "lit 24 tum, likaledes en fu¬\nru 25 tum i stor ändan,\nsamt 9 alnar lång till.\nförsta qwist, der den wa¬\nrit 16 tum tiock, hwilcket\nalt Olof Anderßon nu när¬\nwarande widgieck, förden¬\nskull som samma trän,\nhwilcka till Bru...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00209",
+        "A0067286_A0067286_00210",
+        "A0067286_A0067286_00211",
+        "A0067286_A0067286_00212"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Grönzincka Bruks Slatte hemman i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0052",
+      "volume_id": "A0067286",
+      "case_summary": "lit 24 tum, likaledes en fu¬\nru 25 tum i stor ändan,\nsamt 9 alnar lång till.\nförsta qwist, der den wa¬\nrit 16 tum tiock, hwilcket\nalt Olof Anderßon nu när¬\nwarande widgieck, förden¬\nskull som samma trän,\nhwilcka till Bru...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00209",
+        "A0067286_A0067286_00210",
+        "A0067286_A0067286_00211",
+        "A0067286_A0067286_00212"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades och sanktionerades olovlig avverkning av virke ämnat för storbyggnad när det istället användes för kolved i bergslagsområden under 1700-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0052",
+      "volume_id": "A0067286",
+      "case_summary": "lit 24 tum, likaledes en fu¬\nru 25 tum i stor ändan,\nsamt 9 alnar lång till.\nförsta qwist, der den wa¬\nrit 16 tum tiock, hwilcket\nalt Olof Anderßon nu när¬\nwarande widgieck, förden¬\nskull som samma trän,\nhwilcka till Bru...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00209",
+        "A0067286_A0067286_00210",
+        "A0067286_A0067286_00211",
+        "A0067286_A0067286_00212"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Erik Ersson, ängkarlen från Römbohögden, i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0070",
+      "volume_id": "A0030234",
+      "case_summary": "No 11.\nMemorial\nnummin\nTill nästfrågående lagtima bergeting med\nTelleforss Silfwer och jernmks district\nhålles om laga stämning å följande\nlysaner:\nBagmannen Petter Jansson Höök i Has¬\nsukullen i Hjulsjö be¬\nongkalla Eri...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00290",
+        "A0030234_A0030234_00291",
+        "A0030234_A0030234_00292",
+        "A0030234_A0030234_00293"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Carlsdahls Bruks inblandning i rättsfall rörande järnförsel?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0070",
+      "volume_id": "A0030234",
+      "case_summary": "No 11.\nMemorial\nnummin\nTill nästfrågående lagtima bergeting med\nTelleforss Silfwer och jernmks district\nhålles om laga stämning å följande\nlysaner:\nBagmannen Petter Jansson Höök i Has¬\nsukullen i Hjulsjö be¬\nongkalla Eri...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00290",
+        "A0030234_A0030234_00291",
+        "A0030234_A0030234_00292",
+        "A0030234_A0030234_00293"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av brott rörande oloflig järnförsel behandlades vid Bergs Tingen under 1800-talet och vilka var de typiska påföljderna?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0070",
+      "volume_id": "A0030234",
+      "case_summary": "No 11.\nMemorial\nnummin\nTill nästfrågående lagtima bergeting med\nTelleforss Silfwer och jernmks district\nhålles om laga stämning å följande\nlysaner:\nBagmannen Petter Jansson Höök i Has¬\nsukullen i Hjulsjö be¬\nongkalla Eri...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00290",
+        "A0030234_A0030234_00291",
+        "A0030234_A0030234_00292",
+        "A0030234_A0030234_00293"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bleckslagaren Mäster Anders Gullberg från Söderhamn i fler handlingar?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0170",
+      "volume_id": "A0067286",
+      "case_summary": "wid Forsmarcks Bruk Nils Östling\ntill förledit års BergsTing låtit instem¬\nma emot förtennarena wid Johan\nniofors Jern Manufactur werk\nChristian och Dragoth Reisman\ntillika med deras hustrur Maja Stil¬\nle och Greta Ehren...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00687",
+        "A0067286_A0067286_00688",
+        "A0067286_A0067286_00689",
+        "A0067286_A0067286_00690"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Erik Olssons mor, Margeta Ersdotter, från SöderHagas by?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0170",
+      "volume_id": "A0067286",
+      "case_summary": "wid Forsmarcks Bruk Nils Östling\ntill förledit års BergsTing låtit instem¬\nma emot förtennarena wid Johan\nniofors Jern Manufactur werk\nChristian och Dragoth Reisman\ntillika med deras hustrur Maja Stil¬\nle och Greta Ehren...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00687",
+        "A0067286_A0067286_00688",
+        "A0067286_A0067286_00689",
+        "A0067286_A0067286_00690"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av icke-ekonomiska sanktioner, utöver böter, utdömdes vid snattermål under denna tidsperiod?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0170",
+      "volume_id": "A0067286",
+      "case_summary": "wid Forsmarcks Bruk Nils Östling\ntill förledit års BergsTing låtit instem¬\nma emot förtennarena wid Johan\nniofors Jern Manufactur werk\nChristian och Dragoth Reisman\ntillika med deras hustrur Maja Stil¬\nle och Greta Ehren...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00687",
+        "A0067286_A0067286_00688",
+        "A0067286_A0067286_00689",
+        "A0067286_A0067286_00690"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer vittnet Maria Gustafsdotter i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0009",
+      "volume_id": "A0030234",
+      "case_summary": "Den 8. April\nifrån Sjölandet norr om långnäs, då han hwist\nuppå Vitsnets föreställning att Skogvakta\nren Brundig kunde träffas, som förmodeligen\nfasttog honom, häst och Sögstreck, att han, fått\ntillstånd att taga Stockar...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00035",
+        "A0030234_A0030234_00036",
+        "A0030234_A0030234_00037",
+        "A0030234_A0030234_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om platser benämnda Sågen vid Skälen i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0009",
+      "volume_id": "A0030234",
+      "case_summary": "Den 8. April\nifrån Sjölandet norr om långnäs, då han hwist\nuppå Vitsnets föreställning att Skogvakta\nren Brundig kunde träffas, som förmodeligen\nfasttog honom, häst och Sögstreck, att han, fått\ntillstånd att taga Stockar...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00035",
+        "A0030234_A0030234_00036",
+        "A0030234_A0030234_00037",
+        "A0030234_A0030234_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka påföljder var vanliga för åverkan på skogsegendom och hur specificerades dessa i den tidens förordningar?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0009",
+      "volume_id": "A0030234",
+      "case_summary": "Den 8. April\nifrån Sjölandet norr om långnäs, då han hwist\nuppå Vitsnets föreställning att Skogvakta\nren Brundig kunde träffas, som förmodeligen\nfasttog honom, häst och Sögstreck, att han, fått\ntillstånd att taga Stockar...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00035",
+        "A0030234_A0030234_00036",
+        "A0030234_A0030234_00037",
+        "A0030234_A0030234_00038"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer masmästaren vid Långvinds Bruk Pehr Winroth i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0136",
+      "volume_id": "A0067286",
+      "case_summary": "5. §.\nLikaledes gaf Inspectoren\nFrodlin tillkänna, at den\nemellan honom och Acode¬\nmie Inspectoren Anton Ols¬\nberg här wid Rätten an¬\nhängige och till detta\nBergsTing upskutne twi¬\nstige saken är worden\ni godo och wänlig...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00551",
+        "A0067286_A0067286_00552",
+        "A0067286_A0067286_00553",
+        "A0067286_A0067286_00554"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om mästersven Michael Härme vid Långvinds Bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0136",
+      "volume_id": "A0067286",
+      "case_summary": "5. §.\nLikaledes gaf Inspectoren\nFrodlin tillkänna, at den\nemellan honom och Acode¬\nmie Inspectoren Anton Ols¬\nberg här wid Rätten an¬\nhängige och till detta\nBergsTing upskutne twi¬\nstige saken är worden\ni godo och wänlig...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00551",
+        "A0067286_A0067286_00552",
+        "A0067286_A0067286_00553",
+        "A0067286_A0067286_00554"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga åtgärder vidtogs vid tvister rörande felaktigt hantverk eller undermåliga produkter vid svenska bruk?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0136",
+      "volume_id": "A0067286",
+      "case_summary": "5. §.\nLikaledes gaf Inspectoren\nFrodlin tillkänna, at den\nemellan honom och Acode¬\nmie Inspectoren Anton Ols¬\nberg här wid Rätten an¬\nhängige och till detta\nBergsTing upskutne twi¬\nstige saken är worden\ni godo och wänlig...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00551",
+        "A0067286_A0067286_00552",
+        "A0067286_A0067286_00553",
+        "A0067286_A0067286_00554"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Erick Olßon i Sunde Torp som vittne i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0101",
+      "volume_id": "A0067435",
+      "case_summary": "den 31 Maii\nmåtte kiänner JE Wig¬\ndeltaga uti the utgifter\nsom kiärande giordt\ntit den för 3ne år sedan\nsin genom som efter\nhållne skogz under söknin¬\ngen hwad förr, å deßa\ndelar, fordras 300 D: Kmt\noch ther för utan bli...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00403",
+        "A0067435_A0067435_00404",
+        "A0067435_A0067435_00405",
+        "A0067435_A0067435_00406"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om BruksPatron Christian Robsahm och hans affärsrelationer i Målberga?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0101",
+      "volume_id": "A0067435",
+      "case_summary": "den 31 Maii\nmåtte kiänner JE Wig¬\ndeltaga uti the utgifter\nsom kiärande giordt\ntit den för 3ne år sedan\nsin genom som efter\nhållne skogz under söknin¬\ngen hwad förr, å deßa\ndelar, fordras 300 D: Kmt\noch ther för utan bli...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00403",
+        "A0067435_A0067435_00404",
+        "A0067435_A0067435_00405",
+        "A0067435_A0067435_00406"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister rörande skog och andra egendomar i domstol, och hur ofta löstes dessa genom ekonomiska överenskommelser framför utmätning?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0101",
+      "volume_id": "A0067435",
+      "case_summary": "den 31 Maii\nmåtte kiänner JE Wig¬\ndeltaga uti the utgifter\nsom kiärande giordt\ntit den för 3ne år sedan\nsin genom som efter\nhållne skogz under söknin¬\ngen hwad förr, å deßa\ndelar, fordras 300 D: Kmt\noch ther för utan bli...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00403",
+        "A0067435_A0067435_00404",
+        "A0067435_A0067435_00405",
+        "A0067435_A0067435_00406"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer hammarsmedsmästare Eric Navatröm vid Helleforss i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0016",
+      "volume_id": "A0030234",
+      "case_summary": "Den 8de Aprill\nSlottählsmossarne kallade belägne Norr om Halmckö,\nlia, uti Säfsnäs Socken och Stora hopparbergs Län, icke\nom\nkanna fredas från vallande af angränande eller närbe¬\nägne grannars Wallbjön, hvilket äfven inf...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00063",
+        "A0030234_A0030234_00064",
+        "A0030234_A0030234_00065",
+        "A0030234_A0030234_00066"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om området Slottählsmossarne i Säfsnäs socken?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0016",
+      "volume_id": "A0030234",
+      "case_summary": "Den 8de Aprill\nSlottählsmossarne kallade belägne Norr om Halmckö,\nlia, uti Säfsnäs Socken och Stora hopparbergs Län, icke\nom\nkanna fredas från vallande af angränande eller närbe¬\nägne grannars Wallbjön, hvilket äfven inf...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00063",
+        "A0030234_A0030234_00064",
+        "A0030234_A0030234_00065",
+        "A0030234_A0030234_00066"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister eller överträdelser behandlades vid Bergstingen i relation till gruv- och bruksnäringen, och vilka påföljder utdömdes vanligtvis?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0016",
+      "volume_id": "A0030234",
+      "case_summary": "Den 8de Aprill\nSlottählsmossarne kallade belägne Norr om Halmckö,\nlia, uti Säfsnäs Socken och Stora hopparbergs Län, icke\nom\nkanna fredas från vallande af angränande eller närbe¬\nägne grannars Wallbjön, hvilket äfven inf...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00063",
+        "A0030234_A0030234_00064",
+        "A0030234_A0030234_00065",
+        "A0030234_A0030234_00066"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det ytterligare uppgifter om Anders Erßon, ägaren till den inhägnade egan som nämns i rättegångsprotokoll?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0152",
+      "volume_id": "A0067286",
+      "case_summary": "äfwen Kunnat af den¬\nå Kärande sidan fö¬\nretedde Chartan tydeli¬\ngen intygas, derest å\nder samma icke en¬\ndast och allenast blot¬\nta rågångarne skogs¬\nlotterne emellan blif¬\nwit utstakade, utan\nock de å samma lot¬\nter wa...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00615",
+        "A0067286_A0067286_00616",
+        "A0067286_A0067286_00617",
+        "A0067286_A0067286_00618"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka dokument omnämner Horndahls Bruks förvärv av skogsdelar från hemman i Bryghytte och WästerHästbo?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0152",
+      "volume_id": "A0067286",
+      "case_summary": "äfwen Kunnat af den¬\nå Kärande sidan fö¬\nretedde Chartan tydeli¬\ngen intygas, derest å\nder samma icke en¬\ndast och allenast blot¬\nta rågångarne skogs¬\nlotterne emellan blif¬\nwit utstakade, utan\nock de å samma lot¬\nter wa...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00615",
+        "A0067286_A0067286_00616",
+        "A0067286_A0067286_00617",
+        "A0067286_A0067286_00618"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga principer och sedvanor tillämpades vid tvister om rätten att ta virke från annans mark för stängsel och hägnad i Bergs lägen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0152",
+      "volume_id": "A0067286",
+      "case_summary": "äfwen Kunnat af den¬\nå Kärande sidan fö¬\nretedde Chartan tydeli¬\ngen intygas, derest å\nder samma icke en¬\ndast och allenast blot¬\nta rågångarne skogs¬\nlotterne emellan blif¬\nwit utstakade, utan\nock de å samma lot¬\nter wa...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00615",
+        "A0067286_A0067286_00616",
+        "A0067286_A0067286_00617",
+        "A0067286_A0067286_00618"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergmästare Biuggrens roll i förvaltningen av tackjärnsblåsningar?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0169",
+      "volume_id": "A0067435",
+      "case_summary": "legadt, emedan så många\nhandlingar blifwit af them\nföretedde, at Rätten kun¬\nnat erhålla tilräckeligit\nlins i saken, och den sam¬\nme til slutaligit afgiö¬\nrande sig företaga. wa¬\nrande de flere handlin¬\ngar som angå deße...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00682",
+        "A0067435_A0067435_00683",
+        "A0067435_A0067435_00684",
+        "A0067435_A0067435_00685"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bruket Elfsbacka i handlingar rörande privilegier eller skyldigheter för tackjärnsblåsning?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0169",
+      "volume_id": "A0067435",
+      "case_summary": "legadt, emedan så många\nhandlingar blifwit af them\nföretedde, at Rätten kun¬\nnat erhålla tilräckeligit\nlins i saken, och den sam¬\nme til slutaligit afgiö¬\nrande sig företaga. wa¬\nrande de flere handlin¬\ngar som angå deße...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00682",
+        "A0067435_A0067435_00683",
+        "A0067435_A0067435_00684",
+        "A0067435_A0067435_00685"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister uppstod gällande skatte- och avgiftsskyldighet när tackjärnsproduktion upphörde eller ändrade omfattning?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0169",
+      "volume_id": "A0067435",
+      "case_summary": "legadt, emedan så många\nhandlingar blifwit af them\nföretedde, at Rätten kun¬\nnat erhålla tilräckeligit\nlins i saken, och den sam¬\nme til slutaligit afgiö¬\nrande sig företaga. wa¬\nrande de flere handlin¬\ngar som angå deße...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00682",
+        "A0067435_A0067435_00683",
+        "A0067435_A0067435_00684",
+        "A0067435_A0067435_00685"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Klockaren Kobergs deltagande i kvarnverksamhet i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0088",
+      "volume_id": "A0067260",
+      "case_summary": "uppgifwit Klockaren Koberg såsom deltagande\nuti Afledne Michel Mattsson Wänkos qwarn, denne\nomständigheten ej eller, i fall han ägde grund¬\nwid de 2ne här förut åren 1774 och 1775 hållne Berg\nTing blifwit tillkiänna gifw...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00352",
+        "A0067260_A0067260_00353",
+        "A0067260_A0067260_00354",
+        "A0067260_A0067260_00355"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bruksarbetaren Baltzar Jönssons arbetsförhållanden och eventuella tvister kring militärtjänst?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0088",
+      "volume_id": "A0067260",
+      "case_summary": "uppgifwit Klockaren Koberg såsom deltagande\nuti Afledne Michel Mattsson Wänkos qwarn, denne\nomständigheten ej eller, i fall han ägde grund¬\nwid de 2ne här förut åren 1774 och 1775 hållne Berg\nTing blifwit tillkiänna gifw...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00352",
+        "A0067260_A0067260_00353",
+        "A0067260_A0067260_00354",
+        "A0067260_A0067260_00355"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister om vattenrättigheter och kvarnbyggnation av Bergstingsrätten?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0088",
+      "volume_id": "A0067260",
+      "case_summary": "uppgifwit Klockaren Koberg såsom deltagande\nuti Afledne Michel Mattsson Wänkos qwarn, denne\nomständigheten ej eller, i fall han ägde grund¬\nwid de 2ne här förut åren 1774 och 1775 hållne Berg\nTing blifwit tillkiänna gifw...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00352",
+        "A0067260_A0067260_00353",
+        "A0067260_A0067260_00354",
+        "A0067260_A0067260_00355"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Jöns Olsson i Stenbacken i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0204",
+      "volume_id": "A0067286",
+      "case_summary": "gifwande icke någon af BruksPa¬\ntion Smarai Syskon blifwit utlöste utur\nWifors, så här efter 8 §: 11 Cap: Rätteg\nH. samt reso. på Allmogens beswär\naf d. 29 Novembr. 1756 Herr BruksPa¬\num Smaraeus såsom disponerat ålegat\n...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00825",
+        "A0067286_A0067286_00826",
+        "A0067286_A0067286_00827",
+        "A0067286_A0067286_00828"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om byggmästaren och mjölnaren Johan Jägan?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0204",
+      "volume_id": "A0067286",
+      "case_summary": "gifwande icke någon af BruksPa¬\ntion Smarai Syskon blifwit utlöste utur\nWifors, så här efter 8 §: 11 Cap: Rätteg\nH. samt reso. på Allmogens beswär\naf d. 29 Novembr. 1756 Herr BruksPa¬\num Smaraeus såsom disponerat ålegat\n...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00825",
+        "A0067286_A0067286_00826",
+        "A0067286_A0067286_00827",
+        "A0067286_A0067286_00828"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur fungerade tillsynen över smeder och skogsbrukare enligt dåtida lagstiftning?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0204",
+      "volume_id": "A0067286",
+      "case_summary": "gifwande icke någon af BruksPa¬\ntion Smarai Syskon blifwit utlöste utur\nWifors, så här efter 8 §: 11 Cap: Rätteg\nH. samt reso. på Allmogens beswär\naf d. 29 Novembr. 1756 Herr BruksPa¬\num Smaraeus såsom disponerat ålegat\n...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00825",
+        "A0067286_A0067286_00826",
+        "A0067286_A0067286_00827",
+        "A0067286_A0067286_00828"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka ärenden omnämns Gruvfofgden Jacob Art. Sundberg i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0177",
+      "volume_id": "A0067286",
+      "case_summary": "12./. Koppmt enligit derå nu udermedan B\nning; Och som Erik Erßon denne Jacob\nAnderssons fordran icke gittade bestrida,\nutan förmälte, at den samma hos en dehl\naf händelagaren ännu innefår, ty\nåligger det Erik Erßon såso...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00717",
+        "A0067286_A0067286_00718",
+        "A0067286_A0067286_00719",
+        "A0067286_A0067286_00720"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Hans Olsson, boende nära masugnen vid Högbo Bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0177",
+      "volume_id": "A0067286",
+      "case_summary": "12./. Koppmt enligit derå nu udermedan B\nning; Och som Erik Erßon denne Jacob\nAnderssons fordran icke gittade bestrida,\nutan förmälte, at den samma hos en dehl\naf händelagaren ännu innefår, ty\nåligger det Erik Erßon såso...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00717",
+        "A0067286_A0067286_00718",
+        "A0067286_A0067286_00719",
+        "A0067286_A0067286_00720"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga mönster kan observeras gällande olovligt tillägnande av råmaterial från bruksverksamhet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0177",
+      "volume_id": "A0067286",
+      "case_summary": "12./. Koppmt enligit derå nu udermedan B\nning; Och som Erik Erßon denne Jacob\nAnderssons fordran icke gittade bestrida,\nutan förmälte, at den samma hos en dehl\naf händelagaren ännu innefår, ty\nåligger det Erik Erßon såso...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00717",
+        "A0067286_A0067286_00718",
+        "A0067286_A0067286_00719",
+        "A0067286_A0067286_00720"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bokaren Jan Ersson vid Hofors Bruk i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0044",
+      "volume_id": "A0067286",
+      "case_summary": "beropade och tillstädes waran¬\nde wittnen Byggmästaren\nJöns Andersson, upsättarne,\nPer Perßon och Anders Jans¬\nson, samt Brukskarlen Olof\nErßon förekallade, hwilka\nemedan intet jäf emot dem\nanfördes, eller eljest något\nw...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00177",
+        "A0067286_A0067286_00178",
+        "A0067286_A0067286_00179",
+        "A0067286_A0067286_00180"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om hyttedrängen Erik Jansson vid Hofors Bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0044",
+      "volume_id": "A0067286",
+      "case_summary": "beropade och tillstädes waran¬\nde wittnen Byggmästaren\nJöns Andersson, upsättarne,\nPer Perßon och Anders Jans¬\nson, samt Brukskarlen Olof\nErßon förekallade, hwilka\nemedan intet jäf emot dem\nanfördes, eller eljest något\nw...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00177",
+        "A0067286_A0067286_00178",
+        "A0067286_A0067286_00179",
+        "A0067286_A0067286_00180"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av påföljder drabbades arbetare vid järnbruk för försumlighet eller oordentligt uppförande?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0044",
+      "volume_id": "A0067286",
+      "case_summary": "beropade och tillstädes waran¬\nde wittnen Byggmästaren\nJöns Andersson, upsättarne,\nPer Perßon och Anders Jans¬\nson, samt Brukskarlen Olof\nErßon förekallade, hwilka\nemedan intet jäf emot dem\nanfördes, eller eljest något\nw...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00177",
+        "A0067286_A0067286_00178",
+        "A0067286_A0067286_00179",
+        "A0067286_A0067286_00180"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Bergsfogden Anders Westlings ämbetstid och uppdrag i Hellefors?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0015",
+      "volume_id": "A0030234",
+      "case_summary": "Den 24. April\nWigtertiden Getkreatur, som skada Skogsväxtene\nmed förstörande de uppi hennes skogs Planter och\nfälla Skog af hvad sort som hälstutan Skogvagtaren\nutsyning, undantagande torra Trän och vindhåll¬\nför Wedbran...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00059",
+        "A0030234_A0030234_00060",
+        "A0030234_A0030234_00061",
+        "A0030234_A0030234_00062"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Mästersven Anders Halm i arkivets listor över arbetare eller utbetalningar från Hellefors bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0015",
+      "volume_id": "A0030234",
+      "case_summary": "Den 24. April\nWigtertiden Getkreatur, som skada Skogsväxtene\nmed förstörande de uppi hennes skogs Planter och\nfälla Skog af hvad sort som hälstutan Skogvagtaren\nutsyning, undantagande torra Trän och vindhåll¬\nför Wedbran...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00059",
+        "A0030234_A0030234_00060",
+        "A0030234_A0030234_00061",
+        "A0030234_A0030234_00062"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga sanktioner var vanligast för att hantera förseelser gällande skogsbruk och jakt inom bruksägda områden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0015",
+      "volume_id": "A0030234",
+      "case_summary": "Den 24. April\nWigtertiden Getkreatur, som skada Skogsväxtene\nmed förstörande de uppi hennes skogs Planter och\nfälla Skog af hvad sort som hälstutan Skogvagtaren\nutsyning, undantagande torra Trän och vindhåll¬\nför Wedbran...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00059",
+        "A0030234_A0030234_00060",
+        "A0030234_A0030234_00061",
+        "A0030234_A0030234_00062"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Erik Jönsson, som är nämnd i samband med olovligt näverteg, i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0010",
+      "volume_id": "A0067435",
+      "case_summary": "den 24 Aprill\nes utbrukad at then på nå¬\nger är behöfwer fredas.\nses thes utom Knöppel kiän¬\nnilkför med den östadighet\noch sådan lifnad at i fin¬\ndomens skiäßet honom id¬\nskall kunna ombetros, hwil¬\ncket för anlåtit the...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00039",
+        "A0067435_A0067435_00040",
+        "A0067435_A0067435_00041",
+        "A0067435_A0067435_00042"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Kandsjö Crono och grufwe skog?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0010",
+      "volume_id": "A0067435",
+      "case_summary": "den 24 Aprill\nes utbrukad at then på nå¬\nger är behöfwer fredas.\nses thes utom Knöppel kiän¬\nnilkför med den östadighet\noch sådan lifnad at i fin¬\ndomens skiäßet honom id¬\nskall kunna ombetros, hwil¬\ncket för anlåtit the...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00039",
+        "A0067435_A0067435_00040",
+        "A0067435_A0067435_00041",
+        "A0067435_A0067435_00042"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur bedömdes, värderades och sanktionerades olovligt uttag av naturresurser som näver vid Bergstinget?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0010",
+      "volume_id": "A0067435",
+      "case_summary": "den 24 Aprill\nes utbrukad at then på nå¬\nger är behöfwer fredas.\nses thes utom Knöppel kiän¬\nnilkför med den östadighet\noch sådan lifnad at i fin¬\ndomens skiäßet honom id¬\nskall kunna ombetros, hwil¬\ncket för anlåtit the...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00039",
+        "A0067435_A0067435_00040",
+        "A0067435_A0067435_00041",
+        "A0067435_A0067435_00042"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Anders Carlstedt vid Långbens säter i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0079",
+      "volume_id": "A0067435",
+      "case_summary": "den 18 Maii\nåligger henne til nästa Ting\nutan Tämning wid 10 D. Smt\nsig til swaromål inställa\nså wida förlikning eij\nmellan kommer.\n§. 104.\nNils Stålhandsk, wid sig hit\nthan wille wäl efter stäm¬\narfrig påstå pligt på Gr...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00315",
+        "A0067435_A0067435_00316",
+        "A0067435_A0067435_00317",
+        "A0067435_A0067435_00318"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om gruvbrytaren Jan Horn?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0079",
+      "volume_id": "A0067435",
+      "case_summary": "den 18 Maii\nåligger henne til nästa Ting\nutan Tämning wid 10 D. Smt\nsig til swaromål inställa\nså wida förlikning eij\nmellan kommer.\n§. 104.\nNils Stålhandsk, wid sig hit\nthan wille wäl efter stäm¬\narfrig påstå pligt på Gr...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00315",
+        "A0067435_A0067435_00316",
+        "A0067435_A0067435_00317",
+        "A0067435_A0067435_00318"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka påföljder och ersättningar utdömdes vid olovligt nyttjande av naturresurser som skog och mineraler?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0079",
+      "volume_id": "A0067435",
+      "case_summary": "den 18 Maii\nåligger henne til nästa Ting\nutan Tämning wid 10 D. Smt\nsig til swaromål inställa\nså wida förlikning eij\nmellan kommer.\n§. 104.\nNils Stålhandsk, wid sig hit\nthan wille wäl efter stäm¬\narfrig påstå pligt på Gr...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00315",
+        "A0067435_A0067435_00316",
+        "A0067435_A0067435_00317",
+        "A0067435_A0067435_00318"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om mästersmeden Anders Jansson vid Klafors Biul i andra rättsfall gällande stöld av järn?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0192",
+      "volume_id": "A0067286",
+      "case_summary": "så et Schilling icke är, som orden Full¬\nmakten lyda, förpliktade någon omstän¬\ndighet sig begifwa, eller något sluta\nutan at förut inhämta Herr Hofman¬\nskalkens yttrande, ther han Schilling\nså nödigt finner, eller om he...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00777",
+        "A0067286_A0067286_00778",
+        "A0067286_A0067286_00779",
+        "A0067286_A0067286_00780"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsfogden Anton Mineurs ämbetsutövning i arkivmaterial från bergsting?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0192",
+      "volume_id": "A0067286",
+      "case_summary": "så et Schilling icke är, som orden Full¬\nmakten lyda, förpliktade någon omstän¬\ndighet sig begifwa, eller något sluta\nutan at förut inhämta Herr Hofman¬\nskalkens yttrande, ther han Schilling\nså nödigt finner, eller om he...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00777",
+        "A0067286_A0067286_00778",
+        "A0067286_A0067286_00779",
+        "A0067286_A0067286_00780"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka sociala och ekonomiska mönster kan urskiljas i de fall av olovlig järnhandel som behandlades vid bergsting, och vilka typer av straff utdömdes?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0192",
+      "volume_id": "A0067286",
+      "case_summary": "så et Schilling icke är, som orden Full¬\nmakten lyda, förpliktade någon omstän¬\ndighet sig begifwa, eller något sluta\nutan at förut inhämta Herr Hofman¬\nskalkens yttrande, ther han Schilling\nså nödigt finner, eller om he...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00777",
+        "A0067286_A0067286_00778",
+        "A0067286_A0067286_00779",
+        "A0067286_A0067286_00780"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om bergsmannen Pehr Anderßon från Järbo i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0054",
+      "volume_id": "A0067286",
+      "case_summary": "förlagsfordran hos Olof\nErßon till en summa af\nFyra Tusende Siutio en\ndaler 25./. Kopparmynt\nhärmedelst för fast och o¬\nstridig förklarad, för hwil¬\nken bemälte Handelsman\nifrån nyßnemde Liquidations\ndato eller d. 28 Mar...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00217",
+        "A0067286_A0067286_00218",
+        "A0067286_A0067286_00219",
+        "A0067286_A0067286_00220"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Fru Anna Almgren i samband med fordringsöverlåtelser?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0054",
+      "volume_id": "A0067286",
+      "case_summary": "förlagsfordran hos Olof\nErßon till en summa af\nFyra Tusende Siutio en\ndaler 25./. Kopparmynt\nhärmedelst för fast och o¬\nstridig förklarad, för hwil¬\nken bemälte Handelsman\nifrån nyßnemde Liquidations\ndato eller d. 28 Mar...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00217",
+        "A0067286_A0067286_00218",
+        "A0067286_A0067286_00219",
+        "A0067286_A0067286_00220"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister uppstod rörande förlagsavtal och beräkning av ränta eller förläggarvinst i järnhanteringen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0054",
+      "volume_id": "A0067286",
+      "case_summary": "förlagsfordran hos Olof\nErßon till en summa af\nFyra Tusende Siutio en\ndaler 25./. Kopparmynt\nhärmedelst för fast och o¬\nstridig förklarad, för hwil¬\nken bemälte Handelsman\nifrån nyßnemde Liquidations\ndato eller d. 28 Mar...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00217",
+        "A0067286_A0067286_00218",
+        "A0067286_A0067286_00219",
+        "A0067286_A0067286_00220"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Fru Mattßons förekomst i rättsliga mål i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0064",
+      "volume_id": "A0067435",
+      "case_summary": "den 15 Maii\nskulden kommat upwises\nherre igenom then\nstadfästad och hwarföru¬\ntan Borgmans förskrif¬\nningen emot Kongl. sorlagz¬\nordningen icke giälla.\n§ 58.\nFru Lisa Fernell til talade\ngenom des betient Olof\nKlingberg, ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00255",
+        "A0067435_A0067435_00256",
+        "A0067435_A0067435_00257",
+        "A0067435_A0067435_00258"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer platsen Horns H.r Husbacke i andra protokoll gällande malmrelaterade tvister?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0064",
+      "volume_id": "A0067435",
+      "case_summary": "den 15 Maii\nskulden kommat upwises\nherre igenom then\nstadfästad och hwarföru¬\ntan Borgmans förskrif¬\nningen emot Kongl. sorlagz¬\nordningen icke giälla.\n§ 58.\nFru Lisa Fernell til talade\ngenom des betient Olof\nKlingberg, ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00255",
+        "A0067435_A0067435_00256",
+        "A0067435_A0067435_00257",
+        "A0067435_A0067435_00258"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades anklagelser om olovlig malmplockning inom bruksmiljöer, och vilka typer av bevisföring var vanliga i sådana mål?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0064",
+      "volume_id": "A0067435",
+      "case_summary": "den 15 Maii\nskulden kommat upwises\nherre igenom then\nstadfästad och hwarföru¬\ntan Borgmans förskrif¬\nningen emot Kongl. sorlagz¬\nordningen icke giälla.\n§ 58.\nFru Lisa Fernell til talade\ngenom des betient Olof\nKlingberg, ...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00255",
+        "A0067435_A0067435_00256",
+        "A0067435_A0067435_00257",
+        "A0067435_A0067435_00258"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Nils Jönsson vid hyttan?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0002",
+      "volume_id": "A0067435",
+      "case_summary": "den 22 Aprill\npröfwat samt tilstånd erhål¬\ntill stadnandes eljest sådant\nföregrufwo fogdens räkning.\nkilt tidie igenom\nngden Fahlbecks Räkning\nsedan then efterRättens til¬\nsäjelse blifwit rättad, för\nhel under hafde gruf...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00010",
+        "A0067435_A0067435_00011",
+        "A0067435_A0067435_00012"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Förekommer vittnet Christopher Larsson i närvarohyttan i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0002",
+      "volume_id": "A0067435",
+      "case_summary": "den 22 Aprill\npröfwat samt tilstånd erhål¬\ntill stadnandes eljest sådant\nföregrufwo fogdens räkning.\nkilt tidie igenom\nngden Fahlbecks Räkning\nsedan then efterRättens til¬\nsäjelse blifwit rättad, för\nhel under hafde gruf...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00010",
+        "A0067435_A0067435_00011",
+        "A0067435_A0067435_00012"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "I vilka rättsliga sammanhang användes tackjärn som betalningsmedel för skulder?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0002",
+      "volume_id": "A0067435",
+      "case_summary": "den 22 Aprill\npröfwat samt tilstånd erhål¬\ntill stadnandes eljest sådant\nföregrufwo fogdens räkning.\nkilt tidie igenom\nngden Fahlbecks Räkning\nsedan then efterRättens til¬\nsäjelse blifwit rättad, för\nhel under hafde gruf...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00010",
+        "A0067435_A0067435_00011",
+        "A0067435_A0067435_00012"
+      ],
+      "num_relevant": 3
+    },
+    {
+      "query": "Förekommer bruksarbetaren Johan Johansson Packare i Torneå Fors i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0091",
+      "volume_id": "A0067260",
+      "case_summary": "han, i anseende till det lefwererade och här\nofwanomnämde Smöret skall hafwa twenne\nwittnen, nem. Bruksarbetarne Olof Larsson\noch Johan Johansson Packare i Torneå Fors, dem han\nbock nu ej haft tillfälle att lagligen för ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00364",
+        "A0067260_A0067260_00365",
+        "A0067260_A0067260_00366",
+        "A0067260_A0067260_00367"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Anders Nilsson Rickare som ägde skattland i Gellivara Lappmark?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0091",
+      "volume_id": "A0067260",
+      "case_summary": "han, i anseende till det lefwererade och här\nofwanomnämde Smöret skall hafwa twenne\nwittnen, nem. Bruksarbetarne Olof Larsson\noch Johan Johansson Packare i Torneå Fors, dem han\nbock nu ej haft tillfälle att lagligen för ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00364",
+        "A0067260_A0067260_00365",
+        "A0067260_A0067260_00366",
+        "A0067260_A0067260_00367"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister kring bruksarbetares skulder och avtal vid Bergsting?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0091",
+      "volume_id": "A0067260",
+      "case_summary": "han, i anseende till det lefwererade och här\nofwanomnämde Smöret skall hafwa twenne\nwittnen, nem. Bruksarbetarne Olof Larsson\noch Johan Johansson Packare i Torneå Fors, dem han\nbock nu ej haft tillfälle att lagligen för ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00364",
+        "A0067260_A0067260_00365",
+        "A0067260_A0067260_00366",
+        "A0067260_A0067260_00367"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om hammarsmedsmästaren Christopher Hansson från Kiengio?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0076",
+      "volume_id": "A0067260",
+      "case_summary": "samt sedan sielf jämte öfrige swaranden wid förlust.\naf widare talan sig här wid rätten infinna och Bergs¬\nTingsRättens sluteliga utslag afaksa: Föröfrigt och eme¬\ndan Herr BruksPatron genom flera inför Bergs¬\nTingsRätte...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00304",
+        "A0067260_A0067260_00305",
+        "A0067260_A0067260_00306",
+        "A0067260_A0067260_00307"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Brita Ericsdotter Biörck, omnämnd i samband med skogsbrand på Renberget, i andra mål?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0076",
+      "volume_id": "A0067260",
+      "case_summary": "samt sedan sielf jämte öfrige swaranden wid förlust.\naf widare talan sig här wid rätten infinna och Bergs¬\nTingsRättens sluteliga utslag afaksa: Föröfrigt och eme¬\ndan Herr BruksPatron genom flera inför Bergs¬\nTingsRätte...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00304",
+        "A0067260_A0067260_00305",
+        "A0067260_A0067260_00306",
+        "A0067260_A0067260_00307"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av sanktioner och viten tillämpades av domstolar vid tvister rörande privilegier och brukande av egendom?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0076",
+      "volume_id": "A0067260",
+      "case_summary": "samt sedan sielf jämte öfrige swaranden wid förlust.\naf widare talan sig här wid rätten infinna och Bergs¬\nTingsRättens sluteliga utslag afaksa: Föröfrigt och eme¬\ndan Herr BruksPatron genom flera inför Bergs¬\nTingsRätte...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00304",
+        "A0067260_A0067260_00305",
+        "A0067260_A0067260_00306",
+        "A0067260_A0067260_00307"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Borstrud Gästgifware Gård i arkivmaterial från 1700-talet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0165",
+      "volume_id": "A0067435",
+      "case_summary": "afhörande. År och dag\nsom förut\nDhetima Borg Tingz\nRätten, dom öfwer\ndet kiäromål, som\nefter lagestämning\nBrorz Fiscalen i Tranne¬\nland, nu mera afle\nHerr Carl Ryting i lifs¬\ntiden, å ämbetes wäg¬\nner wid lagtima\nBerg Ti...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00666",
+        "A0067435_A0067435_00667",
+        "A0067435_A0067435_00668",
+        "A0067435_A0067435_00669"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Brukspatron Olof Schagerström och hans ägarintressen i bergverk under mitten av 1700-talet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0165",
+      "volume_id": "A0067435",
+      "case_summary": "afhörande. År och dag\nsom förut\nDhetima Borg Tingz\nRätten, dom öfwer\ndet kiäromål, som\nefter lagestämning\nBrorz Fiscalen i Tranne¬\nland, nu mera afle\nHerr Carl Ryting i lifs¬\ntiden, å ämbetes wäg¬\nner wid lagtima\nBerg Ti...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00666",
+        "A0067435_A0067435_00667",
+        "A0067435_A0067435_00668",
+        "A0067435_A0067435_00669"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av sanktioner och tvister uppstod när brukspatroner inte följde de kungliga resolutionerna angående järntillverkning på 1700-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0165",
+      "volume_id": "A0067435",
+      "case_summary": "afhörande. År och dag\nsom förut\nDhetima Borg Tingz\nRätten, dom öfwer\ndet kiäromål, som\nefter lagestämning\nBrorz Fiscalen i Tranne¬\nland, nu mera afle\nHerr Carl Ryting i lifs¬\ntiden, å ämbetes wäg¬\nner wid lagtima\nBerg Ti...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00666",
+        "A0067435_A0067435_00667",
+        "A0067435_A0067435_00668",
+        "A0067435_A0067435_00669"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer hammarsmedsmästaren Carl Joh: Glock från Gustafströms Bruk i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0097",
+      "volume_id": "A0030234",
+      "case_summary": "Litt. A.\nstadde Smeder vid Säpp¬\nVerken till 1850.\nVia Carlsdahl\nCarlsdahl\nFredr. Kihlström\ntare\nJan Elg\nEder Jaqvert\nInstrumente P. A. Sternelius\n§. A. Verneuren\nHend. Hedling\nJacob Heillingz\nCarl Ersson\nningar\nOlof Hju...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00403",
+        "A0030234_A0030234_00404",
+        "A0030234_A0030234_00405",
+        "A0030234_A0030234_00406"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om torparen Olof Faneson från Nyttorp som Sexman vid Bergsdags Rätt?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0097",
+      "volume_id": "A0030234",
+      "case_summary": "Litt. A.\nstadde Smeder vid Säpp¬\nVerken till 1850.\nVia Carlsdahl\nCarlsdahl\nFredr. Kihlström\ntare\nJan Elg\nEder Jaqvert\nInstrumente P. A. Sternelius\n§. A. Verneuren\nHend. Hedling\nJacob Heillingz\nCarl Ersson\nningar\nOlof Hju...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00403",
+        "A0030234_A0030234_00404",
+        "A0030234_A0030234_00405",
+        "A0030234_A0030234_00406"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur tillsattes och fungerade Bergsdags Rättens Sexmän i 1800-talets svenska rättsväsende?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0097",
+      "volume_id": "A0030234",
+      "case_summary": "Litt. A.\nstadde Smeder vid Säpp¬\nVerken till 1850.\nVia Carlsdahl\nCarlsdahl\nFredr. Kihlström\ntare\nJan Elg\nEder Jaqvert\nInstrumente P. A. Sternelius\n§. A. Verneuren\nHend. Hedling\nJacob Heillingz\nCarl Ersson\nningar\nOlof Hju...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00403",
+        "A0030234_A0030234_00404",
+        "A0030234_A0030234_00405",
+        "A0030234_A0030234_00406"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Råd- och Handelsmannen Joachim Hindrich Maii i Gefle i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0104",
+      "volume_id": "A0067286",
+      "case_summary": "för detta aflagde wittnes¬\ntiden betygadt, det de icke\nKunnat kiänna igen\nde ställe, eller at det är\ndet samma, hwarifrån\nde hulpit Olof Jonßon\nat afföra något timmer,\nden omständigheten jem¬\nwäl at en stock uti Olof\nJön...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00422",
+        "A0067286_A0067286_00423",
+        "A0067286_A0067286_00424",
+        "A0067286_A0067286_00425"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Bergsfogden Anders Wijberg i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0104",
+      "volume_id": "A0067286",
+      "case_summary": "för detta aflagde wittnes¬\ntiden betygadt, det de icke\nKunnat kiänna igen\nde ställe, eller at det är\ndet samma, hwarifrån\nde hulpit Olof Jonßon\nat afföra något timmer,\nden omständigheten jem¬\nwäl at en stock uti Olof\nJön...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00422",
+        "A0067286_A0067286_00423",
+        "A0067286_A0067286_00424",
+        "A0067286_A0067286_00425"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka tvister uppstod vanligast mellan handelsmän och bergsmän gällande förlagsavtal, och hur hanterades dessa rättsligt?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0104",
+      "volume_id": "A0067286",
+      "case_summary": "för detta aflagde wittnes¬\ntiden betygadt, det de icke\nKunnat kiänna igen\nde ställe, eller at det är\ndet samma, hwarifrån\nde hulpit Olof Jonßon\nat afföra något timmer,\nden omständigheten jem¬\nwäl at en stock uti Olof\nJön...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00422",
+        "A0067286_A0067286_00423",
+        "A0067286_A0067286_00424",
+        "A0067286_A0067286_00425"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bokhållaren Eric Renman i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0026",
+      "volume_id": "A0067260",
+      "case_summary": "af Protocollet bemälte Bergström och des\nmeddelägare häröfwer meddelas skulle,\n§. 6.\nTilltalade efter utwärkad stämning Bokhål¬\nlaren Eric Renman Bonden unga Lars Nilsson\ni wittjerf för det han innewarande år efter\nsatt ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00103",
+        "A0067260_A0067260_00104",
+        "A0067260_A0067260_00105",
+        "A0067260_A0067260_00106"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Christopher Persson i Åhrbyn, särskilt rörande hans handel med järn?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0026",
+      "volume_id": "A0067260",
+      "case_summary": "af Protocollet bemälte Bergström och des\nmeddelägare häröfwer meddelas skulle,\n§. 6.\nTilltalade efter utwärkad stämning Bokhål¬\nlaren Eric Renman Bonden unga Lars Nilsson\ni wittjerf för det han innewarande år efter\nsatt ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00103",
+        "A0067260_A0067260_00104",
+        "A0067260_A0067260_00105",
+        "A0067260_A0067260_00106"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades rättsligt uteblivna leveranser av kol till bruken, och vilka sanktioner var vanligast i sådana mål?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0026",
+      "volume_id": "A0067260",
+      "case_summary": "af Protocollet bemälte Bergström och des\nmeddelägare häröfwer meddelas skulle,\n§. 6.\nTilltalade efter utwärkad stämning Bokhål¬\nlaren Eric Renman Bonden unga Lars Nilsson\ni wittjerf för det han innewarande år efter\nsatt ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00103",
+        "A0067260_A0067260_00104",
+        "A0067260_A0067260_00105",
+        "A0067260_A0067260_00106"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Bergsfogden Anders Wijberg i Parterne?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0027",
+      "volume_id": "A0067286",
+      "case_summary": "nens skuld blifwit utsatt,\ntill 1659 D 18 2/6./. Krmt, och såle¬\ndes 319 D. 17⅓./. dito mynt stor.\nre än samma skuld fin¬\nnes wara af Handelsman¬\nnen Bauman wid motbo¬\nkens afslutande d. 21 Maji\nsist. Erik Olßon påförd, ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00108",
+        "A0067286_A0067286_00109",
+        "A0067286_A0067286_00110",
+        "A0067286_A0067286_00111"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsmannen Jan Anderßon i Krall ofwansiö sockn?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0027",
+      "volume_id": "A0067286",
+      "case_summary": "nens skuld blifwit utsatt,\ntill 1659 D 18 2/6./. Krmt, och såle¬\ndes 319 D. 17⅓./. dito mynt stor.\nre än samma skuld fin¬\nnes wara af Handelsman¬\nnen Bauman wid motbo¬\nkens afslutande d. 21 Maji\nsist. Erik Olßon påförd, ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00108",
+        "A0067286_A0067286_00109",
+        "A0067286_A0067286_00110",
+        "A0067286_A0067286_00111"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur reglerades och bestreds värderingen av stångjärn som användes för avbetalning av förlagsskulder?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0027",
+      "volume_id": "A0067286",
+      "case_summary": "nens skuld blifwit utsatt,\ntill 1659 D 18 2/6./. Krmt, och såle¬\ndes 319 D. 17⅓./. dito mynt stor.\nre än samma skuld fin¬\nnes wara af Handelsman¬\nnen Bauman wid motbo¬\nkens afslutande d. 21 Maji\nsist. Erik Olßon påförd, ...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00108",
+        "A0067286_A0067286_00109",
+        "A0067286_A0067286_00110",
+        "A0067286_A0067286_00111"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om bruksarbetaren Samuel Johansson Peckare vid Tornéåsbro Masugn?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0074",
+      "volume_id": "A0067260",
+      "case_summary": "han af Johan Larsson utbekommo penningar, skulle han för\ndem at Herr BruksPatron aflämna; men skulle återde\nJohan Larsson ej fullgiöra sine förbindelser; så lärer han be¬\nblifwa nödsakad förese sig om andra utwägars\ntill...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00296",
+        "A0067260_A0067260_00297",
+        "A0067260_A0067260_00298",
+        "A0067260_A0067260_00299"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Arendt Grape, participant vid Törneå Jernbruk, i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0074",
+      "volume_id": "A0067260",
+      "case_summary": "han af Johan Larsson utbekommo penningar, skulle han för\ndem at Herr BruksPatron aflämna; men skulle återde\nJohan Larsson ej fullgiöra sine förbindelser; så lärer han be¬\nblifwa nödsakad förese sig om andra utwägars\ntill...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00296",
+        "A0067260_A0067260_00297",
+        "A0067260_A0067260_00298",
+        "A0067260_A0067260_00299"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister kring rätten att bygga och driva kvarnar eller använda strömfall i bruksmiljöer, och vilka privilegier åberopades?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0074",
+      "volume_id": "A0067260",
+      "case_summary": "han af Johan Larsson utbekommo penningar, skulle han för\ndem at Herr BruksPatron aflämna; men skulle återde\nJohan Larsson ej fullgiöra sine förbindelser; så lärer han be¬\nblifwa nödsakad förese sig om andra utwägars\ntill...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00296",
+        "A0067260_A0067260_00297",
+        "A0067260_A0067260_00298",
+        "A0067260_A0067260_00299"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om båtbyggaren Hamingsson?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0135",
+      "volume_id": "A0067435",
+      "case_summary": "den 25 Junii\ngamla Böten war förlorad,\nstod det uti BruksPatron\nullmarks behag, at anwän¬\nda ther andel der uti, som\nhan behagade, Men efter\ningen instalt der om gior¬\ndel, och han stod för oråk\nnyttiade sig hwad duga\nly...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00545",
+        "A0067435_A0067435_00546",
+        "A0067435_A0067435_00547",
+        "A0067435_A0067435_00548"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bonden Jonas Carlßon i Gräsas?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0135",
+      "volume_id": "A0067435",
+      "case_summary": "den 25 Junii\ngamla Böten war förlorad,\nstod det uti BruksPatron\nullmarks behag, at anwän¬\nda ther andel der uti, som\nhan behagade, Men efter\ningen instalt der om gior¬\ndel, och han stod för oråk\nnyttiade sig hwad duga\nly...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00545",
+        "A0067435_A0067435_00546",
+        "A0067435_A0067435_00547",
+        "A0067435_A0067435_00548"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga påföljder var vanliga vid olovligt tillgrepp av naturresurser, såsom skogsprodukter?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0135",
+      "volume_id": "A0067435",
+      "case_summary": "den 25 Junii\ngamla Böten war förlorad,\nstod det uti BruksPatron\nullmarks behag, at anwän¬\nda ther andel der uti, som\nhan behagade, Men efter\ningen instalt der om gior¬\ndel, och han stod för oråk\nnyttiade sig hwad duga\nly...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00545",
+        "A0067435_A0067435_00546",
+        "A0067435_A0067435_00547",
+        "A0067435_A0067435_00548"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Olof Josephsson i Pelle i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0008",
+      "volume_id": "A0067260",
+      "case_summary": "några jernstycken, dels af ordinarie Stångjern\nbels af det så kallade yyjernet, då wittnet fåå\ngat honom om han hade Stål, hwarpå han swa¬\nrat nej; men emedan wittnet förmodade det¬\nsådant wore endast en undanflyckt, så ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00031",
+        "A0067260_A0067260_00032",
+        "A0067260_A0067260_00033",
+        "A0067260_A0067260_00034"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Kierstin Häricksdotter?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0008",
+      "volume_id": "A0067260",
+      "case_summary": "några jernstycken, dels af ordinarie Stångjern\nbels af det så kallade yyjernet, då wittnet fåå\ngat honom om han hade Stål, hwarpå han swa¬\nrat nej; men emedan wittnet förmodade det¬\nsådant wore endast en undanflyckt, så ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00031",
+        "A0067260_A0067260_00032",
+        "A0067260_A0067260_00033",
+        "A0067260_A0067260_00034"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilket sätt reglerades och bestraffades olaga handel med bruksvaror, såsom järn, under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0008",
+      "volume_id": "A0067260",
+      "case_summary": "några jernstycken, dels af ordinarie Stångjern\nbels af det så kallade yyjernet, då wittnet fåå\ngat honom om han hade Stål, hwarpå han swa¬\nrat nej; men emedan wittnet förmodade det¬\nsådant wore endast en undanflyckt, så ...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00031",
+        "A0067260_A0067260_00032",
+        "A0067260_A0067260_00033",
+        "A0067260_A0067260_00034"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer förmyndaren Jöns Persson i Råneå By i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0097",
+      "volume_id": "A0067260",
+      "case_summary": "d 17 Maji detta år af Inspectoren Olof Georg Brodinhi\nlämnade Orlofs sedel från Melderskerns Bruk, med\nförmälan, det han ej Kan för god antaga, min\ndra erkiänna den honom deruti påförde skuld stöld\n132 RDr, så wida han e...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00393",
+        "A0067260_A0067260_00394",
+        "A0067260_A0067260_00395",
+        "A0067260_A0067260_00396"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om smedsdrängen Carl Ahlgren vid Meldersteins Bruk?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0097",
+      "volume_id": "A0067260",
+      "case_summary": "d 17 Maji detta år af Inspectoren Olof Georg Brodinhi\nlämnade Orlofs sedel från Melderskerns Bruk, med\nförmälan, det han ej Kan för god antaga, min\ndra erkiänna den honom deruti påförde skuld stöld\n132 RDr, så wida han e...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00393",
+        "A0067260_A0067260_00394",
+        "A0067260_A0067260_00395",
+        "A0067260_A0067260_00396"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "På vilka sätt samarbetade länsmän och domstolar vid eftersökande av misstänkta eller uteblivna personer?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067260-0097",
+      "volume_id": "A0067260",
+      "case_summary": "d 17 Maji detta år af Inspectoren Olof Georg Brodinhi\nlämnade Orlofs sedel från Melderskerns Bruk, med\nförmälan, det han ej Kan för god antaga, min\ndra erkiänna den honom deruti påförde skuld stöld\n132 RDr, så wida han e...",
+      "relevant_chunks": [
+        "A0067260_A0067260_00393",
+        "A0067260_A0067260_00394",
+        "A0067260_A0067260_00395",
+        "A0067260_A0067260_00396"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer brukspatron Anders Portæus i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0117",
+      "volume_id": "A0067435",
+      "case_summary": "den 31 Maii\nmin gaf thet förslaget, at re¬\nsättning kan med minsta\nskada lemnas, ut af det\nut dömde torpet kojan på\nH. Är skogen näst in til Bruks¬\nPatron Castbohms i söder be¬\nlägne Hr Hofko kohlade torp, som\ndell kalla...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00472",
+        "A0067435_A0067435_00473",
+        "A0067435_A0067435_00474",
+        "A0067435_A0067435_00475"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Jonas Jönsson i Gällie?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0117",
+      "volume_id": "A0067435",
+      "case_summary": "den 31 Maii\nmin gaf thet förslaget, at re¬\nsättning kan med minsta\nskada lemnas, ut af det\nut dömde torpet kojan på\nH. Är skogen näst in til Bruks¬\nPatron Castbohms i söder be¬\nlägne Hr Hofko kohlade torp, som\ndell kalla...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00472",
+        "A0067435_A0067435_00473",
+        "A0067435_A0067435_00474",
+        "A0067435_A0067435_00475"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur värderades egendom eller skada vid lagliga uppgörelser om mark och torp?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0117",
+      "volume_id": "A0067435",
+      "case_summary": "den 31 Maii\nmin gaf thet förslaget, at re¬\nsättning kan med minsta\nskada lemnas, ut af det\nut dömde torpet kojan på\nH. Är skogen näst in til Bruks¬\nPatron Castbohms i söder be¬\nlägne Hr Hofko kohlade torp, som\ndell kalla...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00472",
+        "A0067435_A0067435_00473",
+        "A0067435_A0067435_00474",
+        "A0067435_A0067435_00475"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om bymannen Olof Ifwarsson vid Torske bäcken i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0088",
+      "volume_id": "A0067435",
+      "case_summary": "den 19 Maii\nwas, och twist ej som faller\noch tre angräntsande wid\n5 D. Smts wite sig efter kal¬\ndelse infinna, på thet i\nför rättningen intet hin¬\nFör för ordsakar må\n§. 152.\nuppå Sexmännen Nils Hans\nsons wid upp h. Etta...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00351",
+        "A0067435_A0067435_00352",
+        "A0067435_A0067435_00353",
+        "A0067435_A0067435_00354"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Grefwe Cassa som utbetalade underhållsmedel?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0088",
+      "volume_id": "A0067435",
+      "case_summary": "den 19 Maii\nwas, och twist ej som faller\noch tre angräntsande wid\n5 D. Smts wite sig efter kal¬\ndelse infinna, på thet i\nför rättningen intet hin¬\nFör för ordsakar må\n§. 152.\nuppå Sexmännen Nils Hans\nsons wid upp h. Etta...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00351",
+        "A0067435_A0067435_00352",
+        "A0067435_A0067435_00353",
+        "A0067435_A0067435_00354"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Under vilka omständigheter och för vilka typer av förseelser utdömdes 'wite' vid hantering av gemensamma resurser som skog och mark?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0088",
+      "volume_id": "A0067435",
+      "case_summary": "den 19 Maii\nwas, och twist ej som faller\noch tre angräntsande wid\n5 D. Smts wite sig efter kal¬\ndelse infinna, på thet i\nför rättningen intet hin¬\nFör för ordsakar må\n§. 152.\nuppå Sexmännen Nils Hans\nsons wid upp h. Etta...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00351",
+        "A0067435_A0067435_00352",
+        "A0067435_A0067435_00353",
+        "A0067435_A0067435_00354"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsfogden Anders Wijberg och hans uppdrag i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0181",
+      "volume_id": "A0067286",
+      "case_summary": "tid wid Bruket sig åsamkadt och här Fin öf¬\nwe, finnen och Friherrinnan kommer at\nhäfta före.\nBeträffande åter det af Bergsfogden Wij¬\nberg emot Jägare påståendet. Så emedan\nFågaa likmätigt 1. §. uti K. förordningen\naf d...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00733",
+        "A0067286_A0067286_00734",
+        "A0067286_A0067286_00735",
+        "A0067286_A0067286_00736"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bergsmannen Pehr Philipsson i Korthyttan, Korßåkers socken, i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0181",
+      "volume_id": "A0067286",
+      "case_summary": "tid wid Bruket sig åsamkadt och här Fin öf¬\nwe, finnen och Friherrinnan kommer at\nhäfta före.\nBeträffande åter det af Bergsfogden Wij¬\nberg emot Jägare påståendet. Så emedan\nFågaa likmätigt 1. §. uti K. förordningen\naf d...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00733",
+        "A0067286_A0067286_00734",
+        "A0067286_A0067286_00735",
+        "A0067286_A0067286_00736"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister uppstod kring fastställande och indrivning av förlagsfordringar inom bergsbruket under perioden?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0181",
+      "volume_id": "A0067286",
+      "case_summary": "tid wid Bruket sig åsamkadt och här Fin öf¬\nwe, finnen och Friherrinnan kommer at\nhäfta före.\nBeträffande åter det af Bergsfogden Wij¬\nberg emot Jägare påståendet. Så emedan\nFågaa likmätigt 1. §. uti K. förordningen\naf d...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00733",
+        "A0067286_A0067286_00734",
+        "A0067286_A0067286_00735",
+        "A0067286_A0067286_00736"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om pigan Ingeborg Corins i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0057",
+      "volume_id": "A0067435",
+      "case_summary": "den 13 Maii\nat de fallit i Kult, d. un¬\nder och han ofwan uppå\ndå de taget stilla de e\nmed Erick slest dem.\nwitnet för medlen¬\ntid derfik in sitt kostfat¬\noch sedt till Olßon 2ne gån¬\ngor fatta omkull wid jem¬\ndie dörren...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00227",
+        "A0067435_A0067435_00228",
+        "A0067435_A0067435_00229",
+        "A0067435_A0067435_00230"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsmannen Petter Carlstedt vid Långbans hytta?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0057",
+      "volume_id": "A0067435",
+      "case_summary": "den 13 Maii\nat de fallit i Kult, d. un¬\nder och han ofwan uppå\ndå de taget stilla de e\nmed Erick slest dem.\nwitnet för medlen¬\ntid derfik in sitt kostfat¬\noch sedt till Olßon 2ne gån¬\ngor fatta omkull wid jem¬\ndie dörren...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00227",
+        "A0067435_A0067435_00228",
+        "A0067435_A0067435_00229",
+        "A0067435_A0067435_00230"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka sanktioner och ersättningar utdömdes typiskt vid misshandel kopplad till fylleri?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0057",
+      "volume_id": "A0067435",
+      "case_summary": "den 13 Maii\nat de fallit i Kult, d. un¬\nder och han ofwan uppå\ndå de taget stilla de e\nmed Erick slest dem.\nwitnet för medlen¬\ntid derfik in sitt kostfat¬\noch sedt till Olßon 2ne gån¬\ngor fatta omkull wid jem¬\ndie dörren...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00227",
+        "A0067435_A0067435_00228",
+        "A0067435_A0067435_00229",
+        "A0067435_A0067435_00230"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer bergsmannen Anders Giörasson från Skålm i andra rättsliga sammanhang rörande egendom eller avtal i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0006",
+      "volume_id": "A0030234",
+      "case_summary": "Den 16 Aprili\nhuad ordning af den 26 auguelii 1823, ut¬\nskillige §. 8 af 1805 års Skeppordning\nFörordningarne om Brattmål wid\nBerg Werken at deras beskaffande\naf år 1739. Kongl. Femtärckorf wde\nningen, jemte däruti 1818 ...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00023",
+        "A0030234_A0030234_00024",
+        "A0030234_A0030234_00025",
+        "A0030234_A0030234_00026"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka dokument i arkivet omnämner Carlsdahls masugn eller hytta, särskilt gällande tvister om markanvändning eller råvaror?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0006",
+      "volume_id": "A0030234",
+      "case_summary": "Den 16 Aprili\nhuad ordning af den 26 auguelii 1823, ut¬\nskillige §. 8 af 1805 års Skeppordning\nFörordningarne om Brattmål wid\nBerg Werken at deras beskaffande\naf år 1739. Kongl. Femtärckorf wde\nningen, jemte däruti 1818 ...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00023",
+        "A0030234_A0030234_00024",
+        "A0030234_A0030234_00025",
+        "A0030234_A0030234_00026"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister gällande ägande och utnyttjande av biprodukter från gruvdrift, som slaggvarp, i bergslagstinget under 1800-talets första hälft?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0006",
+      "volume_id": "A0030234",
+      "case_summary": "Den 16 Aprili\nhuad ordning af den 26 auguelii 1823, ut¬\nskillige §. 8 af 1805 års Skeppordning\nFörordningarne om Brattmål wid\nBerg Werken at deras beskaffande\naf år 1739. Kongl. Femtärckorf wde\nningen, jemte däruti 1818 ...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00023",
+        "A0030234_A0030234_00024",
+        "A0030234_A0030234_00025",
+        "A0030234_A0030234_00026"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsmannen Jöns Olsson i Bro Ofvansiö socken?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0200",
+      "volume_id": "A0067286",
+      "case_summary": "samma fastighet 2ne Månader ther¬\nefter till then mästbiudande innom\nBergsmansståndet uplåtes hwarwid\noch i fall Auctions Summan icke skulle\nblifwa tilräckelig till betalande så\nwäl af förläggarens som Christierniniske\ns...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00809",
+        "A0067286_A0067286_00810",
+        "A0067286_A0067286_00811",
+        "A0067286_A0067286_00812"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer mästersvännen Eric Abelsson vid Tiärnes nedre hammar i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0200",
+      "volume_id": "A0067286",
+      "case_summary": "samma fastighet 2ne Månader ther¬\nefter till then mästbiudande innom\nBergsmansståndet uplåtes hwarwid\noch i fall Auctions Summan icke skulle\nblifwa tilräckelig till betalande så\nwäl af förläggarens som Christierniniske\ns...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00809",
+        "A0067286_A0067286_00810",
+        "A0067286_A0067286_00811",
+        "A0067286_A0067286_00812"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av tvister uppstod vid förlagshandeln mellan handelsmän och bergsmän, och hur hanterades bevisföring och värdering av skulder i sådana mål?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0200",
+      "volume_id": "A0067286",
+      "case_summary": "samma fastighet 2ne Månader ther¬\nefter till then mästbiudande innom\nBergsmansståndet uplåtes hwarwid\noch i fall Auctions Summan icke skulle\nblifwa tilräckelig till betalande så\nwäl af förläggarens som Christierniniske\ns...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00809",
+        "A0067286_A0067286_00810",
+        "A0067286_A0067286_00811",
+        "A0067286_A0067286_00812"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Petter Jansson i Kvillklinden?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0019",
+      "volume_id": "A0030234",
+      "case_summary": "ken å känd, på vidare tillfrågan twat t\nnade att fora ehrenade han bekenna\ngjöra och slå widare fråga oanstång till\nnågot mera svarade han ett ney näm¬\nWallm och Wittnet började se nogare efter¬\nKärrna hade han sig hafva...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00075",
+        "A0030234_A0030234_00076",
+        "A0030234_A0030234_00077",
+        "A0030234_A0030234_00078"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer Hambria Jansson i Fyrkogden i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0019",
+      "volume_id": "A0030234",
+      "case_summary": "ken å känd, på vidare tillfrågan twat t\nnade att fora ehrenade han bekenna\ngjöra och slå widare fråga oanstång till\nnågot mera svarade han ett ney näm¬\nWallm och Wittnet började se nogare efter¬\nKärrna hade han sig hafva...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00075",
+        "A0030234_A0030234_00076",
+        "A0030234_A0030234_00077",
+        "A0030234_A0030234_00078"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur samverkade olika lokala befattningshavare, såsom hyttfogdar och skyllfogdar, vid utredningar av stölder från industrier?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0019",
+      "volume_id": "A0030234",
+      "case_summary": "ken å känd, på vidare tillfrågan twat t\nnade att fora ehrenade han bekenna\ngjöra och slå widare fråga oanstång till\nnågot mera svarade han ett ney näm¬\nWallm och Wittnet började se nogare efter¬\nKärrna hade han sig hafva...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00075",
+        "A0030234_A0030234_00076",
+        "A0030234_A0030234_00077",
+        "A0030234_A0030234_00078"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om rådmannen Joachim Hindrich Mau i Gefle?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0107",
+      "volume_id": "A0067286",
+      "case_summary": "Anders Erßon nu Erwilligt\nerkiändt de öfrige wid Liqui¬\ndationen bestridde posterne till¬\nhopa 558 D. samt wid den här¬\nofwannemde ostridige skuld¬\nsumman 1769 d. 25./. förklaradt\nsig icke eller hafwa något\nat påminna; B...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00434",
+        "A0067286_A0067286_00435",
+        "A0067286_A0067286_00436",
+        "A0067286_A0067286_00437"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer sexmannen Johan Olofßon i Sohlberga i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0107",
+      "volume_id": "A0067286",
+      "case_summary": "Anders Erßon nu Erwilligt\nerkiändt de öfrige wid Liqui¬\ndationen bestridde posterne till¬\nhopa 558 D. samt wid den här¬\nofwannemde ostridige skuld¬\nsumman 1769 d. 25./. förklaradt\nsig icke eller hafwa något\nat påminna; B...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00434",
+        "A0067286_A0067286_00435",
+        "A0067286_A0067286_00436",
+        "A0067286_A0067286_00437"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades värdering och försäljning av bergsmäns fastigheter vid obetalda förlagsfordringar?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0107",
+      "volume_id": "A0067286",
+      "case_summary": "Anders Erßon nu Erwilligt\nerkiändt de öfrige wid Liqui¬\ndationen bestridde posterne till¬\nhopa 558 D. samt wid den här¬\nofwannemde ostridige skuld¬\nsumman 1769 d. 25./. förklaradt\nsig icke eller hafwa något\nat påminna; B...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00434",
+        "A0067286_A0067286_00435",
+        "A0067286_A0067286_00436",
+        "A0067286_A0067286_00437"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om Per Nilsson i Fogdhyttan, som innehade ett kolhus?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0191",
+      "volume_id": "A0067435",
+      "case_summary": "den 16 Aprill\nat opsom til honom blifwit\nskickade, då wittnet tagit\npå 4 Skp i 21 C Skp, hwilket\njern han nu i winter lå¬\ntit honom så; På frågan\ninhemtades, at det warit\n1 resi härads Bönder, som\nhandtet, emot och kiörd...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00770",
+        "A0067435_A0067435_00771",
+        "A0067435_A0067435_00772",
+        "A0067435_A0067435_00773"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer sexmannen Jonas Månsson, förordnad för laga värdering, i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0191",
+      "volume_id": "A0067435",
+      "case_summary": "den 16 Aprill\nat opsom til honom blifwit\nskickade, då wittnet tagit\npå 4 Skp i 21 C Skp, hwilket\njern han nu i winter lå¬\ntit honom så; På frågan\ninhemtades, at det warit\n1 resi härads Bönder, som\nhandtet, emot och kiörd...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00770",
+        "A0067435_A0067435_00771",
+        "A0067435_A0067435_00772",
+        "A0067435_A0067435_00773"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur hanterades tvister kring egendom för bergmän, och vilka kungliga förordningar skyddade deras besittningar?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0191",
+      "volume_id": "A0067435",
+      "case_summary": "den 16 Aprill\nat opsom til honom blifwit\nskickade, då wittnet tagit\npå 4 Skp i 21 C Skp, hwilket\njern han nu i winter lå¬\ntit honom så; På frågan\ninhemtades, at det warit\n1 resi härads Bönder, som\nhandtet, emot och kiörd...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00770",
+        "A0067435_A0067435_00771",
+        "A0067435_A0067435_00772",
+        "A0067435_A0067435_00773"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om Kronobefallningsmannen Pet: Gagner i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0126",
+      "volume_id": "A0067286",
+      "case_summary": "skriftelige uplåtande un¬\nder d. 10. Februarii sistledne.\nOch war äfwen Swaran¬\nden Lars Svensson i Stens¬\nhyttan tillstädes. Och up¬\nwiste nu Befallnings¬\nman Östling den skrif¬\nteliga afhandling, som\nangående ofwannem¬...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00510",
+        "A0067286_A0067286_00511",
+        "A0067286_A0067286_00512",
+        "A0067286_A0067286_00513"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om hemmanet Stenshyttan i Torsåkers socken?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0126",
+      "volume_id": "A0067286",
+      "case_summary": "skriftelige uplåtande un¬\nder d. 10. Februarii sistledne.\nOch war äfwen Swaran¬\nden Lars Svensson i Stens¬\nhyttan tillstädes. Och up¬\nwiste nu Befallnings¬\nman Östling den skrif¬\nteliga afhandling, som\nangående ofwannem¬...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00510",
+        "A0067286_A0067286_00511",
+        "A0067286_A0067286_00512",
+        "A0067286_A0067286_00513"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka typer av egendom pantsattes vanligen som säkerhet vid penninglån under 1700-talet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0126",
+      "volume_id": "A0067286",
+      "case_summary": "skriftelige uplåtande un¬\nder d. 10. Februarii sistledne.\nOch war äfwen Swaran¬\nden Lars Svensson i Stens¬\nhyttan tillstädes. Och up¬\nwiste nu Befallnings¬\nman Östling den skrif¬\nteliga afhandling, som\nangående ofwannem¬...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00510",
+        "A0067286_A0067286_00511",
+        "A0067286_A0067286_00512",
+        "A0067286_A0067286_00513"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om bergsmannen Olof Jonsson från Will Korsåker?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0187",
+      "volume_id": "A0067286",
+      "case_summary": "laga upsägning; dock få i Olof Erßon sit¬\ntagwer wid hemmanet och gårdsbru¬\nket detta år, så och det påfölljande, samt\ntill midfastan året derpå, men sedan re¬\ndet är afbrukadt, som blifwit, beredskap\nskaffadt till blåsn...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00757",
+        "A0067286_A0067286_00758",
+        "A0067286_A0067286_00759",
+        "A0067286_A0067286_00760"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer handelsmannen Anders Jäderlund i Gefle i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0187",
+      "volume_id": "A0067286",
+      "case_summary": "laga upsägning; dock få i Olof Erßon sit¬\ntagwer wid hemmanet och gårdsbru¬\nket detta år, så och det påfölljande, samt\ntill midfastan året derpå, men sedan re¬\ndet är afbrukadt, som blifwit, beredskap\nskaffadt till blåsn...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00757",
+        "A0067286_A0067286_00758",
+        "A0067286_A0067286_00759",
+        "A0067286_A0067286_00760"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga processer användes för att indriva skulder från bergsmän, särskilt när det gällde deras egendom och bergsbruk?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0187",
+      "volume_id": "A0067286",
+      "case_summary": "laga upsägning; dock få i Olof Erßon sit¬\ntagwer wid hemmanet och gårdsbru¬\nket detta år, så och det påfölljande, samt\ntill midfastan året derpå, men sedan re¬\ndet är afbrukadt, som blifwit, beredskap\nskaffadt till blåsn...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00757",
+        "A0067286_A0067286_00758",
+        "A0067286_A0067286_00759",
+        "A0067286_A0067286_00760"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer tolmannen Matts Mårtensson från Broka i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0005",
+      "volume_id": "A0067286",
+      "case_summary": "wite för hwardera haf¬\nwa sig at infinna, och\nwaranderne wid fem\ndaler Silfwermynts wi¬\nte för hwar och en af\ndem då böra inför Bergs¬\nTings Rätten hafwa till\nhands at upte merof¬\nwannemde HäradsRät¬\ntens dom uti sjelfwa...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00020",
+        "A0067286_A0067286_00021",
+        "A0067286_A0067286_00022",
+        "A0067286_A0067286_00023"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka personer omnämns i samband med Schebo Bruk i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0005",
+      "volume_id": "A0067286",
+      "case_summary": "wite för hwardera haf¬\nwa sig at infinna, och\nwaranderne wid fem\ndaler Silfwermynts wi¬\nte för hwar och en af\ndem då böra inför Bergs¬\nTings Rätten hafwa till\nhands at upte merof¬\nwannemde HäradsRät¬\ntens dom uti sjelfwa...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00020",
+        "A0067286_A0067286_00021",
+        "A0067286_A0067286_00022",
+        "A0067286_A0067286_00023"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga påföljder drabbade smältare eller andra hantverkare som lämnade sin anställning utan tillstånd från ett bruk?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0005",
+      "volume_id": "A0067286",
+      "case_summary": "wite för hwardera haf¬\nwa sig at infinna, och\nwaranderne wid fem\ndaler Silfwermynts wi¬\nte för hwar och en af\ndem då böra inför Bergs¬\nTings Rätten hafwa till\nhands at upte merof¬\nwannemde HäradsRät¬\ntens dom uti sjelfwa...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00020",
+        "A0067286_A0067286_00021",
+        "A0067286_A0067286_00022",
+        "A0067286_A0067286_00023"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka andra ärenden eller protokoll nämner nämndemannen Anders Andersson i Grönhult?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0043",
+      "volume_id": "A0030234",
+      "case_summary": "Carlberg företedde de upp¬\nJohan Matzdotter i Kråket\nrättade Längderne öfwer Kronans\nFionde och Hammanshatts jern¬\nDe förstnämnde jemnfördes med\nnördige presterskapets anteck¬\nningar om blåsningstiderne,\nbefunnos det der...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00174",
+        "A0030234_A0030234_00175",
+        "A0030234_A0030234_00176",
+        "A0030234_A0030234_00177"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vad är känt om uppförande och tvister rörande 'Lichtloch' eller motsvarande ljortluckor vid svenska silvergruvor under 1700- och 1800-talet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0043",
+      "volume_id": "A0030234",
+      "case_summary": "Carlberg företedde de upp¬\nJohan Matzdotter i Kråket\nrättade Längderne öfwer Kronans\nFionde och Hammanshatts jern¬\nDe förstnämnde jemnfördes med\nnördige presterskapets anteck¬\nningar om blåsningstiderne,\nbefunnos det der...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00174",
+        "A0030234_A0030234_00175",
+        "A0030234_A0030234_00176",
+        "A0030234_A0030234_00177"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka rättsliga mönster finns för att bedöma och värdera utfört arbete eller arbetsskyldigheter vid gruvdrift, särskilt vid Bergstingen?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0030234-0043",
+      "volume_id": "A0030234",
+      "case_summary": "Carlberg företedde de upp¬\nJohan Matzdotter i Kråket\nrättade Längderne öfwer Kronans\nFionde och Hammanshatts jern¬\nDe förstnämnde jemnfördes med\nnördige presterskapets anteck¬\nningar om blåsningstiderne,\nbefunnos det der...",
+      "relevant_chunks": [
+        "A0030234_A0030234_00174",
+        "A0030234_A0030234_00175",
+        "A0030234_A0030234_00176",
+        "A0030234_A0030234_00177"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Finns det uppgifter om skogvaktaren Eric Andersson Lönbom i arkivet?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0145",
+      "volume_id": "A0067286",
+      "case_summary": "Wittnet Matt Perhrsson be¬\nrättade, at han intet war\nmed på besiktningen, men\nsedt de stockar i skogen,\nsom sedermera fördes till\nBruket, hwilcka ej annat\nworo än timmerstockar,\ndock om de fådt stå och wä¬\npå öfwer 100:d...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00587",
+        "A0067286_A0067286_00588",
+        "A0067286_A0067286_00589",
+        "A0067286_A0067286_00590"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Förekommer smedsdrängen Mathias Gierss i arkivet?",
+      "query_type": "entity",
+      "query_index": 2,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0145",
+      "volume_id": "A0067286",
+      "case_summary": "Wittnet Matt Perhrsson be¬\nrättade, at han intet war\nmed på besiktningen, men\nsedt de stockar i skogen,\nsom sedermera fördes till\nBruket, hwilcka ej annat\nworo än timmerstockar,\ndock om de fådt stå och wä¬\npå öfwer 100:d...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00587",
+        "A0067286_A0067286_00588",
+        "A0067286_A0067286_00589",
+        "A0067286_A0067286_00590"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Hur fördelades brottmål mellan häradsrätter och bergstingsrätter, särskilt när de rörde både landsbygd och bruksverksamhet?",
+      "query_type": "social_pattern",
+      "query_index": 3,
+      "layer": "layer3",
+      "date": "GROUP-A0067286-0145",
+      "volume_id": "A0067286",
+      "case_summary": "Wittnet Matt Perhrsson be¬\nrättade, at han intet war\nmed på besiktningen, men\nsedt de stockar i skogen,\nsom sedermera fördes till\nBruket, hwilcka ej annat\nworo än timmerstockar,\ndock om de fådt stå och wä¬\npå öfwer 100:d...",
+      "relevant_chunks": [
+        "A0067286_A0067286_00587",
+        "A0067286_A0067286_00588",
+        "A0067286_A0067286_00589",
+        "A0067286_A0067286_00590"
+      ],
+      "num_relevant": 4
+    },
+    {
+      "query": "Vilka fler ärenden behandlar Brukspatron Johan Roman i egenskap av jordägare?",
+      "query_type": "entity",
+      "query_index": 1,
+      "layer": "layer3",
+      "date": "GROUP-A0067435-0151",
+      "volume_id": "A0067435",
+      "case_summary": "den 30 Junii\nrit åstad at taga kohl, hwar\nföre denne skyndat sig ut,\noch fått samman 22 häst re¬\nmed hwilka han hämtadt\nförsta warfwet från ull¬\nmärks bondes Nils Jonßons\ni södra skifwet och mans\nAnderßons mihla, ne¬\nhan...",
+      "relevant_chunks": [
+        "A0067435_A0067435_00609",
+        "A0067435_A0067435_00610",
+        "A0067435_A0067435_00611",
+        "A0067435_A0067435_00612"
+      ],
+      "num_relevant": 4
+    }
+  ]
+}
