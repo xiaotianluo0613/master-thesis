@@ -37,7 +37,7 @@ echo "Combined: output/layer1_layer2_combined_training_data.jsonl"
 # Fine-tune starting from the Layer 1 LoRA+dense checkpoint
 torchrun --nproc_per_node 1 \
     -m FlagEmbedding.finetune.embedder.encoder_only.m3 \
-    --model_name_or_path        output/models/layer1-bge-m3-lora-dense-b4 \
+    --model_name_or_path        output/models/layer1-bge-m3-lora-dense-b4-merged \
     --train_data                output/layer1_layer2_combined_training_data.jsonl \
     --output_dir                output/models/layer2-bge-m3-lora-dense-b4 \
     --train_group_size          8 \
