@@ -4,6 +4,90 @@ Running log of experiments, results, and decisions. Most recent entry first.
 
 ---
 
+## 2026-04-10 (evening) — L2 Fine-tune Submitted, L3/L4 Scoring Queued, Global Val Set Built
+
+**Status**: All jobs queued on UPPMAX. Pipeline advancing on all layers simultaneously.
+
+**Actions**:
+- Verified L2 scoring: 6474 examples, scores 0.15–0.49 (mean 0.30) — clean ✅
+- Split L3/L4 queries on UPPMAX: L3 1629 train / 250 val, L4 978 train / 150 val (seed 42, 0 overlap)
+- All 4 layer val sets committed to git (canonical UPPMAX versions)
+- Built global val set: 1150 queries (L1: 500, L2: 250, L3: 250, L4: 150), proportional to training weights
+- Fixed all split scripts: `-p core` → `-p cpu` (core invalid on Pelle, cpu/gpu are valid)
+- Diagnosed L2 fine-tune failure: LoRA checkpoint has no `config.json` (only adapter delta saved, not base weights)
+- Created `scripts/pipeline/merge_lora_checkpoint.py`: merges LoRA adapter + base BGE-M3, copies colbert/sparse linear heads
+- Merged L1 LoRA checkpoint → `output/models/layer1-bge-m3-lora-dense-b4-merged`
+- Created `slurm/layer3_mine.sh`, `layer4_mine.sh`, `layer3_score.sh`, `layer4_score.sh`
+- L3 mining: 6498 examples ✅ L4 mining: 3903 examples ✅ (both completed)
+
+**Jobs running on UPPMAX**:
+- `4858497` — L2 fine-tune (layer2-bge-m3-lora-dense-b4, from merged L1 checkpoint)
+- `4858615` — L3 teacher scoring
+- `4858616` — L4 teacher scoring
+
+**Key decision — merge after every layer**:
+LoRA saves only the adapter delta. To continue training from a LoRA checkpoint, must first merge into a full model. Going forward: add merge step to end of each finetune slurm script.
+
+**Next**:
+- When L2 fine-tune completes: check results, decide L3 fine-tune hyperparameters
+- When L3/L4 scoring completes: create L3/L4 finetune scripts (need L2 merged checkpoint as starting point for L3)
+- Add auto-merge step to end of layer2_finetune.sh
+
+---
+
+## 2026-04-10 — Layer 2 Pipeline Progress + RAG Demo Started
+
+**Status**: Layer 2 data pipeline mostly done. L3/L4 query gen complete. RAG demo built.
+
+**Actions**:
+- Fixed `build_layer2_chunks.py`: District was crowding out Protocols (cap now proportional to volume count: ~181 District, ~2319 Protocols)
+- Generated queries for all layers on local Mac (UPPMAX login node had missing fewshot file):
+  - Layer 2: 1881 queries (629 groups × 3, 2 failed)
+  - Layer 3: 1881 queries (627 groups × 3, 0 failed)
+  - Layer 4: 1128 queries (376 groups × 3, 0 failed)
+- Split Layer 2: 1629 train / 250 val (group-aware, 0 overlap)
+- Layer 2 hard negative mining: 6474 examples, all with 7 full negatives (avg top-1 neg similarity: 0.470)
+- Layer 2 teacher scoring: complete → `output/layer2_bge_training_data_scored.jsonl`
+- L3/L4 queries pushed to git; splits + mine/score/finetune pending
+
+**RAG Demo** (`demo/`):
+- Built with Gemini for job portfolio purposes
+- Stack: Streamlit + Qdrant Cloud + BGE-M3 (sentence-transformers)
+- `ingest_data.py`: parses XML, encodes with BGE-M3, upserts to Qdrant
+- `app.py`: chat UI, encodes query, retrieves top-3 from Qdrant, displays results
+- Currently uses base BGE-M3; will swap in fine-tuned model when ready
+- One volume ingested so far (`30002021`)
+
+**Pending**:
+- Submit `sbatch slurm/layer2_finetune.sh` on UPPMAX (after UPPMAX connection restores)
+- Split L3/L4 queries on UPPMAX → build global val set
+- Fix split scripts: `-p core` partition invalid on Pelle (run splits directly on login node)
+
+---
+
+## 2026-04-07 — Supervisor Meeting + Layer 2 Planning
+
+**Status**: Supervisor meeting done. Layer 2 pipeline scripts written and committed.
+
+**Supervisor feedback**:
+- Layer 1 results well-received (vs baseline)
+- Absolute figures not yet practical — expected at this stage
+- Requested: global validation set covering ALL document types to simulate real use
+
+**Decisions**:
+- Global val set: proportionally sampled from all 4 layers (weights 5000:2500:2500:1500), built incrementally
+- Training strategy confirmed: cumulative domain expansion (each layer trains on all previous data combined, continues from previous checkpoint)
+- LoRA+dense config locked in for all layers: r=16, alpha=32, target=Q,K,V,O, lr=1e-4, batch=4, 3 epochs
+
+**Scripts written**:
+- `scripts/pipeline/build_layer2/3/4_chunks.py`
+- `scripts/pipeline/prepare_layer2/3/4_data.sh`
+- `slurm/layer2/3/4_query_gen.sh` (login node, nohup)
+- `slurm/layer2/3/4_split.sh`, `layer2_mine.sh`, `layer2_score.sh`, `layer2_finetune.sh`
+- `scripts/pipeline/build_global_val_set.py` (proportional weighted sampling)
+
+---
+
 ## 2026-04-06 — Layer 1 LoRA Experiments Complete
 
 **Status**: All Layer 1 experiments done. LoRA+dense is the recommended approach going forward.
