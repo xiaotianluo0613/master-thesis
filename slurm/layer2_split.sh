@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-95
-#SBATCH -p core
+#SBATCH -p cpu
 #SBATCH -n 1
 #SBATCH -t 00:10:00
 #SBATCH --mem=4G
