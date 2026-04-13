@@ -44,7 +44,7 @@ from pathlib import Path
 layers = ["layer1", "layer2", "layer3", "layer4"]
 all_chunks = []
 for layer in layers:
-    path = Path(f"data/{layer}_chunks.json")
+    path = Path(f"data/{layer}_chunks_grouped.json")
     d = json.load(open(path, encoding="utf-8"))
     all_chunks.extend(d["chunks"])
     print(f"  {layer}: {len(d['chunks'])} chunks")
@@ -72,7 +72,7 @@ echo "Done: output/layer2_eval_results.json"
 # Step 4: layer-specific eval — L2 val queries on L2 corpus only
 echo "=== Layer 2-specific evaluation ==="
 python scripts/pipeline/evaluate_comparison.py \
-    --chunks     data/layer2_chunks.json \
+    --chunks     data/layer2_chunks_grouped.json \
     --queries    data/layer2_val_queries.json \
     --models     BAAI/bge-m3 \
                  output/models/layer1-bge-m3-lora-dense-b4-merged \
