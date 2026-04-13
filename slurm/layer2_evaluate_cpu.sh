@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -A uppmax2026-1-95
-#SBATCH -p cpu
+#SBATCH -p pelle
 #SBATCH -t 12:00:00
 #SBATCH -N 1
 #SBATCH -n 16
