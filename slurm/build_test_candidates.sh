@@ -30,6 +30,11 @@ mkdir -p logs
 module load Python/3.11.5-GCCcore-13.3.0
 source .venv/bin/activate
 
+# Load API keys from .env
+if [ -f .env ]; then
+    export $(grep -v '^#' .env | xargs)
+fi
+
 L4_MODEL=output/models/layer4-bge-m3-lora-dense-b4-merged
 
 # Verify corpus exists
