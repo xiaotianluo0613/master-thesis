@@ -299,12 +299,14 @@ def call_gemini(prompt: str, api_key: str, model: str = "gemini-2.5-flash",
             time.sleep(min(60, 5 * attempt))
 
 
-def gemini_prefilter(queries, merged_candidates, api_key, gemini_model):
+def gemini_prefilter(queries, merged_candidates, api_key, gemini_model, min_candidates=10):
     """
-    For each query, send all candidates to Gemini Flash and keep only relevant ones (~10).
-    Gemini judgment is not ground truth — just reduces manual annotation burden.
+    For each query, send all candidates to Gemini Flash and keep only relevant ones.
+    Always guarantees at least min_candidates by padding with top-ranked candidates
+    that Gemini didn't pick. Gemini judgment is not ground truth — just reduces
+    manual annotation burden.
     """
-    print(f"\nGemini pre-filter on {len(queries)} queries...")
+    print(f"\nGemini pre-filter on {len(queries)} queries (min {min_candidates} per query)...")
     for qi, q in enumerate(queries):
         qid = q["query_id"]
         candidates = merged_candidates.get(qid, [])
@@ -326,9 +328,16 @@ def gemini_prefilter(queries, merged_candidates, api_key, gemini_model):
             relevant_nos = {c["candidate_no"] for c in candidates}
 
         filtered = [c for c in candidates if c["candidate_no"] in relevant_nos]
-        # Fallback: if Gemini returned nothing, keep top-5 by rank
-        if not filtered:
-            filtered = candidates[:5]
+
+        # Pad up to min_candidates with top-ranked candidates not already included
+        if len(filtered) < min_candidates:
+            filtered_nos = {c["candidate_no"] for c in filtered}
+            for c in candidates:
+                if len(filtered) >= min_candidates:
+                    break
+                if c["candidate_no"] not in filtered_nos:
+                    filtered.append(c)
+                    filtered_nos.add(c["candidate_no"])
 
         merged_candidates[qid] = filtered
         print(f"  [{qi+1}/{len(queries)}] {qid}: {len(candidates)} → {len(filtered)} candidates")
@@ -411,6 +420,8 @@ def main():
     parser.add_argument("--gemini-prefilter", action="store_true",
                         help="Use Gemini Flash to pre-filter candidates (human queries only)")
     parser.add_argument("--gemini-model", default="gemini-2.5-flash")
+    parser.add_argument("--min-candidates", type=int, default=10,
+                        help="Minimum candidates per query after Gemini filter (padded by rank)")
     parser.add_argument("--output-json", required=True)
     parser.add_argument("--output-csv", required=True)
     args = parser.parse_args()
@@ -455,7 +466,7 @@ def main():
         api_key = os.environ.get("GEMINI_API_KEY")
         if not api_key:
             raise ValueError("GEMINI_API_KEY not set — required for --gemini-prefilter")
-        merged = gemini_prefilter(queries, merged, api_key, args.gemini_model)
+        merged = gemini_prefilter(queries, merged, api_key, args.gemini_model, args.min_candidates)
         total_after = sum(len(v) for v in merged.values())
         print(f"After Gemini filter: {total_after} candidates "
               f"(avg {total_after/len(queries):.1f} per query)")
