@@ -10,8 +10,8 @@
 #SBATCH -e logs/build_test_candidates_%j.err
 
 # Build candidate pools for human and synthetic test sets.
-# For each query set: retrieves top-20 from BGE-M3 baseline + L4 merged model,
-# merges and deduplicates, outputs JSON + CSV.
+# Two-stage retrieval: dense+sparse union top-100 shortlist → integration re-score → top-20.
+# Human queries: Gemini Flash pre-filters ~30 candidates to ~10 for manual annotation.
 #
 # Prerequisite: global_val_chunks.json must exist (built by layer4_evaluate.sh).
 # Run AFTER layer4 fine-tuning and evaluation are complete.
@@ -47,8 +47,10 @@ python scripts/pipeline/build_test_candidates.py \
     --queries-format    txt \
     --baseline-model    BAAI/bge-m3 \
     --finetuned-model   $L4_MODEL \
-    --top-k             20 \
+    --dense-k           100 \
+    --final-k           20 \
     --batch-size        64 \
+    --gemini-prefilter \
     --output-json       data/test_human_candidates.json \
     --output-csv        data/test_human_candidates.csv
 echo "Done: data/test_human_candidates.json + .csv"
@@ -63,7 +65,8 @@ if [ -f data/test_synthetic_queries_raw.json ]; then
         --queries-format    json \
         --baseline-model    BAAI/bge-m3 \
         --finetuned-model   $L4_MODEL \
-        --top-k             20 \
+        --dense-k           100 \
+        --final-k           20 \
         --batch-size        64 \
         --output-json       data/test_synthetic_candidates.json \
         --output-csv        data/test_synthetic_candidates.csv
